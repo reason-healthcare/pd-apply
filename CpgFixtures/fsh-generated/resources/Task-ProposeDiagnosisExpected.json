@@ -1,0 +1,46 @@
+{
+  "resourceType": "Task",
+  "id": "ProposeDiagnosisExpected",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask"
+    ]
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "code": "propose-diagnosis",
+            "display": "Propose a diagnosis"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Condition/Condition1"
+      }
+    }
+  ],
+  "status": "draft",
+  "intent": "proposal",
+  "instantiatesCanonical": "http://example.com/ActivityDefinition/ProposeDiagnosisActivity|0.1.0",
+  "code": {
+    "coding": [
+      {
+        "code": "propose-diagnosis",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "display": "Propose a diagnosis"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/Patient1"
+  },
+  "encounter": {
+    "reference": "Encounter/Encounter1"
+  },
+  "requester": {
+    "reference": "Practitioner/Practitioner1"
+  }
+}

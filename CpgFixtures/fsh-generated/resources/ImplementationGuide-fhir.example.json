@@ -1,0 +1,522 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.example",
+  "url": "http://example.org/ImplementationGuide/fhir.example",
+  "version": "0.1.0",
+  "name": "CpgFixtures",
+  "status": "draft",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "fhir.example",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.cpg",
+      "version": "1.0.0",
+      "uri": "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg",
+      "id": "hl7_fhir_uv_cpg"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/FixedCPGComputableActivityDefinitionDocumentMedication"
+        },
+        "name": "FixedCPGComputableActivityDefinitionDocumentMedication",
+        "description": "fixes problem in cpg spec",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/FixedCPGTaskAdministerMedication"
+        },
+        "name": "FixedCPGTaskAdministerMedication",
+        "description": "fixes problem in cpg spec",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/FixedCPGTaskDispenseMedication"
+        },
+        "name": "FixedCPGTaskDispenseMedication",
+        "description": "fixes problem in cpg spec",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/FixedCPGTaskDocumentMedication"
+        },
+        "name": "FixedCPGTaskDocumentMedication",
+        "description": "fixes problem in cpg spec",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/AdministerMedicationActivity"
+        },
+        "name": "AdministerMedicationActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/AdministerMedicationExpected"
+        },
+        "name": "AdministerMedicationExpected",
+        "exampleCanonical": "http://example.org/StructureDefinition/FixedCPGTaskAdministerMedication"
+      },
+      {
+        "reference": {
+          "reference": "Library/AdministerMedicationLibrary"
+        },
+        "name": "AdministerMedicationLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/AdministerMedicationParameters"
+        },
+        "name": "AdministerMedicationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/CHFDailyManagement"
+        },
+        "name": "CHFDailyManagement",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/ChfDailyManagementParameters"
+        },
+        "name": "ChfDailyManagementParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/CollectInformationActivity"
+        },
+        "name": "CollectInformationActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/CollectInformationExpected"
+        },
+        "name": "CollectInformationExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/CollectInformationParameters"
+        },
+        "name": "CollectInformationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/DispenseMedicationActivity"
+        },
+        "name": "DispenseMedicationActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/DispenseMedicationExpected"
+        },
+        "name": "DispenseMedicationExpected",
+        "exampleCanonical": "http://example.org/StructureDefinition/FixedCPGTaskDispenseMedication"
+      },
+      {
+        "reference": {
+          "reference": "Library/DispenseMedicationLibrary"
+        },
+        "name": "DispenseMedicationLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/DispenseMedicationParameters"
+        },
+        "name": "DispenseMedicationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/DocumentMedicationActivity"
+        },
+        "name": "DocumentMedicationActivity",
+        "exampleCanonical": "http://example.org/StructureDefinition/FixedCPGComputableActivityDefinitionDocumentMedication"
+      },
+      {
+        "reference": {
+          "reference": "Task/DocumentMedicationExpected"
+        },
+        "name": "DocumentMedicationExpected",
+        "exampleCanonical": "http://example.org/StructureDefinition/FixedCPGTaskDocumentMedication"
+      },
+      {
+        "reference": {
+          "reference": "Library/DocumentMedicationLibrary"
+        },
+        "name": "DocumentMedicationLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/DocumentMedicationParameters"
+        },
+        "name": "DocumentMedicationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/DontCollectInformationActivity"
+        },
+        "name": "DontCollectInformationActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/DontCollectInformationExpected"
+        },
+        "name": "DontCollectInformationExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/DontCollectInformationParameters"
+        },
+        "name": "DontCollectInformationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/DontSendMessageActivity"
+        },
+        "name": "DontSendMessageActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CommunicationRequest/DontSendMessageExpected"
+        },
+        "name": "DontSendMessageExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/DontSendMessageParameters"
+        },
+        "name": "DontSendMessageParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/EnrollPatientActivity"
+        },
+        "name": "EnrollPatientActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/EnrollPatientExpected"
+        },
+        "name": "EnrollPatientExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/EnrollPatientParameters"
+        },
+        "name": "EnrollPatientParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/FHIRHelpers"
+        },
+        "name": "FHIRHelpers",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/GenerateReportActivity"
+        },
+        "name": "GenerateReportActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/GenerateReportExpected"
+        },
+        "name": "GenerateReportExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/GenerateReportParameters"
+        },
+        "name": "GenerateReportParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/OrderMedicationActivity"
+        },
+        "name": "OrderMedicationActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/OrderMedicationExpected"
+        },
+        "name": "OrderMedicationExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/OrderMedicationParameters"
+        },
+        "name": "OrderMedicationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/OrderServiceActivity"
+        },
+        "name": "OrderServiceActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/OrderServiceExpected"
+        },
+        "name": "OrderServiceExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/OrderServiceParameters"
+        },
+        "name": "OrderServiceParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/PatientTestBundle1"
+        },
+        "name": "PatientTestBundle1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/ProposeDiagnosisActivity"
+        },
+        "name": "ProposeDiagnosisActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/ProposeDiagnosisExpected"
+        },
+        "name": "ProposeDiagnosisExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/ProposeDiagnosisLibrary"
+        },
+        "name": "ProposeDiagnosisLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/ProposeDiagnosisParameters"
+        },
+        "name": "ProposeDiagnosisParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/RecommendImmunizationActivity"
+        },
+        "name": "RecommendImmunizationActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ImmunizationRecommendation/RecommendImmunizationExpected"
+        },
+        "name": "RecommendImmunizationExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/RecommendImmunizationParameters"
+        },
+        "name": "RecommendImmunizationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/RecordDetectedIssueActivity"
+        },
+        "name": "RecordDetectedIssueActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/RecordDetectedIssueExpected"
+        },
+        "name": "RecordDetectedIssueExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/RecordDetectedIssueLibrary"
+        },
+        "name": "RecordDetectedIssueLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/RecordDetectedIssueParameters"
+        },
+        "name": "RecordDetectedIssueParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/RecordInferenceActivity"
+        },
+        "name": "RecordInferenceActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/RecordInferenceExpected"
+        },
+        "name": "RecordInferenceExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/RecordInferenceLibrary"
+        },
+        "name": "RecordInferenceLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/RecordInferenceParameters"
+        },
+        "name": "RecordInferenceParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/ReportFlagActivity"
+        },
+        "name": "ReportFlagActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Task/ReportFlagExpected"
+        },
+        "name": "ReportFlagExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/ReportFlagLibrary"
+        },
+        "name": "ReportFlagLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/ReportFlagParameters"
+        },
+        "name": "ReportFlagParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/SendMessageActivity"
+        },
+        "name": "SendMessageActivity",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CommunicationRequest/SendMessageExpected"
+        },
+        "name": "SendMessageExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/SendMessageParameters"
+        },
+        "name": "SendMessageParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "RequestGroup/chf-scenario1-daily-management-expected"
+        },
+        "name": "chf-scenario1-daily-management-expected",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-binary",
+        "value": "./input/cql"
+      },
+      {
+        "code": "generation-off",
+        "value": "true"
+      },
+      {
+        "code": "no-narrative",
+        "value": "*/*"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "DontCollectInformationActivity",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity"
+    ]
+  },
+  "kind": "Task",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask",
+  "intent": "proposal",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/Questionnaire/activity-example-collectinformation"
+    }
+  ],
+  "url": "http://example.com/ActivityDefinition/DontCollectInformationActivity",
+  "name": "DontCollectInformationActivity",
+  "title": "ActivityDefinition DontCollectInformationActivity",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Example",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "description": "Example Activity Definition for a recommendation not to collect information",
+  "code": {
+    "coding": [
+      {
+        "code": "collect-information",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "display": "Collect information"
+      }
+    ]
+  },
+  "doNotPerform": true,
+  "dynamicValue": [
+    {
+      "path": "input[0].type",
+      "expression": {
+        "language": "text/fhirpath",
+        "expression": "code"
+      }
+    },
+    {
+      "path": "input[0].valueCanonical",
+      "expression": {
+        "language": "text/fhirpath",
+        "expression": "extension.where(url='http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith').value"
+      }
+    }
+  ]
+}

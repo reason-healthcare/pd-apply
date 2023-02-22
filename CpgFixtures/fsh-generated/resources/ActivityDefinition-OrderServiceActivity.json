@@ -1,0 +1,51 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "OrderServiceActivity",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity"
+    ]
+  },
+  "kind": "ServiceRequest",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest",
+  "intent": "proposal",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://example.com/ActivityDefinition/OrderServiceActivity",
+  "name": "OrderServiceActivity",
+  "title": "ActivityDefinition OrderServiceActivity",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Example",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "description": "Example Activity Definition for a recommendation to order a service",
+  "code": {
+    "coding": [
+      {
+        "code": "order-service",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "display": "Order a service"
+      }
+    ]
+  },
+  "doNotPerform": false
+}

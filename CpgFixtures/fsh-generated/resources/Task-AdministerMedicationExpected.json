@@ -1,0 +1,46 @@
+{
+  "resourceType": "Task",
+  "id": "AdministerMedicationExpected",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/FixedCPGTaskAdministerMedication"
+    ]
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "administer-medication",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "display": "Administer a medication"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "MedicationRequest/PastMedicationRequest"
+      }
+    }
+  ],
+  "status": "draft",
+  "intent": "proposal",
+  "instantiatesCanonical": "http://example.com/ActivityDefinition/AdministerMedicationActivity|0.1.0",
+  "code": {
+    "coding": [
+      {
+        "code": "administer-medication",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "display": "Administer a medication"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/Patient1"
+  },
+  "encounter": {
+    "reference": "Encounter/Encounter1"
+  },
+  "requester": {
+    "reference": "Practitioner/Practitioner1"
+  }
+}

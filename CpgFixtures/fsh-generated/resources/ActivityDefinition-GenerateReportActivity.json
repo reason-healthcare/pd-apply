@@ -1,0 +1,71 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "GenerateReportActivity",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereportactivity"
+    ]
+  },
+  "kind": "Task",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask",
+  "intent": "proposal",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport"
+    }
+  ],
+  "url": "http://example.com/ActivityDefinition/GenerateReportActivity",
+  "name": "GenerateReportActivity",
+  "title": "ActivityDefinition GenerateReportActivity",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Example",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "description": "Example Activity Definition for a recommendation to generate a report",
+  "code": {
+    "coding": [
+      {
+        "code": "generate-report",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "display": "Generate a metric or case report"
+      }
+    ]
+  },
+  "doNotPerform": false,
+  "dynamicValue": [
+    {
+      "path": "input[0].type",
+      "expression": {
+        "language": "text/fhirpath",
+        "expression": "code"
+      }
+    },
+    {
+      "path": "input[0].valueCanonical",
+      "expression": {
+        "language": "text/fhirpath",
+        "expression": "extension.where(url='http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith').value"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "Task",
+  "id": "DispenseMedicationExpected",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/FixedCPGTaskDispenseMedication"
+    ]
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "dispense-medication",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "display": "Dispense a Medication"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "MedicationRequest/PastMedicationRequest"
+      }
+    }
+  ],
+  "status": "draft",
+  "intent": "proposal",
+  "instantiatesCanonical": "http://example.com/ActivityDefintion/DispenseMedicaitonActivity|0.1.0",
+  "code": {
+    "coding": [
+      {
+        "code": "dispense-medication",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "display": "Dispense a Medication"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/Patient1"
+  },
+  "encounter": {
+    "reference": "Encounter/Encounter1"
+  },
+  "requester": {
+    "reference": "Practitioner/Practitioner1"
+  }
+}
