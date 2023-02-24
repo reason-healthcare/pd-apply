@@ -93,16 +93,16 @@
       },
       {
         "reference": {
-          "reference": "PlanDefinition/CHFDailyManagement"
+          "reference": "Parameters/CKDDiagnosisParameters"
         },
-        "name": "CHFDailyManagement",
+        "name": "CKDDiagnosisParameters",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Parameters/ChfDailyManagementParameters"
+          "reference": "PlanDefinition/CKDDiagnosisPlan"
         },
-        "name": "ChfDailyManagementParameters",
+        "name": "CKDDiagnosisPlan",
         "exampleBoolean": true
       },
       {
@@ -478,9 +478,9 @@
       },
       {
         "reference": {
-          "reference": "RequestGroup/chf-scenario1-daily-management-expected"
+          "reference": "Bundle/cdc2ef13-4319-4e47-bdf8-1e442b91efc4"
         },
-        "name": "chf-scenario1-daily-management-expected",
+        "name": "cdc2ef13-4319-4e47-bdf8-1e442b91efc4",
         "exampleBoolean": true
       }
     ],

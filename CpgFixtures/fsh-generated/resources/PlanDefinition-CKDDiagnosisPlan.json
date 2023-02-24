@@ -1,0 +1,53 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "CKDDiagnosisPlan",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://example.com/PlanDefinition/CKDDiagnosisPlan",
+  "name": "CKDDiagnosisPlan",
+  "title": "PlanDefinition CKDDiagnosisPlan",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Example",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "type": {
+    "coding": [
+      {
+        "code": "clinical-protocol",
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "display": "Clinical Protocol"
+      }
+    ]
+  },
+  "description": "Plan definition to provide education to a patient with newly diagnosed chronic kidney disease",
+  "action": [
+    {
+      "title": "CKD Pateint Education",
+      "description": "Provide verbal and written education on disease state at time of CKD diagnosis"
+    }
+  ]
+}

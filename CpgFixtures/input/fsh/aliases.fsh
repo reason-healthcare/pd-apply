@@ -38,3 +38,7 @@ Alias: $cpg-reportflagtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-
 
 
 Alias: $cpg-activity-type = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type
+
+Alias: $cpg-computableplandefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition
+Alias: $cpg-plan-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
+Alias: $request-group = http://hl7.org/fhir/R4/requestgroup.html
