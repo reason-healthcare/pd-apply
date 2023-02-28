@@ -93,6 +93,13 @@
       },
       {
         "reference": {
+          "reference": "Bundle/CKDDiagnosisExpected"
+        },
+        "name": "CKDDiagnosisExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Parameters/CKDDiagnosisParameters"
         },
         "name": "CKDDiagnosisParameters",
@@ -124,6 +131,27 @@
           "reference": "Parameters/CollectInformationParameters"
         },
         "name": "CollectInformationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/DischargeExpected"
+        },
+        "name": "DischargeExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/DischargeParameters"
+        },
+        "name": "DischargeParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/DischargePlan"
+        },
+        "name": "DischargePlan",
         "exampleBoolean": true
       },
       {
@@ -271,6 +299,13 @@
           "reference": "Parameters/GenerateReportParameters"
         },
         "name": "GenerateReportParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/IronDeficiencyTreatmentLibrary"
+        },
+        "name": "IronDeficiencyTreatmentLibrary",
         "exampleBoolean": true
       },
       {
@@ -457,6 +492,27 @@
       },
       {
         "reference": {
+          "reference": "Bundle/ReportHeightWeightExpected"
+        },
+        "name": "ReportHeightWeightExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/ReportHeightWeightParameters"
+        },
+        "name": "ReportHeightWeightParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/ReportWeightHeightPlan"
+        },
+        "name": "ReportWeightHeightPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ActivityDefinition/SendMessageActivity"
         },
         "name": "SendMessageActivity",
@@ -474,13 +530,6 @@
           "reference": "Parameters/SendMessageParameters"
         },
         "name": "SendMessageParameters",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Bundle/cdc2ef13-4319-4e47-bdf8-1e442b91efc4"
-        },
-        "name": "cdc2ef13-4319-4e47-bdf8-1e442b91efc4",
         "exampleBoolean": true
       }
     ],

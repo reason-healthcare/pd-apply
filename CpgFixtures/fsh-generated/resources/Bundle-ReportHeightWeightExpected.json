@@ -1,0 +1,30 @@
+{
+  "resourceType": "Bundle",
+  "id": "ReportHeightWeightExpected",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://apply-processor/RequestGroup/f29076f2-7852-418a-b617-9d6e19e37321",
+      "resource": {
+        "resourceType": "Goal",
+        "id": "01b0a488-513b-41f3-a4e5-02d782d79bef",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "lifecycleStatus": "planned",
+        "description": {
+          "text": "Weight target"
+        },
+        "startCodeableConcept": {
+          "coding": [
+            {
+              "code": "32485007",
+              "system": "http://snomed.info/sct",
+              "display": "Admission to hospital"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

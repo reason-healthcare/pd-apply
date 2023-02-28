@@ -45,3 +45,9 @@ InstanceOf: Library
 * insert KnowledgeArtifactDefinitionMetadata(ReportFlagLibrary, Library)
 * type = http://terminology.hl7.org/CodeSystem/library-type#logic-library
 * content.id = "ig-loader-ReportFlagLibrary.cql"
+
+Instance: IronDeficiencyTreatmentLibrary
+InstanceOf: Library
+* insert KnowledgeArtifactDefinitionMetadata(IronDeficiencyTreatmentPlan, Library)
+* type = http://terminology.hl7.org/CodeSystem/library-type#logic-library
+* content.id = "ig-loader-IronDeficiencyTreatmentLibrary.cql"
