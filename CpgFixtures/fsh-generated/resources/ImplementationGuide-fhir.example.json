@@ -303,9 +303,51 @@
       },
       {
         "reference": {
+          "reference": "Bundle/IronDeficiencyTreatmentExpected"
+        },
+        "name": "IronDeficiencyTreatmentExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Library/IronDeficiencyTreatmentLibrary"
         },
         "name": "IronDeficiencyTreatmentLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/IronDeficiencyTreatmentParameters"
+        },
+        "name": "IronDeficiencyTreatmentParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/IronDeficiencyTreatmentPlan"
+        },
+        "name": "IronDeficiencyTreatmentPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/IschemicStrokeLibrary"
+        },
+        "name": "IschemicStrokeLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/IschemicStrokeParameters"
+        },
+        "name": "IschemicStrokeParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/IschemicStrokePlan"
+        },
+        "name": "IschemicStrokePlan",
         "exampleBoolean": true
       },
       {

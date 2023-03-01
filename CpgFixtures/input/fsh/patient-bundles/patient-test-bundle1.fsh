@@ -52,6 +52,7 @@ Usage: #inline
 * status = #final
 * code
   * text = "Inference"
+  * coding = http://snomed.info/sct#448765001 "Unintentional weight loss (finding)"
 * subject = Reference(Patient/Patient1)
 * effectiveDateTime = "2023-01-01"
 

@@ -1,6 +1,6 @@
 {
   "resourceType": "Library",
-  "id": "IronDeficiencyTreatmentLibrary",
+  "id": "IschemicStrokeLibrary",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
@@ -11,9 +11,9 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://example.com/Library/IronDeficiencyTreatmentLibrary",
-  "name": "IronDeficiencyTreatmentLibrary",
-  "title": "Library IronDeficiencyTreatmentLibrary",
+  "url": "http://example.com/Library/IschemicStrokeLibrary",
+  "name": "IschemicStrokeLibrary",
+  "title": "Library IschemicStrokeLibrary",
   "status": "draft",
   "experimental": true,
   "publisher": "Example",
@@ -39,7 +39,7 @@
   },
   "content": [
     {
-      "id": "ig-loader-IronDeficiencyTreatmentLibrary.cql"
+      "id": "ig-loader-IschemicStrokeLibrary.cql"
     }
   ]
 }

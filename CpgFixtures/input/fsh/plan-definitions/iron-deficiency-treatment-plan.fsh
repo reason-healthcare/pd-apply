@@ -1,15 +1,13 @@
 Instance: IronDeficiencyTreatmentPlan
-InstanceOf: PlanDefinition
+InstanceOf: $cpg-computableplandefinition
 Usage: #example
-* insert KnowledgeArtifactDefinitionMetadata(PrenatalSupplementationPln, PlanDefinition)
+* insert KnowledgeArtifactDefinitionMetadata(IronDeficiencyTreatmentPlan, PlanDefinition)
+* description = "Definition of a plan to prescribe iron supplement if patient has diagnosis or iron deficiency anemia"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
-* library = canonical()
+* library = "http://example.com/Library/IronDeficiencyTreatmentLibrary"
 * action
   * title = "Iron Supplementation"
-  * textEquivalent = "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemias"
-  * trigger
-    * type = #named-event
-    * name = "anc-contact"
+  * textEquivalent = "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemia"
   * condition
     * kind = #applicability
     * expression

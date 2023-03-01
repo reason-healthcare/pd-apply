@@ -1,0 +1,28 @@
+{
+  "resourceType": "Bundle",
+  "id": "IronDeficiencyTreatmentExpected",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://apply-processor/RequestGroup/3eeaf5f9-8f37-4aba-ab35-5465bdb159fc",
+      "resource": {
+        "resourceType": "RequestGroup",
+        "id": "3eeaf5f9-8f37-4aba-ab35-5465bdb159fc",
+        "intent": "proposal",
+        "status": "draft",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "author": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "instantiatesCanonical": [
+          "http://example.com/PlanDefinition/PrenatalSupplementationPln|0.1.0"
+        ]
+      }
+    }
+  ]
+}
