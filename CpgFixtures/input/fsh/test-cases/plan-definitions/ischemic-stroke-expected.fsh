@@ -4,7 +4,7 @@ Usage: #example
 * type = #collection
 * entry
   * fullUrl = "http://apply-processor/RequestGroup/06e0c0e0-6bca-49d1-8f87-b905d30db141"
-  * resource = Inline-Instance-for-0e12e8ec-f8ad-4733-afa6-978f42e7047a-1
+  * resource = IschemicStrokeRequestGroup
 
 Instance: IschemicStrokeRequestGroup
 InstanceOf: RequestGroup

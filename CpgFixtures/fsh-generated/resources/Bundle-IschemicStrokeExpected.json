@@ -1,0 +1,43 @@
+{
+  "resourceType": "Bundle",
+  "id": "IschemicStrokeExpected",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://apply-processor/RequestGroup/06e0c0e0-6bca-49d1-8f87-b905d30db141",
+      "resource": {
+        "resourceType": "RequestGroup",
+        "id": "06e0c0e0-6bca-49d1-8f87-b905d30db141",
+        "intent": "proposal",
+        "status": "draft",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "author": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "instantiatesCanonical": [
+          "http://example.com/PlanDefinition/IschemicStrokePlan|0.1.0"
+        ],
+        "action": [
+          {
+            "title": "Ischemic Stroke Treatment",
+            "textEquivalent": "Administer TPA intravenously",
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Had Ischemic Stroke"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

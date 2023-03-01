@@ -93,6 +93,48 @@
       },
       {
         "reference": {
+          "reference": "Bundle/AnemiaScreeningExpected"
+        },
+        "name": "AnemiaScreeningExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/AnemiaScreeningLibrary"
+        },
+        "name": "AnemiaScreeningLibrary",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/AnemiaScreeningParameters"
+        },
+        "name": "AnemiaScreeningParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/AnemiaScreeningPlan"
+        },
+        "name": "AnemiaScreeningPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/CHFCarePathway"
+        },
+        "name": "CHFCarePathway",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/CHFCarePathwayParameters"
+        },
+        "name": "CHFCarePathwayParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/CKDDiagnosisExpected"
         },
         "name": "CKDDiagnosisExpected",
@@ -327,6 +369,13 @@
           "reference": "PlanDefinition/IronDeficiencyTreatmentPlan"
         },
         "name": "IronDeficiencyTreatmentPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/IschemicStrokeExpected"
+        },
+        "name": "IschemicStrokeExpected",
         "exampleBoolean": true
       },
       {

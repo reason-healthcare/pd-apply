@@ -1,0 +1,65 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "AnemiaScreeningPlan",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://example.com/PlanDefinition/AnemiaScreeningPlan",
+  "name": "AnemiaScreeningPlan",
+  "title": "PlanDefinition AnemiaScreeningPlan",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Example",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "description": "Definition of plan to screen for iron defeciency anemia",
+  "type": {
+    "coding": [
+      {
+        "code": "clinical-protocol",
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "display": "Clinical Protocol"
+      }
+    ]
+  },
+  "library": [
+    "http://example.com/Library/AnemiaScreeningLibrary"
+  ],
+  "action": [
+    {
+      "title": "Order serum ferritin",
+      "description": "Order serum ferritin to monitor iron status",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Needs serum ferritin"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -219,7 +219,14 @@
               "id": "Inference1",
               "status": "final",
               "code": {
-                "text": "Inference"
+                "text": "Inference",
+                "coding": [
+                  {
+                    "code": "448765001",
+                    "system": "http://snomed.info/sct",
+                    "display": "Unintentional weight loss (finding)"
+                  }
+                ]
               },
               "subject": {
                 "reference": "Patient/Patient1"
