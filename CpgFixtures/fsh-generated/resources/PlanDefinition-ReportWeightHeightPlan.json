@@ -62,6 +62,20 @@
   ],
   "action": [
     {
+      "title": "Report Weight",
+      "description": "Report weight metric upon admission",
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "diagnostic-testing",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "Report Height",
       "description": "Report height metric upon admission",
       "code": [

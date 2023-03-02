@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "IronDeficiencyTreatmentPlan",
+  "id": "CKDEducationPlan",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
@@ -16,9 +16,9 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://example.com/PlanDefinition/IronDeficiencyTreatmentPlan",
-  "name": "IronDeficiencyTreatmentPlan",
-  "title": "PlanDefinition IronDeficiencyTreatmentPlan",
+  "url": "http://example.com/PlanDefinition/CKDEducationPlan",
+  "name": "CKDEducationPlan",
+  "title": "PlanDefinition CKDEducationPlan",
   "status": "draft",
   "experimental": true,
   "publisher": "Example",
@@ -34,7 +34,6 @@
     }
   ],
   "version": "0.1.0",
-  "description": "Definition of a plan to prescribe iron supplement if patient has diagnosis or iron deficiency anemia",
   "type": {
     "coding": [
       {
@@ -44,33 +43,22 @@
       }
     ]
   },
-  "library": [
-    "http://example.com/Library/IronDeficiencyTreatmentLibrary"
-  ],
+  "description": "Plan definition to provide education to a patient with newly diagnosed chronic kidney disease",
   "action": [
     {
-      "title": "Iron Supplementation",
-      "textEquivalent": "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemia",
+      "title": "CKD Pateint Education",
       "code": [
         {
           "coding": [
             {
-              "code": "dispense-medication",
+              "code": "provide-counseling",
               "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
-              "display": "Dispense Medications"
+              "display": "Provide Counseling"
             }
           ]
         }
       ],
-      "condition": [
-        {
-          "kind": "applicability",
-          "expression": {
-            "language": "text/cql",
-            "expression": "Has Anemia"
-          }
-        }
-      ]
+      "description": "Provide verbal and written education on disease state at time of CKD diagnosis"
     }
   ]
 }

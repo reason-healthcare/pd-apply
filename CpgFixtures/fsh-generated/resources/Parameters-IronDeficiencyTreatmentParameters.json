@@ -69,6 +69,17 @@
           {
             "title": "Iron Supplementation",
             "textEquivalent": "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemia",
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "dispense-medication",
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                    "display": "Dispense Medications"
+                  }
+                ]
+              }
+            ],
             "condition": [
               {
                 "kind": "applicability",

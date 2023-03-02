@@ -7,7 +7,7 @@ Usage: #example
   * resource = IschemicStrokeRequestGroup
 
 Instance: IschemicStrokeRequestGroup
-InstanceOf: RequestGroup
+InstanceOf: $cpg-strategy
 Usage: #inline
 * id = "06e0c0e0-6bca-49d1-8f87-b905d30db141"
 * intent = #proposal
@@ -18,7 +18,9 @@ Usage: #inline
 * instantiatesCanonical = "http://example.com/PlanDefinition/IschemicStrokePlan|0.1.0"
 * action
   * title = "Ischemic Stroke Treatment"
+  * description = "Recommendation to administer TPA if patient had Ischemic Stroke"
   * textEquivalent = "Administer TPA intravenously"
+  * code = $cpg-common-process#dispense-meidcations "Dispense Medications"
   * condition
     * kind = #applicability
     * expression

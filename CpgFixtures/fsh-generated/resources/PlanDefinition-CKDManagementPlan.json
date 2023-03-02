@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "IronDeficiencyTreatmentPlan",
+  "id": "CKDManagementPlan",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
@@ -16,9 +16,9 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://example.com/PlanDefinition/IronDeficiencyTreatmentPlan",
-  "name": "IronDeficiencyTreatmentPlan",
-  "title": "PlanDefinition IronDeficiencyTreatmentPlan",
+  "url": "http://example.com/PlanDefinition/CKDManagementPlan",
+  "name": "CKDManagementPlan",
+  "title": "PlanDefinition CKDManagementPlan",
   "status": "draft",
   "experimental": true,
   "publisher": "Example",
@@ -34,7 +34,6 @@
     }
   ],
   "version": "0.1.0",
-  "description": "Definition of a plan to prescribe iron supplement if patient has diagnosis or iron deficiency anemia",
   "type": {
     "coding": [
       {
@@ -44,33 +43,39 @@
       }
     ]
   },
-  "library": [
-    "http://example.com/Library/IronDeficiencyTreatmentLibrary"
-  ],
+  "description": "Management strategy for patients with newly diagnosed Chronic Kidney Disease",
   "action": [
     {
-      "title": "Iron Supplementation",
-      "textEquivalent": "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemia",
+      "title": "CKD Education",
+      "description": "CKD Education at time of diagnosis",
       "code": [
         {
           "coding": [
             {
-              "code": "dispense-medication",
+              "code": "provide-counseling",
               "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
-              "display": "Dispense Medications"
+              "display": "Provide Counseling"
             }
           ]
         }
       ],
-      "condition": [
+      "definitionCanonical": "http://example.com/PlanDefinition/CKDEducationPlan"
+    },
+    {
+      "title": "Follow Up Plan",
+      "description": "Schedule follow up with nephrologist",
+      "code": [
         {
-          "kind": "applicability",
-          "expression": {
-            "language": "text/cql",
-            "expression": "Has Anemia"
-          }
+          "coding": [
+            {
+              "code": "monitor-and-follow-up-of-patient",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "display": "Monitor and Follow-up of Patient"
+            }
+          ]
         }
-      ]
+      ],
+      "definitionCanonical": "http://example.com/PlanDefinition/CKDFollowUpPlan"
     }
   ]
 }

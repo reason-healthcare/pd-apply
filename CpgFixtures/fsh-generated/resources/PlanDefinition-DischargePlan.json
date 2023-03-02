@@ -64,7 +64,30 @@
     {
       "title": "Monitor patient",
       "description": "Monitor patient post discharge",
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "monitor-and-follow-up-of-patient",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+            }
+          ]
+        }
+      ],
       "action": [
+        {
+          "title": "Case management or referral",
+          "code": [
+            {
+              "coding": [
+                {
+                  "code": "discharge-referral-of-patient",
+                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+                }
+              ]
+            }
+          ]
+        },
         {
           "title": "Schedule follow-up visit",
           "code": [

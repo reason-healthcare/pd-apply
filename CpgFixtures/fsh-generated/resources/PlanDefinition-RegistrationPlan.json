@@ -1,6 +1,11 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "CHFCarePathway",
+  "id": "RegistrationPlan",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
+    ]
+  },
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
@@ -11,12 +16,12 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://example.com/PlanDefinition/CHFCarePathway",
-  "name": "CHFCarePathway",
-  "title": "PlanDefinition CHFCarePathway",
+  "url": "http://example.com/$cpg-computableplandefinition/RegistrationPlan",
+  "name": "RegistrationPlan",
+  "title": "$cpg-computableplandefinition RegistrationPlan",
   "status": "draft",
   "experimental": true,
-  "publisher": "HL7 International - Clinical Decision Support WG",
+  "publisher": "Example",
   "jurisdiction": [
     {
       "coding": [
@@ -38,22 +43,22 @@
       }
     ]
   },
-  "description": "Treatment and management care pathway for patients with admitting diagnosis of congestive heart failure",
+  "description": "Definition of plan to register patient",
   "action": [
     {
-      "title": "CHF Hypervolemia",
-      "description": "Hypervolemia strategy for Congestive Heart Failure",
+      "title": "Registration",
       "code": [
         {
           "coding": [
             {
-              "code": "guideline-based-care",
-              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+              "code": "registration",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "display": "Registration"
             }
           ]
         }
       ],
-      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-hypervolemia"
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-common-registration"
     }
   ]
 }

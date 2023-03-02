@@ -8,12 +8,13 @@ Usage: #example
   * description
     * text = "Patient monitoring"
   * start = http://snomed.info/sct#308283009 "Discharge from hospital"
-* action
+* action[+]
   * title = "Monitor patient"
   * description = "Monitor patient post discharge"
-  * action
+  * code = $cpg-common-process#monitor-and-follow-up-of-patient
+  * action[+]
     * title = "Case management or referral"
-    * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#discharge-referral-of-patient
-  * action
+    * code = $cpg-common-process#discharge-referral-of-patient
+  * action[+]
     * title = "Schedule follow-up visit"
-    * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#monitor-and-follow-up-of-patient
+    * code = $cpg-common-process#monitor-and-follow-up-of-patient

@@ -1,0 +1,71 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "SendMessagePlan",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://example.com/PlanDefinition/SendMessagePlan",
+  "name": "SendMessagePlan",
+  "title": "PlanDefinition SendMessagePlan",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Example",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "version": "0.1.0",
+  "type": {
+    "coding": [
+      {
+        "code": "eca-rule",
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+      }
+    ]
+  },
+  "description": "Definition of plan recommendation to send a message",
+  "action": [
+    {
+      "title": "Greet the patient",
+      "type": {
+        "coding": [
+          {
+            "code": "create",
+            "system": "http://terminology.hl7.org/CodeSystem/action-type"
+          }
+        ]
+      },
+      "description": "Send a message with a greeting",
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "alerts-reminders-education",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://example.com/ActivityDefinition/SendMessageActivity"
+    }
+  ]
+}

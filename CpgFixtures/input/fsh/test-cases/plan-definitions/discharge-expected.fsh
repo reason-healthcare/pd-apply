@@ -7,7 +7,7 @@ Usage: #example
 * entry[+].resource = PatientMonitoringGoal
 
 Instance: DischargeRequestGroup
-InstanceOf: RequestGroup
+InstanceOf: $cpg-strategy
 Usage: #inline
 * intent = #proposal
 * status = #draft
@@ -21,15 +21,16 @@ Usage: #inline
 * action
   * title = "Monitor patient"
   * description = "Monitor patient post discharge"
+  * code = $cpg-common-process#monitor-and-follow-up-of-patient
   * action
     * title = "Case management or referral"
-    * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#discharge-referral-of-patient
+    * code = $cpg-common-process#discharge-referral-of-patient
   * action
     * title = "Schedule follow-up visit"
-    * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#monitor-and-follow-up-of-patient
+    * code = $cpg-common-process#monitor-and-follow-up-of-patient
 
 Instance: PatientMonitoringGoal
-InstanceOf: Goal
+InstanceOf: $cpg-goal
 Usage: #inline
 * subject = Reference(Patient1)
 * lifecycleStatus = #planned

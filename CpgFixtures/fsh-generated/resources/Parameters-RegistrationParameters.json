@@ -1,6 +1,6 @@
 {
   "resourceType": "Parameters",
-  "id": "CKDDiagnosisParameters",
+  "id": "RegistrationParameters",
   "parameter": [
     {
       "name": "subject",
@@ -18,7 +18,7 @@
       "name": "planDefinition",
       "resource": {
         "resourceType": "PlanDefinition",
-        "id": "CKDDiagnosisPlan",
+        "id": "RegistrationPlan",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
@@ -34,9 +34,9 @@
             "valueCode": "structured"
           }
         ],
-        "url": "http://example.com/PlanDefinition/CKDDiagnosisPlan",
-        "name": "CKDDiagnosisPlan",
-        "title": "PlanDefinition CKDDiagnosisPlan",
+        "url": "http://example.com/$cpg-computableplandefinition/RegistrationPlan",
+        "name": "RegistrationPlan",
+        "title": "$cpg-computableplandefinition RegistrationPlan",
         "status": "draft",
         "experimental": true,
         "publisher": "Example",
@@ -61,11 +61,22 @@
             }
           ]
         },
-        "description": "Plan definition to provide education to a patient with newly diagnosed chronic kidney disease",
+        "description": "Definition of plan to register patient",
         "action": [
           {
-            "title": "CKD Pateint Education",
-            "description": "Provide verbal and written education on disease state at time of CKD diagnosis"
+            "title": "Registration",
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "registration",
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                    "display": "Registration"
+                  }
+                ]
+              }
+            ],
+            "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-common-registration"
           }
         ]
       }

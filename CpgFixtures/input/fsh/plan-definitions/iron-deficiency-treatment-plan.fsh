@@ -5,9 +5,10 @@ Usage: #example
 * description = "Definition of a plan to prescribe iron supplement if patient has diagnosis or iron deficiency anemia"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
 * library = "http://example.com/Library/IronDeficiencyTreatmentLibrary"
-* action
+* action[+]
   * title = "Iron Supplementation"
   * textEquivalent = "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemia"
+  * code = $cpg-common-process#dispense-medication "Dispense Medications"
   * condition
     * kind = #applicability
     * expression

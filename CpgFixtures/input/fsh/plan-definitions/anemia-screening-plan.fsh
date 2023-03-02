@@ -5,17 +5,19 @@ Usage: #example
 * description = "Definition of plan to screen for iron defeciency anemia"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
 * library = "http://example.com/Library/AnemiaScreeningLibrary"
-* action
+* action[+]
   * title = "Order CBC Lab Panel"
   * description = "Order CBC Lab Panel to screen for anemia"
+  * code = $cpg-common-process#diagnosic-testing "Conduct Diagnostic Tests"
   * condition
     * kind = #applicability
     * expression
       * language = #text/cql
       * expression = "Needs CBC"
-* action
+* action[+]
   * title = "Order serum ferritin"
   * description = "Order serum ferritin to monitor iron status"
+  * code = $cpg-common-process#diagnosic-testing "Conduct Diagnostic Tests"
   * condition
     * kind = #applicability
     * expression

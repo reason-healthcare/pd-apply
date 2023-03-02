@@ -7,7 +7,7 @@ Usage: #example
   * resource = IronDeficiencyTreatmentRequestGroup
 
 Instance: IronDeficiencyTreatmentRequestGroup
-InstanceOf: RequestGroup
+InstanceOf: $cpg-strategy
 Usage: #inline
 * id = "3eeaf5f9-8f37-4aba-ab35-5465bdb159fc"
 * intent = #proposal

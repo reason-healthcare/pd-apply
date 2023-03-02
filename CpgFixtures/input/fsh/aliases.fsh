@@ -36,9 +36,11 @@ Alias: $cpg-recorddetectedissuetask = http://hl7.org/fhir/uv/cpg/StructureDefini
 Alias: $cpg-recordinferencetask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask
 Alias: $cpg-reportflagtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask
 
-
 Alias: $cpg-activity-type = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type
+Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
+Alias: $cpg-common-identity-questionnaire = http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity
 
 Alias: $cpg-computableplandefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition
 Alias: $cpg-plan-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
-Alias: $request-group = http://hl7.org/fhir/R4/requestgroup.html
+Alias: $cpg-strategy = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy
+Alias: $cpg-goal = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal

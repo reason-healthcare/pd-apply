@@ -67,8 +67,43 @@
         ],
         "action": [
           {
+            "title": "Order CBC Lab Panel",
+            "description": "Order CBC Lab Panel to screen for anemia",
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "diagnosic-testing",
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                    "display": "Conduct Diagnostic Tests"
+                  }
+                ]
+              }
+            ],
+            "condition": [
+              {
+                "kind": "applicability",
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Needs CBC"
+                }
+              }
+            ]
+          },
+          {
             "title": "Order serum ferritin",
             "description": "Order serum ferritin to monitor iron status",
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "diagnosic-testing",
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                    "display": "Conduct Diagnostic Tests"
+                  }
+                ]
+              }
+            ],
             "condition": [
               {
                 "kind": "applicability",

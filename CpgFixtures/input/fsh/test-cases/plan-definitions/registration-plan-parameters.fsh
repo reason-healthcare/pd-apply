@@ -1,4 +1,4 @@
-Instance: CHFCarePathwayParameters
+Instance: RegistrationParameters
 InstanceOf: Parameters
 Usage: #example
 * parameter[+]
@@ -12,7 +12,7 @@ Usage: #example
   * valueString = "Encounter/Encounter1"
 * parameter[+]
   * name = "planDefinition"
-  * resource = CHFCarePathway
+  * resource = RegistrationPlan
 * parameter[+]
   * name = "data"
   * resource = PatientTestBundle1

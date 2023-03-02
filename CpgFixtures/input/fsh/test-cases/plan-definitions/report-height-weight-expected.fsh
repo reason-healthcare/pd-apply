@@ -9,7 +9,7 @@ Usage: #example
   * resource = WeightTargetGoal
 
 Instance: ReportHeightWeightRequestGroup
-InstanceOf: RequestGroup
+InstanceOf: $cpg-strategy
 Usage: #inline
 * intent = #proposal
 * status = #draft
@@ -31,7 +31,7 @@ Usage: #inline
 
 
 Instance: WeightTargetGoal
-InstanceOf: Goal
+InstanceOf: $cpg-goal
 Usage: #inline
 * id = "01b0a488-513b-41f3-a4e5-02d782d79bef"
 * subject = Reference(Patient1)

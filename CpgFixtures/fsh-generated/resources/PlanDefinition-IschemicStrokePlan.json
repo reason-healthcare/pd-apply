@@ -50,7 +50,19 @@
   "action": [
     {
       "title": "Ischemic Stroke Treatment",
+      "description": "Recommendation to administer TPA if patient had Ischemic Stroke",
       "textEquivalent": "Administer TPA intravenously",
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "dispense-meidcations",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "display": "Dispense Medications"
+            }
+          ]
+        }
+      ],
       "condition": [
         {
           "kind": "applicability",

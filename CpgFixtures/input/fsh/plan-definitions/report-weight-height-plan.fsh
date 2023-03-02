@@ -8,11 +8,11 @@ Usage: #example
   * description
     * text = "Weight target"
   * start = http://snomed.info/sct#32485007 "Admission to hospital"
-* action
+* action[+]
   * title = "Report Weight"
   * description = "Report weight metric upon admission"
   * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#diagnostic-testing
-* action
+* action[+]
   * title = "Report Height"
   * description = "Report height metric upon admission"
   * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#diagnostic-testing

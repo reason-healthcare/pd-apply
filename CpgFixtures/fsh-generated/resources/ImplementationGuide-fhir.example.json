@@ -121,37 +121,51 @@
       },
       {
         "reference": {
-          "reference": "PlanDefinition/CHFCarePathway"
+          "reference": "Bundle/CKDEducationExpected"
         },
-        "name": "CHFCarePathway",
+        "name": "CKDEducationExpected",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Parameters/CHFCarePathwayParameters"
+          "reference": "Parameters/CKDEducationParameters"
         },
-        "name": "CHFCarePathwayParameters",
+        "name": "CKDEducationParameters",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Bundle/CKDDiagnosisExpected"
+          "reference": "PlanDefinition/CKDEducationPlan"
         },
-        "name": "CKDDiagnosisExpected",
+        "name": "CKDEducationPlan",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Parameters/CKDDiagnosisParameters"
+          "reference": "PlanDefinition/CKDFollowUpPlan"
         },
-        "name": "CKDDiagnosisParameters",
+        "name": "CKDFollowUpPlan",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "PlanDefinition/CKDDiagnosisPlan"
+          "reference": "Bundle/CKDManagementExpected"
         },
-        "name": "CKDDiagnosisPlan",
+        "name": "CKDManagementExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/CKDManagementPlan"
+        },
+        "name": "CKDManagementPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/CKDManagmentParameters"
+        },
+        "name": "CKDManagmentParameters",
         "exampleBoolean": true
       },
       {
@@ -555,6 +569,20 @@
       },
       {
         "reference": {
+          "reference": "Parameters/RegistrationParameters"
+        },
+        "name": "RegistrationParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/RegistrationPlan"
+        },
+        "name": "RegistrationPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ActivityDefinition/ReportFlagActivity"
         },
         "name": "ReportFlagActivity",
@@ -621,6 +649,27 @@
           "reference": "Parameters/SendMessageParameters"
         },
         "name": "SendMessageParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/SendMessagePlan"
+        },
+        "name": "SendMessagePlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/SendMessagePlanExpected"
+        },
+        "name": "SendMessagePlanExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/SendMessagePlanParameters"
+        },
+        "name": "SendMessagePlanParameters",
         "exampleBoolean": true
       }
     ],

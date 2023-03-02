@@ -1,13 +1,13 @@
 {
   "resourceType": "Bundle",
-  "id": "IschemicStrokeExpected",
+  "id": "CKDEducationExpected",
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://apply-processor/RequestGroup/06e0c0e0-6bca-49d1-8f87-b905d30db141",
+      "fullUrl": "http://apply-processor/RequestGroup/ddcaed00-e46d-4cd4-9535-c01c47d27436",
       "resource": {
         "resourceType": "RequestGroup",
-        "id": "06e0c0e0-6bca-49d1-8f87-b905d30db141",
+        "id": "CKDEducationRequestGroup",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
@@ -25,31 +25,21 @@
           "reference": "Encounter/Encounter1"
         },
         "instantiatesCanonical": [
-          "http://example.com/PlanDefinition/IschemicStrokePlan|0.1.0"
+          "http://example.com/PlanDefinition/CKDEducationPlan|0.1.0"
         ],
         "action": [
           {
-            "title": "Ischemic Stroke Treatment",
-            "description": "Recommendation to administer TPA if patient had Ischemic Stroke",
-            "textEquivalent": "Administer TPA intravenously",
+            "title": "CKD Pateint Education",
+            "description": "Provide verbal and written education on disease state at time of CKD diagnosis",
             "code": [
               {
                 "coding": [
                   {
-                    "code": "dispense-meidcations",
+                    "code": "provide-counseling",
                     "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
-                    "display": "Dispense Medications"
+                    "display": "Provide Counseling"
                   }
                 ]
-              }
-            ],
-            "condition": [
-              {
-                "kind": "applicability",
-                "expression": {
-                  "language": "text/cql",
-                  "expression": "Had Ischemic Stroke"
-                }
               }
             ]
           }
