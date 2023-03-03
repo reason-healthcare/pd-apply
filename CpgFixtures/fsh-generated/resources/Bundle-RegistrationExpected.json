@@ -1,0 +1,47 @@
+{
+  "resourceType": "Bundle",
+  "id": "RegistrationExpected",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://apply-processor/RequestGroup/3552c8f7-e925-4c97-9c54-54d89354a2ae",
+      "resource": {
+        "resourceType": "RequestGroup",
+        "id": "3552c8f7-e925-4c97-9c54-54d89354a2ae",
+        "intent": "proposal",
+        "status": "draft",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "author": {
+          "reference": "Author1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "instantiatesCanonical": [
+          "http://example.com/$cpg-computableplandefinition/RegistrationPlan|0.1.0"
+        ],
+        "action": [
+          {
+            "title": "Registration with questionnaire",
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "registration",
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                    "display": "Registration"
+                  }
+                ]
+              }
+            ],
+            "resource": {
+              "reference": "http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

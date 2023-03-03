@@ -1,6 +1,6 @@
 {
   "resourceType": "Parameters",
-  "id": "RegistrationParameters",
+  "id": "DischargeInstructionsParameters",
   "parameter": [
     {
       "name": "subject",
@@ -18,7 +18,7 @@
       "name": "planDefinition",
       "resource": {
         "resourceType": "PlanDefinition",
-        "id": "RegistrationPlan",
+        "id": "DichargeInstructionsPlan",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
@@ -34,9 +34,9 @@
             "valueCode": "structured"
           }
         ],
-        "url": "http://example.com/$cpg-computableplandefinition/RegistrationPlan",
-        "name": "RegistrationPlan",
-        "title": "$cpg-computableplandefinition RegistrationPlan",
+        "url": "http://example.com/PlanDefinition/DichargeInstructionsPlan",
+        "name": "DichargeInstructionsPlan",
+        "title": "PlanDefinition DichargeInstructionsPlan",
         "status": "draft",
         "experimental": true,
         "publisher": "Example",
@@ -52,6 +52,7 @@
           }
         ],
         "version": "0.1.0",
+        "description": "Definition of plan to provide patient discharge instructions",
         "type": {
           "coding": [
             {
@@ -61,22 +62,18 @@
             }
           ]
         },
-        "description": "Definition of plan to collect information for patient registration",
         "action": [
           {
-            "title": "Registration with questionnaire",
-            "code": [
+            "title": "Provide discharge instructions",
+            "dynamicValue": [
               {
-                "coding": [
-                  {
-                    "code": "registration",
-                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
-                    "display": "Registration"
-                  }
-                ]
+                "path": "action.description",
+                "expression": {
+                  "language": "text/fhirpath",
+                  "expression": "action.title + ' for ' + %subject.name.given.first()"
+                }
               }
-            ],
-            "definitionCanonical": "http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"
+            ]
           }
         ]
       }

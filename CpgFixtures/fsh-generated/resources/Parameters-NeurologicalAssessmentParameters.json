@@ -1,6 +1,6 @@
 {
   "resourceType": "Parameters",
-  "id": "RegistrationParameters",
+  "id": "NeurologicalAssessmentParameters",
   "parameter": [
     {
       "name": "subject",
@@ -18,7 +18,7 @@
       "name": "planDefinition",
       "resource": {
         "resourceType": "PlanDefinition",
-        "id": "RegistrationPlan",
+        "id": "NeurologicalAssessmentPlan",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
@@ -34,9 +34,9 @@
             "valueCode": "structured"
           }
         ],
-        "url": "http://example.com/$cpg-computableplandefinition/RegistrationPlan",
-        "name": "RegistrationPlan",
-        "title": "$cpg-computableplandefinition RegistrationPlan",
+        "url": "http://example.com/PlanDefinition/DiabetesScreeningPlan",
+        "name": "DiabetesScreeningPlan",
+        "title": "PlanDefinition DiabetesScreeningPlan",
         "status": "draft",
         "experimental": true,
         "publisher": "Example",
@@ -52,6 +52,7 @@
           }
         ],
         "version": "0.1.0",
+        "description": "Definition of a plan to recommend nuerological assessment",
         "type": {
           "coding": [
             {
@@ -61,22 +62,18 @@
             }
           ]
         },
-        "description": "Definition of plan to collect information for patient registration",
         "action": [
           {
-            "title": "Registration with questionnaire",
-            "code": [
+            "title": "Order neurological exam",
+            "dynamicValue": [
               {
-                "coding": [
-                  {
-                    "code": "registration",
-                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
-                    "display": "Registration"
-                  }
-                ]
+                "path": "action.description",
+                "expression": {
+                  "language": "text/cql-identifier",
+                  "expression": "Neurological Impairment Risk Factors"
+                }
               }
-            ],
-            "definitionCanonical": "http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"
+            ]
           }
         ]
       }

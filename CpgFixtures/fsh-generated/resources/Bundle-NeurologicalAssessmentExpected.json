@@ -1,0 +1,34 @@
+{
+  "resourceType": "Bundle",
+  "id": "NeurologicalAssessmentExpected",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://apply-processor/RequestGroup/ac140fea-8512-4a5f-83e5-a486df23a57b",
+      "resource": {
+        "resourceType": "RequestGroup",
+        "id": "NeurologicalAssessmentRequestGroup",
+        "intent": "proposal",
+        "status": "draft",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "author": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "instantiatesCanonical": [
+          "http://example.com/PlanDefinition/DiabetesScreeningPlan|0.1.0"
+        ],
+        "action": [
+          {
+            "title": "Order neurological exam",
+            "description": "Recommend neurological screening based on risk factor of Ischemic stroke (disorder)"
+          }
+        ]
+      }
+    }
+  ]
+}

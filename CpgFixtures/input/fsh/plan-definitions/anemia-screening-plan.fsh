@@ -12,7 +12,7 @@ Usage: #example
   * condition
     * kind = #applicability
     * expression
-      * language = #text/cql
+      * language = #text/cql-identifier
       * expression = "Needs CBC"
 * action[+]
   * title = "Order serum ferritin"
@@ -21,5 +21,5 @@ Usage: #example
   * condition
     * kind = #applicability
     * expression
-      * language = #text/cql
+      * language = #text/cql-identifier
       * expression = "Needs serum ferritin"

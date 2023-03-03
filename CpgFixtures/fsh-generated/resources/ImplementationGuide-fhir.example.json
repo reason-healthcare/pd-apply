@@ -191,9 +191,23 @@
       },
       {
         "reference": {
+          "reference": "PlanDefinition/DichargeInstructionsPlan"
+        },
+        "name": "DichargeInstructionsPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Bundle/DischargeExpected"
         },
         "name": "DischargeExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/DischargeInstructionsParameters"
+        },
+        "name": "DischargeInstructionsParameters",
         "exampleBoolean": true
       },
       {
@@ -415,6 +429,27 @@
       },
       {
         "reference": {
+          "reference": "Bundle/NeurologicalAssessmentExpected"
+        },
+        "name": "NeurologicalAssessmentExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/NeurologicalAssessmentParameters"
+        },
+        "name": "NeurologicalAssessmentParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/NeurologicalAssessmentPlan"
+        },
+        "name": "NeurologicalAssessmentPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ActivityDefinition/OrderMedicationActivity"
         },
         "name": "OrderMedicationActivity",
@@ -565,6 +600,13 @@
           "reference": "Parameters/RecordInferenceParameters"
         },
         "name": "RecordInferenceParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/RegistrationExpected"
+        },
+        "name": "RegistrationExpected",
         "exampleBoolean": true
       },
       {

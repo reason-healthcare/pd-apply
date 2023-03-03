@@ -4,7 +4,7 @@ Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(IschemicStrokePlan, PlanDefinition)
 * description = "Definition of a plan to administer TPA if patient had ischemic stroke"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
-* library = "http://example.com/Library/IronDeficiencyTreatmentLibrary"
+* library = "http://example.com/Library/IschemicStrokeLibrary"
 * action[+]
   * title = "Ischemic Stroke Treatment"
   * description = "Recommendation to administer TPA if patient had Ischemic Stroke"
@@ -13,5 +13,5 @@ Usage: #example
   * condition
     * kind = #applicability
     * expression
-      * language = #text/cql
+      * language = #text/cql-identifier
       * expression = "Had Ischemic Stroke"
