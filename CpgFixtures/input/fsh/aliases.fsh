@@ -38,7 +38,7 @@ Alias: $cpg-reportflagtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-
 
 Alias: $cpg-activity-type = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type
 Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
-Alias: $cpg-common-identity-questionnaire = http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity
+Alias: $cpg-shareablequestionnaire = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire
 
 Alias: $cpg-computableplandefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition
 Alias: $cpg-plan-type = http://terminology.hl7.org/CodeSystem/plan-definition-type

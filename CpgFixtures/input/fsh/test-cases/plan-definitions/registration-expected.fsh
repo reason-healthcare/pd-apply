@@ -19,4 +19,4 @@ Usage: #inline
 * action
   * title = "Registration with questionnaire"
   * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#registration "Registration"
-  * resource = Reference($cpg-common-identity-questionnaire)
+  * resource = Reference(RegistrationQuestionnaire)

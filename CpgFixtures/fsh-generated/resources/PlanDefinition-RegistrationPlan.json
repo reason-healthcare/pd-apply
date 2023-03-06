@@ -58,7 +58,7 @@
           ]
         }
       ],
-      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"
+      "definitionCanonical": "http://example.com/Questionnaire/RegistrationQuestionnaire"
     }
   ]
 }

@@ -51,7 +51,7 @@
         {
           "path": "action.description",
           "expression": {
-            "language": "text/cql-expression",
+            "language": "text/cql-identifier",
             "expression": "Neurological Impairment Risk Factors"
           }
         }

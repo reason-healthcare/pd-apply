@@ -3,7 +3,7 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry
-  * fullUrl = "http://apply-processor/RequestGroup/ddcaed00-e46d-4cd4-9535-c01c47d27436"
+  * fullUrl = "http://apply-processor/RequestGroup/CKDEducationRequestGroup"
   * resource = CKDEducationRequestGroup
 
 Instance: CKDEducationRequestGroup
@@ -16,6 +16,6 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.com/PlanDefinition/CKDEducationPlan|0.1.0"
 * action
-  * title = "CKD Pateint Education"
+  * title = "CKD Patient Education"
   * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
   * code = $cpg-common-process#provide-counseling "Provide Counseling"

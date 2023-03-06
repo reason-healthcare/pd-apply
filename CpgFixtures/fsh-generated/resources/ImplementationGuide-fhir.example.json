@@ -205,6 +205,13 @@
       },
       {
         "reference": {
+          "reference": "Bundle/DischargeInstructionsExpected"
+        },
+        "name": "DischargeInstructionsExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Parameters/DischargeInstructionsParameters"
         },
         "name": "DischargeInstructionsParameters",
@@ -621,6 +628,13 @@
           "reference": "PlanDefinition/RegistrationPlan"
         },
         "name": "RegistrationPlan",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/RegistrationQuestionnaire"
+        },
+        "name": "RegistrationQuestionnaire",
         "exampleBoolean": true
       },
       {

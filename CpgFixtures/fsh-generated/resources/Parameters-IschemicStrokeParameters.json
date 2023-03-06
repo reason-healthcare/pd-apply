@@ -63,7 +63,7 @@
           ]
         },
         "library": [
-          "http://example.com/Library/IronDeficiencyTreatmentLibrary"
+          "http://example.com/Library/IschemicStrokeLibrary"
         ],
         "action": [
           {
@@ -85,7 +85,7 @@
               {
                 "kind": "applicability",
                 "expression": {
-                  "language": "text/cql",
+                  "language": "text/cql-identifier",
                   "expression": "Had Ischemic Stroke"
                 }
               }

@@ -7,4 +7,4 @@ Usage: #example
 * action
   * title = "Registration with questionnaire"
   * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#registration "Registration"
-  * definitionCanonical = $cpg-common-identity-questionnaire
+  * definitionCanonical = "http://example.com/Questionnaire/RegistrationQuestionnaire"

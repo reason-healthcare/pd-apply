@@ -84,7 +84,7 @@
               {
                 "kind": "applicability",
                 "expression": {
-                  "language": "text/cql",
+                  "language": "text/cql-identifier",
                   "expression": "Needs CBC"
                 }
               }
@@ -108,7 +108,7 @@
               {
                 "kind": "applicability",
                 "expression": {
-                  "language": "text/cql",
+                  "language": "text/cql-identifier",
                   "expression": "Needs serum ferritin"
                 }
               }
