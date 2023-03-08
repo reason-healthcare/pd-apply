@@ -3,13 +3,12 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry
-  * fullUrl = "http://apply-processor/RequestGroup/3eeaf5f9-8f37-4aba-ab35-5465bdb159fc"
+  * fullUrl = "http://apply-processor/RequestGroup/IronDeficiencyTreatmentRequestGroup"
   * resource = IronDeficiencyTreatmentRequestGroup
 
 Instance: IronDeficiencyTreatmentRequestGroup
 InstanceOf: $cpg-strategy
 Usage: #inline
-* id = "3eeaf5f9-8f37-4aba-ab35-5465bdb159fc"
 * intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)

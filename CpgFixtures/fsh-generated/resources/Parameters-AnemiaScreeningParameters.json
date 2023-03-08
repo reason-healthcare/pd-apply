@@ -73,7 +73,7 @@
               {
                 "coding": [
                   {
-                    "code": "diagnosic-testing",
+                    "code": "diagnostic-testing",
                     "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
                     "display": "Conduct Diagnostic Tests"
                   }
@@ -97,7 +97,7 @@
               {
                 "coding": [
                   {
-                    "code": "diagnosic-testing",
+                    "code": "diagnostic-testing",
                     "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
                     "display": "Conduct Diagnostic Tests"
                   }

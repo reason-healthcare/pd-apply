@@ -3,9 +3,10 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry
-  * fullUrl = "http://apply-processor/RequestGroup/f29076f2-7852-418a-b617-9d6e19e37321"
+  * fullUrl = "http://apply-processor/RequestGroup/ReportHeightWeightRequestGroup"
   * resource = ReportHeightWeightRequestGroup
 * entry
+  * fullUrl = "http://apply-processor/Goal/WeightTargetGoal"
   * resource = WeightTargetGoal
 
 Instance: ReportHeightWeightRequestGroup
@@ -23,17 +24,16 @@ Usage: #inline
 * action
   * title = "Report Weight"
   * description = "Report weight metric upon admission"
-  * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#diagnostic-testing
+  * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
 * action
   * title = "Report Height"
   * description = "Report height metric upon admission"
-  * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#diagnostic-testing
+  * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
 
 
 Instance: WeightTargetGoal
 InstanceOf: $cpg-goal
 Usage: #inline
-* id = "01b0a488-513b-41f3-a4e5-02d782d79bef"
 * subject = Reference(Patient1)
 * lifecycleStatus = #planned
 * description

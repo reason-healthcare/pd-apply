@@ -47,9 +47,20 @@
   "action": [
     {
       "title": "Provide discharge instructions",
+      "code": [
+        {
+          "coding": [
+            {
+              "code": "provide-counseling",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "display": "Provide Counseling"
+            }
+          ]
+        }
+      ],
       "dynamicValue": [
         {
-          "path": "action.description",
+          "path": "action[0].description",
           "expression": {
             "language": "text/fhirpath",
             "expression": "action.title + ' for ' + %subject.name.given.first()"

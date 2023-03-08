@@ -62,12 +62,26 @@
             }
           ]
         },
+        "library": [
+          "http://example.com/Library/NeurologicalAssessmentLibrary"
+        ],
         "action": [
           {
             "title": "Order neurological exam",
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "diagnostic-testing",
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                    "display": "Conduct Diagnostic Tests"
+                  }
+                ]
+              }
+            ],
             "dynamicValue": [
               {
-                "path": "action.description",
+                "path": "action[0].description",
                 "expression": {
                   "language": "text/cql-identifier",
                   "expression": "Neurological Impairment Risk Factors"

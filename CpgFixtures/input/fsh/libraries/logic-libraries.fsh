@@ -63,3 +63,9 @@ InstanceOf: Library
 * insert KnowledgeArtifactDefinitionMetadata(AnemiaScreeningLibrary, Library)
 * type = http://terminology.hl7.org/CodeSystem/library-type#logic-library
 * content.id = "ig-loader-AnemiaScreeningLibrary.cql"
+
+Instance: NeurologicalAssessmentLibrary
+InstanceOf: Library
+* insert KnowledgeArtifactDefinitionMetadata(NeurologicalAssessmentLibrary, Library)
+* type = http://terminology.hl7.org/CodeSystem/library-type#logic-library
+* content.id = "ig-loader-NeurologicalAssessmentLibrary.cql"

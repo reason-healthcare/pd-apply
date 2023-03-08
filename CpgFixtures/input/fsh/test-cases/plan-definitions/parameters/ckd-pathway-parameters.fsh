@@ -1,4 +1,4 @@
-Instance: DischargeParameters
+Instance: CkdPathwayParameters
 InstanceOf: Parameters
 Usage: #example
 * parameter[+]
@@ -12,7 +12,7 @@ Usage: #example
   * valueString = "Encounter/Encounter1"
 * parameter[+]
   * name = "planDefinition"
-  * resource = DischargePlan
+  * resource = CkdPathway
 * parameter[+]
   * name = "data"
   * resource = PatientTestBundle1

@@ -8,7 +8,7 @@ Usage: #example
 * action[+]
   * title = "Order CBC Lab Panel"
   * description = "Order CBC Lab Panel to screen for anemia"
-  * code = $cpg-common-process#diagnosic-testing "Conduct Diagnostic Tests"
+  * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
   * condition
     * kind = #applicability
     * expression
@@ -17,7 +17,7 @@ Usage: #example
 * action[+]
   * title = "Order serum ferritin"
   * description = "Order serum ferritin to monitor iron status"
-  * code = $cpg-common-process#diagnosic-testing "Conduct Diagnostic Tests"
+  * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
   * condition
     * kind = #applicability
     * expression

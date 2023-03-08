@@ -65,6 +65,7 @@
         "action": [
           {
             "title": "Registration with questionnaire",
+            "description": "Register patient using questionnaire",
             "code": [
               {
                 "coding": [

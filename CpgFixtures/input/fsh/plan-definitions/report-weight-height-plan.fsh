@@ -11,8 +11,8 @@ Usage: #example
 * action[+]
   * title = "Report Weight"
   * description = "Report weight metric upon admission"
-  * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#diagnostic-testing
+  * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
 * action[+]
   * title = "Report Height"
   * description = "Report height metric upon admission"
-  * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#diagnostic-testing
+  * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"

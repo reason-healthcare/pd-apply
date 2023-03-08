@@ -3,11 +3,11 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry
-  * fullUrl = "http://apply-processor/RequestGroup/ac140fea-8512-4a5f-83e5-a486df23a57b"
+  * fullUrl = "http://apply-processor/RequestGroup/NeurologicalAssessmentRequestGroup"
   * resource = NeurologicalAssessmentRequestGroup
 
 Instance: NeurologicalAssessmentRequestGroup
-InstanceOf: RequestGroup
+InstanceOf: $cpg-strategy
 Usage: #inline
 * intent = #proposal
 * status = #draft
@@ -17,4 +17,5 @@ Usage: #inline
 * instantiatesCanonical = "http://example.com/PlanDefinition/DiabetesScreeningPlan|0.1.0"
 * action
   * title = "Order neurological exam"
+  * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
   * description = "Recommend neurological screening based on risk factor of Ischemic stroke (disorder)"

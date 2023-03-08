@@ -4,10 +4,10 @@
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://apply-processor/RequestGroup/94129eba-6477-47c5-8354-100845c87c7f",
+      "fullUrl": "http://apply-processor/RequestGroup/AnemiaScreeningRequestGroup",
       "resource": {
         "resourceType": "RequestGroup",
-        "id": "94129eba-6477-47c5-8354-100845c87c7f",
+        "id": "AnemiaScreeningRequestGroup",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
@@ -35,7 +35,7 @@
               {
                 "coding": [
                   {
-                    "code": "diagnosic-testing",
+                    "code": "diagnostic-testing",
                     "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
                     "display": "Conduct Diagnostic Tests"
                   }
@@ -46,7 +46,7 @@
               {
                 "kind": "applicability",
                 "expression": {
-                  "language": "text/cql",
+                  "language": "text/cql-identifier",
                   "expression": "Needs CBC"
                 }
               }

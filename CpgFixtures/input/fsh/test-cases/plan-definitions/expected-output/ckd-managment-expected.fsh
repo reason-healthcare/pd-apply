@@ -3,7 +3,7 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/617748bf-c3dc-48a9-801e-4e363633539a"
+  * fullUrl = "http://apply-processor/RequestGroup/CKDManagementRequestGroup"
   * resource = CKDManagementRequestGroup
 * entry[+]
   * fullUrl = "http://example.com/RequestGroup/InlineCKDEducationRequestGroup"
@@ -15,10 +15,9 @@ Usage: #example
 Instance: CKDManagementRequestGroup
 InstanceOf: $cpg-strategy
 Usage: #inline
-* id = "617748bf-c3dc-48a9-801e-4e363633539a"
 * intent = #proposal
 * status = #draft
-* subject = Reference(Patient/undefined)
+* subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.com/PlanDefinition/CKDManagementPlan|0.1.0"
@@ -43,10 +42,9 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.com/PlanDefinition/CKDEducationPlan|0.1.0"
 * action
-  * title = "CKD Pateint Education"
+  * title = "CKD Patient Education"
   * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
-  * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
-
+  * code = $cpg-common-process#provide-counseling "Provide Counseling"
 
 Instance: CKDFollowUpRequestGroup
 InstanceOf: $cpg-strategy
@@ -58,6 +56,6 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.com/PlanDefinition/CKDFollowUpPlan|0.1.0"
 * action
-  * title = "CKD Pateint Education"
+  * title = "CKD Patient Education"
   * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"

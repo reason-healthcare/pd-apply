@@ -60,7 +60,8 @@
           "coding": [
             {
               "code": "alerts-reminders-education",
-              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "display": "Alerts Reminders Education"
             }
           ]
         }

@@ -1,6 +1,6 @@
 {
   "resourceType": "Parameters",
-  "id": "CKDEducationParameters",
+  "id": "DischargeFollowUpParameters",
   "parameter": [
     {
       "name": "subject",
@@ -18,7 +18,7 @@
       "name": "planDefinition",
       "resource": {
         "resourceType": "PlanDefinition",
-        "id": "CKDEducationPlan",
+        "id": "DischargeFollowUpPlan",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
@@ -34,9 +34,9 @@
             "valueCode": "structured"
           }
         ],
-        "url": "http://example.com/PlanDefinition/CKDEducationPlan",
-        "name": "CKDEducationPlan",
-        "title": "PlanDefinition CKDEducationPlan",
+        "url": "http://example.com/PlanDefinition/DischargeFollowUpPlan",
+        "name": "DischargeFollowUpPlan",
+        "title": "PlanDefinition DischargeFollowUpPlan",
         "status": "draft",
         "experimental": true,
         "publisher": "Example",
@@ -52,6 +52,7 @@
           }
         ],
         "version": "0.1.0",
+        "description": "Definition of plan to monitor patient following discharge",
         "type": {
           "coding": [
             {
@@ -61,22 +62,67 @@
             }
           ]
         },
-        "description": "Plan definition to provide education to a patient with newly diagnosed chronic kidney disease",
+        "goal": [
+          {
+            "description": {
+              "text": "Patient monitoring"
+            },
+            "start": {
+              "coding": [
+                {
+                  "code": "308283009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Discharge from hospital"
+                }
+              ]
+            }
+          }
+        ],
         "action": [
           {
-            "title": "CKD Patient Education",
+            "title": "Monitor patient",
+            "description": "Monitor patient post discharge",
             "code": [
               {
                 "coding": [
                   {
-                    "code": "provide-counseling",
+                    "code": "monitor-and-follow-up-of-patient",
                     "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
-                    "display": "Provide Counseling"
+                    "display": "Monitor and Follow-up of Patient"
                   }
                 ]
               }
             ],
-            "description": "Provide verbal and written education on disease state at time of CKD diagnosis"
+            "action": [
+              {
+                "title": "Case management or referral",
+                "code": [
+                  {
+                    "coding": [
+                      {
+                        "code": "discharge-referral-of-patient",
+                        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                        "display": "Discharge/Referral of Patient"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Schedule follow-up visit",
+                "code": [
+                  {
+                    "coding": [
+                      {
+                        "code": "monitor-and-follow-up-of-patient",
+                        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                        "display": "Monitor and Follow-up of Patient"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

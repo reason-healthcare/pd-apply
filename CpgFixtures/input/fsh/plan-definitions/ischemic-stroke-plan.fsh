@@ -5,11 +5,11 @@ Usage: #example
 * description = "Definition of a plan to administer TPA if patient had ischemic stroke"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
 * library = "http://example.com/Library/IschemicStrokeLibrary"
-* action[+]
+* action
   * title = "Ischemic Stroke Treatment"
   * description = "Recommendation to administer TPA if patient had Ischemic Stroke"
   * textEquivalent = "Administer TPA intravenously"
-  * code = $cpg-common-process#dispense-meidcations "Dispense Medications"
+  * code = $cpg-common-process#dispense-medications "Dispense Medications"
   * condition
     * kind = #applicability
     * expression

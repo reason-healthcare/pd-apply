@@ -170,6 +170,27 @@
       },
       {
         "reference": {
+          "reference": "PlanDefinition/CkdPathway"
+        },
+        "name": "CkdPathway",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/CkdPathwayExpected"
+        },
+        "name": "CkdPathwayExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/CkdPathwayParameters"
+        },
+        "name": "CkdPathwayParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "ActivityDefinition/CollectInformationActivity"
         },
         "name": "CollectInformationActivity",
@@ -198,9 +219,23 @@
       },
       {
         "reference": {
-          "reference": "Bundle/DischargeExpected"
+          "reference": "Bundle/DischargeFollowUpExpected"
         },
-        "name": "DischargeExpected",
+        "name": "DischargeFollowUpExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/DischargeFollowUpParameters"
+        },
+        "name": "DischargeFollowUpParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/DischargeFollowUpPlan"
+        },
+        "name": "DischargeFollowUpPlan",
         "exampleBoolean": true
       },
       {
@@ -215,20 +250,6 @@
           "reference": "Parameters/DischargeInstructionsParameters"
         },
         "name": "DischargeInstructionsParameters",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Parameters/DischargeParameters"
-        },
-        "name": "DischargeParameters",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "PlanDefinition/DischargePlan"
-        },
-        "name": "DischargePlan",
         "exampleBoolean": true
       },
       {
@@ -439,6 +460,13 @@
           "reference": "Bundle/NeurologicalAssessmentExpected"
         },
         "name": "NeurologicalAssessmentExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Library/NeurologicalAssessmentLibrary"
+        },
+        "name": "NeurologicalAssessmentLibrary",
         "exampleBoolean": true
       },
       {

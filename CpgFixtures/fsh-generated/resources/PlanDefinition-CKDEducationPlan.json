@@ -46,7 +46,7 @@
   "description": "Plan definition to provide education to a patient with newly diagnosed chronic kidney disease",
   "action": [
     {
-      "title": "CKD Pateint Education",
+      "title": "CKD Patient Education",
       "code": [
         {
           "coding": [

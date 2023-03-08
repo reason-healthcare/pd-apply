@@ -74,7 +74,7 @@
               {
                 "coding": [
                   {
-                    "code": "dispense-meidcations",
+                    "code": "dispense-medications",
                     "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
                     "display": "Dispense Medications"
                   }

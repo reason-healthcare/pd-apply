@@ -4,10 +4,10 @@
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://apply-processor/RequestGroup/3cb6a53d-a977-4c08-b6f8-2086658c8d46",
+      "fullUrl": "http://apply-processor/RequestGroup/SendMessageRequestGroup",
       "resource": {
         "resourceType": "RequestGroup",
-        "id": "3cb6a53d-a977-4c08-b6f8-2086658c8d46",
+        "id": "SendMessageRequestGroup",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
@@ -36,23 +36,24 @@
                 "coding": [
                   {
                     "code": "alerts-reminders-education",
-                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                    "display": "Alerts Reminders Education"
                   }
                 ]
               }
             ],
             "resource": {
-              "reference": "CommunicationRequest/5fd4b96a-b1dd-4dc6-9506-8374ed6c1ee0"
+              "reference": "CommunicationRequest/SendMessageRequest"
             }
           }
         ]
       }
     },
     {
-      "fullUrl": "http://apply-processor/CommunicationRequest/5fd4b96a-b1dd-4dc6-9506-8374ed6c1ee0",
+      "fullUrl": "http://apply-processor/CommunicationRequest/SendMessageRequest",
       "resource": {
         "resourceType": "CommunicationRequest",
-        "id": "5fd4b96a-b1dd-4dc6-9506-8374ed6c1ee0",
+        "id": "SendMessageRequest",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"

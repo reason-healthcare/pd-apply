@@ -4,10 +4,10 @@
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://apply-processor/RequestGroup/3eeaf5f9-8f37-4aba-ab35-5465bdb159fc",
+      "fullUrl": "http://apply-processor/RequestGroup/IronDeficiencyTreatmentRequestGroup",
       "resource": {
         "resourceType": "RequestGroup",
-        "id": "3eeaf5f9-8f37-4aba-ab35-5465bdb159fc",
+        "id": "IronDeficiencyTreatmentRequestGroup",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"

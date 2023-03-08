@@ -4,10 +4,15 @@
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://apply-processor/RequestGroup/3552c8f7-e925-4c97-9c54-54d89354a2ae",
+      "fullUrl": "http://apply-processor/RequestGroup/RegistrationRequestGroup",
       "resource": {
         "resourceType": "RequestGroup",
-        "id": "3552c8f7-e925-4c97-9c54-54d89354a2ae",
+        "id": "RegistrationRequestGroup",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
+          ]
+        },
         "intent": "proposal",
         "status": "draft",
         "subject": {
@@ -25,6 +30,7 @@
         "action": [
           {
             "title": "Registration with questionnaire",
+            "description": "Register patient using questionnaire",
             "code": [
               {
                 "coding": [

@@ -1,13 +1,13 @@
 {
   "resourceType": "Bundle",
-  "id": "ReportHeightWeightExpected",
+  "id": "DischargeFollowUpExpected",
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://apply-processor/Goal/WeightTargetGoal",
+      "fullUrl": "http://apply-processor/Goal/PatientMonitoringGoal",
       "resource": {
         "resourceType": "Goal",
-        "id": "WeightTargetGoal",
+        "id": "PatientMonitoringGoal",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal"
@@ -18,14 +18,14 @@
         },
         "lifecycleStatus": "planned",
         "description": {
-          "text": "Weight target"
+          "text": "Patient monitoring"
         },
         "startCodeableConcept": {
           "coding": [
             {
-              "code": "32485007",
+              "code": "308283009",
               "system": "http://snomed.info/sct",
-              "display": "Admission to hospital"
+              "display": "Discharge from hospital"
             }
           ]
         }

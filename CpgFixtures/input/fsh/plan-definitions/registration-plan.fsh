@@ -6,5 +6,6 @@ Usage: #example
 * description = "Definition of plan to collect information for patient registration"
 * action
   * title = "Registration with questionnaire"
-  * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#registration "Registration"
+  * description = "Register patient using questionnaire"
+  * code = $cpg-common-process#registration "Registration"
   * definitionCanonical = "http://example.com/Questionnaire/RegistrationQuestionnaire"

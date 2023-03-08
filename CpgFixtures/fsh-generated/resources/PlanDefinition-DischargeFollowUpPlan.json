@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "DischargePlan",
+  "id": "DischargeFollowUpPlan",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
@@ -16,9 +16,9 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://example.com/PlanDefinition/DischargePlan",
-  "name": "DischargePlan",
-  "title": "PlanDefinition DischargePlan",
+  "url": "http://example.com/PlanDefinition/DischargeFollowUpPlan",
+  "name": "DischargeFollowUpPlan",
+  "title": "PlanDefinition DischargeFollowUpPlan",
   "status": "draft",
   "experimental": true,
   "publisher": "Example",
@@ -69,7 +69,8 @@
           "coding": [
             {
               "code": "monitor-and-follow-up-of-patient",
-              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "display": "Monitor and Follow-up of Patient"
             }
           ]
         }
@@ -82,7 +83,8 @@
               "coding": [
                 {
                   "code": "discharge-referral-of-patient",
-                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                  "display": "Discharge/Referral of Patient"
                 }
               ]
             }
@@ -95,7 +97,8 @@
               "coding": [
                 {
                   "code": "monitor-and-follow-up-of-patient",
-                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"
+                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                  "display": "Monitor and Follow-up of Patient"
                 }
               ]
             }

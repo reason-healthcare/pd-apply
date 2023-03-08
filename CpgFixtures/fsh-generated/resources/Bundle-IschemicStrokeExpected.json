@@ -4,10 +4,10 @@
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://apply-processor/RequestGroup/06e0c0e0-6bca-49d1-8f87-b905d30db141",
+      "fullUrl": "http://apply-processor/RequestGroup/IschemicStrokeRequestGroup",
       "resource": {
         "resourceType": "RequestGroup",
-        "id": "06e0c0e0-6bca-49d1-8f87-b905d30db141",
+        "id": "IschemicStrokeRequestGroup",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
@@ -36,7 +36,7 @@
               {
                 "coding": [
                   {
-                    "code": "dispense-meidcations",
+                    "code": "dispense-medications",
                     "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
                     "display": "Dispense Medications"
                   }
@@ -47,7 +47,7 @@
               {
                 "kind": "applicability",
                 "expression": {
-                  "language": "text/cql",
+                  "language": "text/cql-identifier",
                   "expression": "Had Ischemic Stroke"
                 }
               }

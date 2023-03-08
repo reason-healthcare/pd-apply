@@ -3,13 +3,12 @@ InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry
-  * fullUrl = "http://apply-processor/RequestGroup/606aa765-e056-47e8-9fe2-46a3b6ae5622"
+  * fullUrl = "http://apply-processor/RequestGroup/DischargeInstructionsRequestGroup"
   * resource = DischargeInstructionsRequestGroup
 
 Instance: DischargeInstructionsRequestGroup
-InstanceOf: RequestGroup
+InstanceOf: $cpg-strategy
 Usage: #inline
-* id = "606aa765-e056-47e8-9fe2-46a3b6ae5622"
 * intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)
@@ -18,4 +17,5 @@ Usage: #inline
 * instantiatesCanonical = "http://example.com/PlanDefinition/DichargeInstructionsPlan|0.1.0"
 * action
   * title = "Provide discharge instructions"
+  * code = $cpg-common-process#provide-counseling "Provide Counseling"
   * description = "Provide discharge instructions for Alice"
