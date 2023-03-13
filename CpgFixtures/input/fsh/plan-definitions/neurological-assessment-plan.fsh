@@ -1,15 +1,15 @@
 Instance: NeurologicalAssessmentPlan
 InstanceOf: $cpg-computableplandefinition
 Usage: #example
-* insert KnowledgeArtifactDefinitionMetadata(DiabetesScreeningPlan, PlanDefinition)
+* insert KnowledgeArtifactDefinitionMetadata(NeurologicalAssessmentPlan, PlanDefinition)
 * description = "Definition of a plan to recommend nuerological assessment"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
 * library = "http://example.com/Library/NeurologicalAssessmentLibrary"
 * action
   * title = "Order neurological exam"
-  * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
   * dynamicValue
-    * path = "action[0].description"   //would this be %action.description or action[0].description
+    * path = "occurrenceDateTime"
     * expression
       * language = #text/cql-identifier
-      * expression = "Neurological Impairment Risk Factors"
+      * expression = "Timing of Service"
+  * definitionCanonical = "http://example.com/ActivityDefinition/OrderServiceActivity"

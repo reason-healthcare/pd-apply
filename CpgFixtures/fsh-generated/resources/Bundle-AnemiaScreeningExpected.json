@@ -8,11 +8,6 @@
       "resource": {
         "resourceType": "RequestGroup",
         "id": "AnemiaScreeningRequestGroup",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
-          ]
-        },
         "intent": "proposal",
         "status": "draft",
         "subject": {
@@ -40,15 +35,6 @@
                     "display": "Conduct Diagnostic Tests"
                   }
                 ]
-              }
-            ],
-            "condition": [
-              {
-                "kind": "applicability",
-                "expression": {
-                  "language": "text/cql-identifier",
-                  "expression": "Needs CBC"
-                }
               }
             ]
           }

@@ -7,7 +7,7 @@ Usage: #example
   * resource = RegistrationRequestGroup
 
 Instance: RegistrationRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft

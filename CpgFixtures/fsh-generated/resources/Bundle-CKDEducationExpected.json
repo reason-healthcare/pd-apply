@@ -8,11 +8,6 @@
       "resource": {
         "resourceType": "RequestGroup",
         "id": "CKDEducationRequestGroup",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
-          ]
-        },
         "intent": "proposal",
         "status": "draft",
         "subject": {

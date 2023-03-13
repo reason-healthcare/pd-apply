@@ -7,14 +7,14 @@ Usage: #example
   * resource = DischargeInstructionsRequestGroup
 
 Instance: DischargeInstructionsRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.com/PlanDefinition/DichargeInstructionsPlan|0.1.0"
+* instantiatesCanonical = "http://example.com/PlanDefinition/DischargeInstructionsPlan|0.1.0"
 * action
   * title = "Provide discharge instructions"
   * code = $cpg-common-process#provide-counseling "Provide Counseling"

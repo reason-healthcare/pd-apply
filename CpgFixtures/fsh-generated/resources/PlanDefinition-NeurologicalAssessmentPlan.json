@@ -16,9 +16,9 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://example.com/PlanDefinition/DiabetesScreeningPlan",
-  "name": "DiabetesScreeningPlan",
-  "title": "PlanDefinition DiabetesScreeningPlan",
+  "url": "http://example.com/PlanDefinition/NeurologicalAssessmentPlan",
+  "name": "NeurologicalAssessmentPlan",
+  "title": "PlanDefinition NeurologicalAssessmentPlan",
   "status": "draft",
   "experimental": true,
   "publisher": "Example",
@@ -50,26 +50,16 @@
   "action": [
     {
       "title": "Order neurological exam",
-      "code": [
-        {
-          "coding": [
-            {
-              "code": "diagnostic-testing",
-              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
-              "display": "Conduct Diagnostic Tests"
-            }
-          ]
-        }
-      ],
       "dynamicValue": [
         {
-          "path": "action[0].description",
+          "path": "occurrenceDateTime",
           "expression": {
             "language": "text/cql-identifier",
-            "expression": "Neurological Impairment Risk Factors"
+            "expression": "Timing of Service"
           }
         }
-      ]
+      ],
+      "definitionCanonical": "http://example.com/ActivityDefinition/OrderServiceActivity"
     }
   ]
 }

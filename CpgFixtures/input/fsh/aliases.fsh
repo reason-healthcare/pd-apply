@@ -42,5 +42,4 @@ Alias: $cpg-shareablequestionnaire = http://hl7.org/fhir/uv/cpg/StructureDefinit
 
 Alias: $cpg-computableplandefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition
 Alias: $cpg-plan-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
-Alias: $cpg-strategy = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy
 Alias: $cpg-goal = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal

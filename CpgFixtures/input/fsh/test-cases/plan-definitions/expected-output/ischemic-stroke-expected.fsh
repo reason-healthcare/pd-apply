@@ -7,7 +7,7 @@ Usage: #example
   * resource = IschemicStrokeRequestGroup
 
 Instance: IschemicStrokeRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft
@@ -20,8 +20,3 @@ Usage: #inline
   * description = "Recommendation to administer TPA if patient had Ischemic Stroke"
   * textEquivalent = "Administer TPA intravenously"
   * code = $cpg-common-process#dispense-medications "Dispense Medications"
-  * condition
-    * kind = #applicability
-    * expression
-      * language = #text/cql-identifier
-      * expression = "Had Ischemic Stroke"

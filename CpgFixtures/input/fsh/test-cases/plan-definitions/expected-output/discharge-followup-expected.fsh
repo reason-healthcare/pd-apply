@@ -2,15 +2,15 @@ Instance: DischargeFollowUpExpected
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry
+* entry[+]
   * fullUrl = "http://apply-processor/RequestGroup/DischargeRequestGroup"
   * resource = DischargeRequestGroup
-* entry
+* entry[+]
   * fullUrl = "http://apply-processor/Goal/PatientMonitoringGoal"
   * resource = PatientMonitoringGoal
 
 Instance: DischargeRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft
@@ -25,10 +25,10 @@ Usage: #inline
   * title = "Monitor patient"
   * description = "Monitor patient post discharge"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
-  * action
+  * action[+]
     * title = "Case management or referral"
-    * code = $cpg-common-process#discharge-referral-of-patient "Discharge/Regerral of Patient"
-  * action
+    * code = $cpg-common-process#discharge-referral-of-patient "Discharge/Referral of Patient"
+  * action[+]
     * title = "Schedule follow-up visit"
     * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
 

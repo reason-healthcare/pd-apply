@@ -212,13 +212,6 @@
       },
       {
         "reference": {
-          "reference": "PlanDefinition/DichargeInstructionsPlan"
-        },
-        "name": "DichargeInstructionsPlan",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Bundle/DischargeFollowUpExpected"
         },
         "name": "DischargeFollowUpExpected",
@@ -250,6 +243,13 @@
           "reference": "Parameters/DischargeInstructionsParameters"
         },
         "name": "DischargeInstructionsParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/DischargeInstructionsPlan"
+        },
+        "name": "DischargeInstructionsPlan",
         "exampleBoolean": true
       },
       {
@@ -446,6 +446,20 @@
           "reference": "Parameters/IschemicStrokeParameters"
         },
         "name": "IschemicStrokeParameters",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/IschemicStrokePathway"
+        },
+        "name": "IschemicStrokePathway",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/IschemicStrokePathwayParameters"
+        },
+        "name": "IschemicStrokePathwayParameters",
         "exampleBoolean": true
       },
       {

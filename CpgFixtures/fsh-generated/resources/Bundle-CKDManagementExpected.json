@@ -8,11 +8,6 @@
       "resource": {
         "resourceType": "RequestGroup",
         "id": "CKDManagementRequestGroup",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
-          ]
-        },
         "intent": "proposal",
         "status": "draft",
         "subject": {
@@ -72,11 +67,6 @@
       "resource": {
         "resourceType": "RequestGroup",
         "id": "InlineCKDEducationRequestGroup",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
-          ]
-        },
         "intent": "option",
         "status": "draft",
         "subject": {
@@ -115,11 +105,6 @@
       "resource": {
         "resourceType": "RequestGroup",
         "id": "CKDFollowUpRequestGroup",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
-          ]
-        },
         "intent": "option",
         "status": "draft",
         "subject": {
@@ -136,8 +121,8 @@
         ],
         "action": [
           {
-            "title": "CKD Patient Education",
-            "description": "Provide verbal and written education on disease state at time of CKD diagnosis",
+            "title": "Follow Up Plan",
+            "description": "Schedule follow up with nephrologist",
             "code": [
               {
                 "coding": [

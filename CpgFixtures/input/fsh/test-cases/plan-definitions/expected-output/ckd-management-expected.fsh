@@ -13,7 +13,7 @@ Usage: #example
   * resource = CKDFollowUpRequestGroup
 
 Instance: CKDManagementRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft
@@ -33,7 +33,7 @@ Usage: #inline
   * resource = Reference(CKDFollowUpRequestGroup)
 
 Instance: InlineCKDEducationRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #option
 * status = #draft
@@ -47,7 +47,7 @@ Usage: #inline
   * code = $cpg-common-process#provide-counseling "Provide Counseling"
 
 Instance: CKDFollowUpRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #option
 * status = #draft
@@ -56,6 +56,6 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.com/PlanDefinition/CKDFollowUpPlan|0.1.0"
 * action
-  * title = "CKD Patient Education"
-  * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
+  * title = "Follow Up Plan"
+  * description = "Schedule follow up with nephrologist"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"

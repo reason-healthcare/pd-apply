@@ -18,7 +18,7 @@
       "name": "planDefinition",
       "resource": {
         "resourceType": "PlanDefinition",
-        "id": "DichargeInstructionsPlan",
+        "id": "DischargeInstructionsPlan",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"
@@ -34,9 +34,9 @@
             "valueCode": "structured"
           }
         ],
-        "url": "http://example.com/PlanDefinition/DichargeInstructionsPlan",
-        "name": "DichargeInstructionsPlan",
-        "title": "PlanDefinition DichargeInstructionsPlan",
+        "url": "http://example.com/PlanDefinition/DischargeInstructionsPlan",
+        "name": "DischargeInstructionsPlan",
+        "title": "PlanDefinition DischargeInstructionsPlan",
         "status": "draft",
         "experimental": true,
         "publisher": "Example",
@@ -52,7 +52,7 @@
           }
         ],
         "version": "0.1.0",
-        "description": "Definition of plan to provide patient discharge instructions",
+        "description": "Plan to provide patient discharge instructions",
         "type": {
           "coding": [
             {
@@ -78,13 +78,14 @@
             ],
             "dynamicValue": [
               {
-                "path": "action[0].description",
+                "path": "payload[0].contentString",
                 "expression": {
                   "language": "text/fhirpath",
-                  "expression": "action.title + ' for ' + %subject.name.given.first()"
+                  "expression": "description + ' for ' + %subject.name.given.first()"
                 }
               }
-            ]
+            ],
+            "definitionCanonical": "http://example.com/ActivityDefinition/SendMessageActivity"
           }
         ]
       }

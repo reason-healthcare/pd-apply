@@ -47,7 +47,7 @@
   "action": [
     {
       "title": "CKD Follow up Plan",
-      "description": "Schedule follow up with a nephrolois at time of CKD diagnosis",
+      "description": "Schedule follow up with a nephrologist at time of CKD diagnosis",
       "code": [
         {
           "coding": [

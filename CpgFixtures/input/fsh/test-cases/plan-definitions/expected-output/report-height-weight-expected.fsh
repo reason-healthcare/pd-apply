@@ -2,15 +2,15 @@ Instance: ReportHeightWeightExpected
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry
+* entry[+]
   * fullUrl = "http://apply-processor/RequestGroup/ReportHeightWeightRequestGroup"
   * resource = ReportHeightWeightRequestGroup
-* entry
+* entry[+]
   * fullUrl = "http://apply-processor/Goal/WeightTargetGoal"
   * resource = WeightTargetGoal
 
 Instance: ReportHeightWeightRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft
@@ -21,11 +21,11 @@ Usage: #inline
 * extension
   * url = "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"
   * valueReference = Reference(WeightTargetGoal)
-* action
+* action[+]
   * title = "Report Weight"
   * description = "Report weight metric upon admission"
   * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
-* action
+* action[+]
   * title = "Report Height"
   * description = "Report height metric upon admission"
   * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"

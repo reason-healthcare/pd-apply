@@ -29,5 +29,6 @@
   },
   "requester": {
     "reference": "Practitioner/Practitioner1"
-  }
+  },
+  "occurrenceDateTime": "2023-01-02"
 }

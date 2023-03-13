@@ -7,11 +7,11 @@ Usage: #example
   * resource = IronDeficiencyTreatmentRequestGroup
 
 Instance: IronDeficiencyTreatmentRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.com/PlanDefinition/PrenatalSupplementationPln|0.1.0"
+* instantiatesCanonical = "http://example.com/PlanDefinition/IronDeficiencyTreatmentPlan|0.1.0"

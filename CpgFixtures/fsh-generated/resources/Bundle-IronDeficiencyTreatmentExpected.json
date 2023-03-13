@@ -8,11 +8,6 @@
       "resource": {
         "resourceType": "RequestGroup",
         "id": "IronDeficiencyTreatmentRequestGroup",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
-          ]
-        },
         "intent": "proposal",
         "status": "draft",
         "subject": {
@@ -25,7 +20,7 @@
           "reference": "Encounter/Encounter1"
         },
         "instantiatesCanonical": [
-          "http://example.com/PlanDefinition/PrenatalSupplementationPln|0.1.0"
+          "http://example.com/PlanDefinition/IronDeficiencyTreatmentPlan|0.1.0"
         ]
       }
     }

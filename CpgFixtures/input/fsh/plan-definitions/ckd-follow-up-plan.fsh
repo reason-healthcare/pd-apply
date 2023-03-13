@@ -6,5 +6,5 @@ Usage: #example
 * description = "Definition of a plan to schedule follow up at time of CKD diagnosis"
 * action
   * title = "CKD Follow up Plan"
-  * description = "Schedule follow up with a nephrolois at time of CKD diagnosis"
+  * description = "Schedule follow up with a nephrologist at time of CKD diagnosis"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"

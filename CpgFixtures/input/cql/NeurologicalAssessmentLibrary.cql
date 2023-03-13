@@ -12,8 +12,8 @@ define "Patient id":
 define "Condition":
   [Condition]
 
-define "Condition Name":
-  "Condition".code.coding[0].display.value
+define "Condition Recorded Date":
+  "Condition".recordedDate.value
 
-define "Neurological Impairment Risk Factors":
-  'Recommend neurological screening based on risk factor of ' + "Condition Name"
+define "Timing of Service":
+  "Condition Recorded Date".first()

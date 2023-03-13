@@ -8,42 +8,72 @@
       "resource": {
         "resourceType": "RequestGroup",
         "id": "NeurologicalAssessmentRequestGroup",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy"
-          ]
-        },
         "intent": "proposal",
         "status": "draft",
         "subject": {
           "reference": "Patient/Patient1"
         },
+        "instantiatesCanonical": [
+          "http://example.com/PlanDefinition/NeurologicalAssessmentPlan|0.1.0"
+        ],
         "author": {
           "reference": "Practitioner/Practitioner1"
         },
         "encounter": {
           "reference": "Encounter/Encounter1"
         },
-        "instantiatesCanonical": [
-          "http://example.com/PlanDefinition/DiabetesScreeningPlan|0.1.0"
-        ],
         "action": [
           {
             "title": "Order neurological exam",
-            "code": [
-              {
-                "coding": [
-                  {
-                    "code": "diagnostic-testing",
-                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
-                    "display": "Conduct Diagnostic Tests"
-                  }
-                ]
-              }
-            ],
-            "description": "Recommend neurological screening based on risk factor of Ischemic stroke (disorder)"
+            "type": {
+              "coding": [
+                {
+                  "code": "create",
+                  "system": "http://terminology.hl7.org/CodeSystem/action-type"
+                }
+              ]
+            },
+            "resource": {
+              "reference": "ServiceRequest/InlineServiceRequest"
+            }
           }
         ]
+      }
+    },
+    {
+      "fullUrl": "http://apply-processor/ServiceRequest/InlineServiceRequest",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "InlineServiceRequest",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest"
+          ]
+        },
+        "status": "draft",
+        "intent": "option",
+        "instantiatesCanonical": [
+          "http://example.com/ActivityDefinition/OrderServiceActivity|0.1.0"
+        ],
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "requester": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "doNotPerform": false,
+        "code": {
+          "coding": [
+            {
+              "code": "order-service",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+              "display": "Order a service"
+            }
+          ]
+        }
       }
     }
   ]

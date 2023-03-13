@@ -21,3 +21,9 @@ define "Condition Code Value":
 
 define "Had Ischemic Stroke":
   "Condition Code Value"[0] = "Ischemic Stroke".code
+
+define "Condition Reference":
+  if "Condition" is not null then
+    Tuple { reference: 'Condition/' + "Condition"[0].id }
+  else
+    Tuple { reference: 'Condition/unknown' }

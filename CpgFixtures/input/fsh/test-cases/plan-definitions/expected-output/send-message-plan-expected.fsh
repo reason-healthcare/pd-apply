@@ -10,7 +10,7 @@ Usage: #example
   * resource = SendMessageRequest
 
 Instance: SendMessageRequestGroup
-InstanceOf: $cpg-strategy
+InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft
@@ -19,7 +19,7 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.com/PlanDefinition/SendMessagePlan|0.1.0"
 * action
-  * title = "Greet the patient" //is this considered an AD override of communicationActivity.title?
+  * title = "Greet the patient"
   * description = "Send a message with a greeting"
   * code = $cpg-common-process#alerts-reminders-education "Alerts Reminders Education"
   * resource = Reference(SendMessageRequest)
