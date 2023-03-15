@@ -156,16 +156,16 @@
       },
       {
         "reference": {
-          "reference": "PlanDefinition/CKDManagementPlan"
+          "reference": "Parameters/CKDManagementParameters"
         },
-        "name": "CKDManagementPlan",
+        "name": "CKDManagementParameters",
         "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Parameters/CKDManagmentParameters"
+          "reference": "PlanDefinition/CKDManagementPlan"
         },
-        "name": "CKDManagmentParameters",
+        "name": "CKDManagementPlan",
         "exampleBoolean": true
       },
       {

@@ -1,6 +1,6 @@
 {
   "resourceType": "Parameters",
-  "id": "CKDManagmentParameters",
+  "id": "CKDManagementParameters",
   "parameter": [
     {
       "name": "subject",

@@ -6,10 +6,10 @@ Usage: #example
   * fullUrl = "http://apply-processor/RequestGroup/CKDManagementRequestGroup"
   * resource = CKDManagementRequestGroup
 * entry[+]
-  * fullUrl = "http://example.com/RequestGroup/InlineCKDEducationRequestGroup"
+  * fullUrl = "http://apply-processor/RequestGroup/InlineCKDEducationRequestGroup"
   * resource = InlineCKDEducationRequestGroup
 * entry[+]
-  * fullUrl = "http://example.com/RequestGroup/CKDFollowUpRequestGroup"
+  * fullUrl = "http://apply-processor/RequestGroup/CKDFollowUpRequestGroup"
   * resource = CKDFollowUpRequestGroup
 
 Instance: CKDManagementRequestGroup
@@ -32,6 +32,20 @@ Usage: #inline
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
   * resource = Reference(CKDFollowUpRequestGroup)
 
+Instance: CKDFollowUpRequestGroup
+InstanceOf: RequestGroup
+Usage: #inline
+* intent = #option
+* status = #draft
+* subject = Reference(Patient1)
+* author = Reference(Practitioner1)
+* encounter = Reference(Encounter1)
+* instantiatesCanonical = "http://example.com/PlanDefinition/CKDFollowUpPlan|0.1.0"
+* action
+  * title = "CKD Follow Up Plan"
+  * description = "Schedule follow up with a nephrologist at time of CKD diagnosis"
+  * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
+
 Instance: InlineCKDEducationRequestGroup
 InstanceOf: RequestGroup
 Usage: #inline
@@ -45,17 +59,3 @@ Usage: #inline
   * title = "CKD Patient Education"
   * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
   * code = $cpg-common-process#provide-counseling "Provide Counseling"
-
-Instance: CKDFollowUpRequestGroup
-InstanceOf: RequestGroup
-Usage: #inline
-* intent = #option
-* status = #draft
-* subject = Reference(Patient1)
-* author = Reference(Practitioner1)
-* encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.com/PlanDefinition/CKDFollowUpPlan|0.1.0"
-* action
-  * title = "Follow Up Plan"
-  * description = "Schedule follow up with nephrologist"
-  * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"

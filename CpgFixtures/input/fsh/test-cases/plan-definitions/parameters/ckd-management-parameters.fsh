@@ -1,4 +1,4 @@
-Instance: CKDManagmentParameters
+Instance: CKDManagementParameters
 InstanceOf: Parameters
 Usage: #example
 * parameter[+]
