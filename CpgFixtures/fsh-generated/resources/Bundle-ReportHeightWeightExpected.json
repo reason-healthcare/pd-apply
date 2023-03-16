@@ -65,7 +65,6 @@
       }
     },
     {
-      "fullUrl": "http://apply-processor/Goal/WeightTargetGoal",
       "resource": {
         "resourceType": "Goal",
         "id": "WeightTargetGoal",
@@ -80,15 +79,6 @@
         "lifecycleStatus": "planned",
         "description": {
           "text": "Weight target"
-        },
-        "startCodeableConcept": {
-          "coding": [
-            {
-              "code": "32485007",
-              "system": "http://snomed.info/sct",
-              "display": "Admission to hospital"
-            }
-          ]
         }
       }
     }

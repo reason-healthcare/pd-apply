@@ -7,7 +7,6 @@ Usage: #example
 * goal
   * description
     * text = "Weight target"
-  * start = http://snomed.info/sct#32485007 "Admission to hospital"
 * action[+]
   * title = "Report Weight"
   * description = "Report weight metric upon admission"

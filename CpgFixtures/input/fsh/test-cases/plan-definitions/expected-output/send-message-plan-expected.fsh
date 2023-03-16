@@ -22,6 +22,7 @@ Usage: #inline
   * title = "Greet the patient"
   * description = "Send a message with a greeting"
   * code = $cpg-common-process#alerts-reminders-education "Alerts Reminders Education"
+  * type = http://terminology.hl7.org/CodeSystem/action-type#create
   * resource = Reference(SendMessageRequest)
 
 Instance: SendMessageRequest

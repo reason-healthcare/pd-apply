@@ -6,7 +6,6 @@ Usage: #example
   * fullUrl = "http://apply-processor/RequestGroup/ReportHeightWeightRequestGroup"
   * resource = ReportHeightWeightRequestGroup
 * entry[+]
-  * fullUrl = "http://apply-processor/Goal/WeightTargetGoal"
   * resource = WeightTargetGoal
 
 Instance: ReportHeightWeightRequestGroup
@@ -38,4 +37,3 @@ Usage: #inline
 * lifecycleStatus = #planned
 * description
   * text = "Weight target"
-* startCodeableConcept = http://snomed.info/sct#32485007 "Admission to hospital"

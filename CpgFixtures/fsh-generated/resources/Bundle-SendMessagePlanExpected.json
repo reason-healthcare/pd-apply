@@ -37,6 +37,14 @@
                 ]
               }
             ],
+            "type": {
+              "coding": [
+                {
+                  "code": "create",
+                  "system": "http://terminology.hl7.org/CodeSystem/action-type"
+                }
+              ]
+            },
             "resource": {
               "reference": "CommunicationRequest/SendMessageRequest"
             }

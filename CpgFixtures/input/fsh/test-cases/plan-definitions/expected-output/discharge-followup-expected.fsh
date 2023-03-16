@@ -6,7 +6,6 @@ Usage: #example
   * fullUrl = "http://apply-processor/RequestGroup/DischargeRequestGroup"
   * resource = DischargeRequestGroup
 * entry[+]
-  * fullUrl = "http://apply-processor/Goal/PatientMonitoringGoal"
   * resource = PatientMonitoringGoal
 
 Instance: DischargeRequestGroup
@@ -39,4 +38,3 @@ Usage: #inline
 * lifecycleStatus = #planned
 * description
   * text = "Patient monitoring"
-* startCodeableConcept = http://snomed.info/sct#308283009 "Discharge from hospital"

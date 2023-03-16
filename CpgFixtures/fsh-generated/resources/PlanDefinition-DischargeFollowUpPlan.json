@@ -48,15 +48,6 @@
     {
       "description": {
         "text": "Patient monitoring"
-      },
-      "start": {
-        "coding": [
-          {
-            "code": "308283009",
-            "system": "http://snomed.info/sct",
-            "display": "Discharge from hospital"
-          }
-        ]
       }
     }
   ],

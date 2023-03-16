@@ -12,11 +12,11 @@ Usage: #example
   * fullUrl = "http://apply-processor/RequestGroup/InlineCkdEducationRequestGroup"
   * resource = InlineCkdEducationRequestGroup
 * entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/InlineCKDManagementRequestGroup"
-  * resource = InlineCKDManagementRequestGroup
-* entry[+]
   * fullUrl = "http://apply-processor/CommunicationRequest/InlineCommunicationRequest"
   * resource = InlineCommunicationRequest
+* entry[+]
+  * fullUrl = "http://apply-processor/RequestGroup/InlineCKDManagementRequestGroup"
+  * resource = InlineCKDManagementRequestGroup
 * entry[+]
   * fullUrl = "http://apply-processor/RequestGroup/InlineSendMessageRequestGroup"
   * resource = InlineSendMessageRequestGroup
@@ -49,7 +49,7 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.com/PlanDefinition/CKDFollowUpPlan|0.1.0"
 * action
-  * title = "CKD Follow up Plan"
+  * title = "CKD Follow Up Plan"
   * description = "Schedule follow up with a nephrologist at time of CKD diagnosis"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
 
@@ -66,6 +66,17 @@ Usage: #inline
   * title = "CKD Patient Education"
   * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
   * code = $cpg-common-process#provide-counseling "Provide Counseling"
+
+Instance: InlineCommunicationRequest
+InstanceOf: CommunicationRequest
+Usage: #inline
+* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
+* status = #draft
+* doNotPerform = false
+* subject = Reference(Patient1)
+* requester = Reference(Practitioner1)
+* encounter = Reference(Encounter1)
+* payload.contentString = "Greeting: Hello! Alice Message: Example Activity Definition for a recommendation to send a message Practitioner: Michael"
 
 Instance: InlineCKDManagementRequestGroup
 InstanceOf: RequestGroup
@@ -86,13 +97,6 @@ Usage: #inline
   * description = "Schedule follow up with nephrologist"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
   * resource = Reference(RequestGroup/InlineCKDFollowUpRequestGroup)
-
-Instance: InlineCommunicationRequest
-InstanceOf: CommunicationRequest
-Usage: #inline
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
-* status = #draft
-* doNotPerform = false
 
 Instance: InlineSendMessageRequestGroup
 InstanceOf: RequestGroup

@@ -7,7 +7,6 @@ Usage: #example
 * goal
   * description
     * text = "Patient monitoring"
-  * start = http://snomed.info/sct#308283009 "Discharge from hospital"
 * action
   * title = "Monitor patient"
   * description = "Monitor patient post discharge"

@@ -80,7 +80,6 @@
       }
     },
     {
-      "fullUrl": "http://apply-processor/Goal/PatientMonitoringGoal",
       "resource": {
         "resourceType": "Goal",
         "id": "PatientMonitoringGoal",
@@ -95,15 +94,6 @@
         "lifecycleStatus": "planned",
         "description": {
           "text": "Patient monitoring"
-        },
-        "startCodeableConcept": {
-          "coding": [
-            {
-              "code": "308283009",
-              "system": "http://snomed.info/sct",
-              "display": "Discharge from hospital"
-            }
-          ]
         }
       }
     }
