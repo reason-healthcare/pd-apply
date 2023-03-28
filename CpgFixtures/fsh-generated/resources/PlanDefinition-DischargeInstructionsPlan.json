@@ -34,7 +34,7 @@
     }
   ],
   "version": "0.1.0",
-  "description": "Plan to provide patient discharge instructions",
+  "description": "Provide patient discharge instructions",
   "type": {
     "coding": [
       {
@@ -46,7 +46,7 @@
   },
   "action": [
     {
-      "title": "Provide discharge instructions",
+      "title": "Send message with discharge instructions",
       "code": [
         {
           "coding": [

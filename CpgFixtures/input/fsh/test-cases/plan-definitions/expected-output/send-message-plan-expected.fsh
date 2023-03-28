@@ -29,7 +29,6 @@ Instance: SendMessageRequest
 InstanceOf: $cpg-communicationrequest
 Usage: #inline
 * status = #draft
-//* intent = #option     not supported for communication request
 * doNotPerform = false
 * subject = Reference(Patient1)
 * encounter = Reference(Encounter1)

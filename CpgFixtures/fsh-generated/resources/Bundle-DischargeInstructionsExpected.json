@@ -24,7 +24,7 @@
         ],
         "action": [
           {
-            "title": "Provide discharge instructions",
+            "title": "Send message with discharge instructions",
             "code": [
               {
                 "coding": [
@@ -36,7 +36,40 @@
                 ]
               }
             ],
-            "description": "Provide discharge instructions for Alice"
+            "type": {
+              "coding": [
+                {
+                  "code": "create",
+                  "system": "http://terminology.hl7.org/CodeSystem/action-type"
+                }
+              ]
+            },
+            "resource": {
+              "reference": "CommunicationRequest/DischargeMessageRequest"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://apply-processor/CommunicationRequest/DischargeMessageRequest",
+      "resource": {
+        "resourceType": "CommunicationRequest",
+        "id": "DischargeMessageRequest",
+        "status": "draft",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "requester": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "doNotPerform": false,
+        "payload": [
+          {
+            "contentString": "Provide patient discharge instructions for Alice"
           }
         ]
       }

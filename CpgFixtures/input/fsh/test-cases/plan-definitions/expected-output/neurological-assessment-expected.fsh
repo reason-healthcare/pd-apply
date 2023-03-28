@@ -35,4 +35,4 @@ Usage: #inline
 * requester = Reference(Practitioner/Practitioner1)
 * doNotPerform = false
 * code = $cpg-activity-type#order-service "Order a service"
-// * occurenceDateTime = "2023-01-01"
+* occurrencePeriod.start = "2023-01-01"

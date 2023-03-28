@@ -2,10 +2,10 @@ Instance: DischargeInstructionsPlan
 InstanceOf: $cpg-computableplandefinition
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(DischargeInstructionsPlan, PlanDefinition)
-* description = "Plan to provide patient discharge instructions"
+* description = "Provide patient discharge instructions"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
 * action
-  * title = "Provide discharge instructions"
+  * title = "Send message with discharge instructions"
   * code = $cpg-common-process#provide-counseling "Provide Counseling"
   * dynamicValue
     * path = "payload[0].contentString"

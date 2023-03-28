@@ -73,6 +73,9 @@
               "display": "Order a service"
             }
           ]
+        },
+        "occurrencePeriod": {
+          "start": "2023-01-01"
         }
       }
     }

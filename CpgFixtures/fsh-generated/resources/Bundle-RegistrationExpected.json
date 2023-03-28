@@ -14,7 +14,7 @@
           "reference": "Patient/Patient1"
         },
         "author": {
-          "reference": "Author1"
+          "reference": "Practitioner/Practitioner1"
         },
         "encounter": {
           "reference": "Encounter/Encounter1"

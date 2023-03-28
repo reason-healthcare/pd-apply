@@ -12,7 +12,7 @@ Usage: #inline
 * intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)
-* author = Reference(Author1)
+* author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.com/$cpg-computableplandefinition/RegistrationPlan|0.1.0"
 * action

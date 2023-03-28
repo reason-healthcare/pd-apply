@@ -8,7 +8,7 @@ Usage: #example
 * action
   * title = "Order neurological exam"
   * dynamicValue
-    * path = "occurrenceTiming.event"
+    * path = "occurrencePeriod.start"
     * expression
       * language = #text/cql-identifier
       * expression = "Timing of Service"

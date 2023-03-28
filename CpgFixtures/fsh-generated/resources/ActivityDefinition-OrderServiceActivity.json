@@ -48,9 +48,7 @@
     ]
   },
   "doNotPerform": false,
-  "timingTiming": {
-    "event": [
-      "2023-01-02"
-    ]
+  "timingPeriod": {
+    "start": "2023-03-28"
   }
 }
