@@ -1,0 +1,223 @@
+{
+  "resourceType": "Bundle",
+  "id": "IschemicStrokePathExpected",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://apply-processor/RequestGroup/IschemicStrokePathRequestGroup",
+      "resource": {
+        "resourceType": "RequestGroup",
+        "id": "IschemicStrokePathRequestGroup",
+        "intent": "proposal",
+        "status": "draft",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "instantiatesCanonical": [
+          "http://example.com/PlanDefinition/IschemicStrokePathway|0.1.0"
+        ],
+        "author": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "action": [
+          {
+            "title": "Generate Report",
+            "type": {
+              "coding": [
+                {
+                  "code": "create",
+                  "system": "http://terminology.hl7.org/CodeSystem/action-type"
+                }
+              ]
+            },
+            "resource": {
+              "reference": "Task/GenerateReportRequest"
+            }
+          },
+          {
+            "title": "Ischemic Stroke Plan",
+            "resource": {
+              "reference": "RequestGroup/IschemicStrokeRequestGroup"
+            },
+            "action": [
+              {
+                "title": "Order Medication",
+                "type": {
+                  "coding": [
+                    {
+                      "code": "create",
+                      "system": "http://terminology.hl7.org/CodeSystem/action-type"
+                    }
+                  ]
+                },
+                "resource": {
+                  "reference": "MedicationRequest/OrderMedicationRequest"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://apply-processor/Task/GenerateReportRequest",
+      "resource": {
+        "resourceType": "Task",
+        "id": "GenerateReportRequest",
+        "status": "draft",
+        "intent": "option",
+        "instantiatesCanonical": "http://example.com/ActivityDefinition/GenerateReportActivity|0.1.0",
+        "for": {
+          "reference": "Patient/Patient1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "requester": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "generate-report",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+              "display": "Generate a metric or case report"
+            }
+          ]
+        },
+        "input": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "generate-report",
+                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+                  "display": "Generate a metric or case report"
+                }
+              ]
+            },
+            "valueCanonical": "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport"
+          }
+        ],
+        "description": "Plan to treat patient with ischemic stroke for patient Alice"
+      }
+    },
+    {
+      "fullUrl": "http://apply-processor/RequestGroup/InlineIschemicStrokeRequestGroup",
+      "resource": {
+        "resourceType": "RequestGroup",
+        "id": "InlineIschemicStrokeRequestGroup",
+        "intent": "option",
+        "status": "draft",
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "instantiatesCanonical": [
+          "http://example.com/PlanDefinition/IschemicStrokePlan|0.1.0"
+        ],
+        "author": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "action": [
+          {
+            "title": "Ischemic Stroke Treatment",
+            "description": "Recommendation to administer TPA if patient had Ischemic Stroke",
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "dispense-medications",
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                    "display": "Dispense Medications"
+                  }
+                ]
+              }
+            ],
+            "textEquivalent": "Administer TPA intravenously"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://apply-processor/MedicationRequest/OrderMedicationRequest",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "OrderMedicationRequest",
+        "status": "draft",
+        "intent": "option",
+        "instantiatesCanonical": [
+          "http://example.com/ActivityDefinition/OrderMedicationActivity|0.1.0"
+        ],
+        "subject": {
+          "reference": "Patient/Patient1"
+        },
+        "requester": {
+          "reference": "Practitioner/Practitioner1"
+        },
+        "encounter": {
+          "reference": "Encounter/Encounter1"
+        },
+        "doNotPerform": false,
+        "medicationReference": {
+          "reference": "Medication/PastMedication"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "376988009",
+              "system": "http://snomed.info/sct",
+              "display": "Levothyroxine sodium 75 microgram oral tablet"
+            }
+          ]
+        },
+        "dosageInstruction": [
+          {
+            "sequence": 1,
+            "text": "75mcg daily",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "code": "26643006",
+                  "system": "http://snomed.info/sct",
+                  "display": "Oral Route (qualifier value)"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "code": "ordered",
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 75,
+                  "code": "ug",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "mcg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

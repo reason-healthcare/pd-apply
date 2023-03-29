@@ -9,4 +9,3 @@ Usage: #example
 * subject = Reference(Patient1)
 * encounter = Reference(Encounter1)
 * requester = Reference(Practitioner1)
-* occurrencePeriod.start = "2023-03-28"

@@ -7,4 +7,3 @@ Usage: #example
 * code = $cpg-activity-type#order-service "Order a service"
 * doNotPerform = false
 * intent = #proposal
-* timingPeriod.start = "2023-03-28"

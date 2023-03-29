@@ -450,6 +450,13 @@
       },
       {
         "reference": {
+          "reference": "Bundle/IschemicStrokePathExpected"
+        },
+        "name": "IschemicStrokePathExpected",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "PlanDefinition/IschemicStrokePathway"
         },
         "name": "IschemicStrokePathway",

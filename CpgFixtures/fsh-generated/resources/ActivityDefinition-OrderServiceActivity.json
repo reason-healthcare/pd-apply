@@ -47,8 +47,5 @@
       }
     ]
   },
-  "doNotPerform": false,
-  "timingPeriod": {
-    "start": "2023-03-28"
-  }
+  "doNotPerform": false
 }

@@ -5,25 +5,34 @@ Usage: #example
 * description = "Plan to treat patient with ischemic stroke"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
 * library = "http://example.com/Library/IschemicStrokeLibrary"
-* action
+* action[+]
+  * title = "Action based on timing"
+  * condition
+    * kind = #applicability
+    * expression
+      * language = #text/cql-identifier
+      * expression = "Condition Timing"
+* action[+]
   * title = "Generate Report"
   * dynamicValue
-    * path = "%action.description"
+    * path = "description"
     * expression
       * language = #text/fhirpath
-      * expression = "description + ' for ' + %subject.name.given.first()"
+      * expression = "description + ' for patient ' + %subject.name.given.first()"
   * definitionCanonical = "http://example.com/ActivityDefinition/GenerateReportActivity"
-* action
+* action[+]
+  * title = "Ischemic Stroke Plan"
   * definitionCanonical = "http://example.com/PlanDefinition/IschemicStrokePlan"
-  * action
+  * action[+]
+    * title = "Order Medication"
     * condition
       * kind = #applicability
       * expression
         * language = #text/cql-identifier
         * expression = "Had Ischemic Stroke"
     * dynamicValue
-      * path = "reasonReference"
+      * path = "medicationReference"
       * expression
         * language = #text/cql-identifier
-        * expression = "Condition Reference"
-    * definitionCanonical = "http://example.com/PlanDefinition/NeurologicalAssessmentPlan"
+        * expression = "Medication Reference"
+    * definitionCanonical = "http://example.com/ActivityDefinition/OrderMedicationActivity"

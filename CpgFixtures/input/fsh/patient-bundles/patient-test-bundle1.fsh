@@ -27,6 +27,12 @@ Usage: #inline
 * medicationCodeableConcept.text = "Some medication"
 * subject = Reference(Patient1)
 
+Instance: PastMedication
+InstanceOf: Medication
+Usage: #inline
+* form = http://snomed.info/sct#pill "Pill"
+
+
 Instance: DetectedIssue1
 InstanceOf: DetectedIssue
 Usage: #inline
@@ -76,6 +82,7 @@ InstanceOf: Bundle
 * entry[+].resource = Encounter1
 * entry[+].resource = Practitioner1
 * entry[+].resource = PastMedicationRequest
+* entry[+].resource = PastMedication
 * entry[+].resource = DetectedIssue1
 * entry[+].resource = Condition1
 * entry[+].resource = Inference1

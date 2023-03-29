@@ -16,14 +16,20 @@ define "Patient id":
 define "Condition":
   [Condition]
 
+define "Condition Timing":
+  ToString("Condition"[0].recordedDate) = '2023-03-28'
+
 define "Condition Code Value":
   "Condition".code.coding.code.value
 
 define "Had Ischemic Stroke":
   "Condition Code Value"[0] = "Ischemic Stroke".code
 
-define "Condition Reference":
+define "Medication":
+  [MedicationRequest]
+
+define "Medication Reference":
   if "Condition" is not null then
-    Tuple { reference: 'Condition/' + "Condition"[0].id }
+    Tuple { reference: 'Medication/' + "Medication".id }
   else
     Tuple { reference: 'Condition/unknown' }

@@ -49,19 +49,36 @@
   ],
   "action": [
     {
+      "title": "Action based on timing",
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql-identifier",
+            "expression": "Condition Timing"
+          }
+        }
+      ]
+    },
+    {
       "title": "Generate Report",
       "dynamicValue": [
         {
-          "path": "%action.description",
+          "path": "description",
           "expression": {
             "language": "text/fhirpath",
-            "expression": "description + ' for ' + %subject.name.given.first()"
+            "expression": "description + ' for patient ' + %subject.name.given.first()"
           }
         }
       ],
+      "definitionCanonical": "http://example.com/ActivityDefinition/GenerateReportActivity"
+    },
+    {
+      "title": "Ischemic Stroke Plan",
       "definitionCanonical": "http://example.com/PlanDefinition/IschemicStrokePlan",
       "action": [
         {
+          "title": "Order Medication",
           "condition": [
             {
               "kind": "applicability",
@@ -73,14 +90,14 @@
           ],
           "dynamicValue": [
             {
-              "path": "reasonReference",
+              "path": "medicationReference",
               "expression": {
                 "language": "text/cql-identifier",
-                "expression": "Condition Reference"
+                "expression": "Medication Reference"
               }
             }
           ],
-          "definitionCanonical": "http://example.com/PlanDefinition/NeurologicalAssessmentPlan"
+          "definitionCanonical": "http://example.com/ActivityDefinition/OrderMedicationActivity"
         }
       ]
     }
