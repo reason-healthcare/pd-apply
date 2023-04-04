@@ -149,6 +149,21 @@
           },
           {
             "resource": {
+              "resourceType": "Medication",
+              "id": "PastMedication",
+              "form": {
+                "coding": [
+                  {
+                    "code": "pill",
+                    "system": "http://snomed.info/sct",
+                    "display": "Pill"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "resource": {
               "resourceType": "DetectedIssue",
               "id": "DetectedIssue1",
               "status": "final",

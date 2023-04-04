@@ -77,7 +77,6 @@ Usage: #inline
 * encounter = Reference(Encounter/Encounter1)
 * doNotPerform = false
 * medicationReference = Reference(PastMedication)
-* medicationCodeableConcept = http://snomed.info/sct#376988009 "Levothyroxine sodium 75 microgram oral tablet"
 * dosageInstruction
   * sequence = 1
   * text = "75mcg daily"
