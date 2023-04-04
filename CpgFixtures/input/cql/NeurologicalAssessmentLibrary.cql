@@ -10,10 +10,9 @@ define "Patient id":
   Patient.id
 
 define "Condition":
-  [Condition]
-
-define "Condition Recorded Date":
-  "Condition".recordedDate.value
+  First([Condition] M
+    sort by recordedDate
+  )
 
 define "Timing of Service":
-  "Condition Recorded Date".first()
+  "Condition".recordedDate.value

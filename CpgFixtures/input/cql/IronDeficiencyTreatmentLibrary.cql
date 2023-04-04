@@ -14,10 +14,12 @@ define "Patient id":
   Patient.id
 
 define "Condition":
-  [Condition]
+  First([Condition] M
+    sort by recordedDate
+  )
 
 define "Condition Code Value":
-  "Condition".code.coding.code.value
+  "Condition".code.coding.first()
 
 define "Has anemia":
-  "Condition Code Value"[0] = "anemia".code
+  "Condition Code Value" = "anemia"

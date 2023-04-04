@@ -16,14 +16,16 @@ define "Patient id":
   Patient.id
 
 define "Observation":
-  [Observation]
+  First([Observation] M
+    sort by effective
+  )
 
 define "Observation Code":
-  "Observation"[0].code.coding.code.value
+  "Observation".code.coding.first()
 
 define "Needs CBC":
-  "Observation Code"[0] = "Unintentional weight loss".code
+  "Observation Code" = "Unintentional weight loss"
 
 define "Needs serum ferritin":
-  "Observation Code"[0] = "Inadequate mineral intake".code
+  "Observation Code" = "Inadequate mineral intake"
 

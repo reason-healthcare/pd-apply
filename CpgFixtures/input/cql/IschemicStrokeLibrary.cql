@@ -14,22 +14,26 @@ define "Patient id":
   Patient.id
 
 define "Condition":
-  [Condition]
+  First([Condition] M
+    sort by recordedDate
+  )
 
 define "Condition Timing":
-  ToString("Condition"[0].recordedDate) = '2023-03-28'
+  ToString("Condition".recordedDate) = '2023-03-28'
 
 define "Condition Code Value":
-  "Condition".code.coding.code.value
+  "Condition".code.coding.first()
 
 define "Had Ischemic Stroke":
-  "Condition Code Value"[0] = "Ischemic Stroke".code
+  "Condition Code Value" = "Ischemic Stroke"
 
 define "Medication":
-  [MedicationRequest]
+  First([MedicationRequest] M
+    sort by authoredOn
+  )
 
 define "Medication Reference":
-  if "Condition" is not null then
+  if "Medication" is not null then
     Tuple { reference: 'Medication/' + "Medication".id }
   else
     Tuple { reference: 'Condition/unknown' }
