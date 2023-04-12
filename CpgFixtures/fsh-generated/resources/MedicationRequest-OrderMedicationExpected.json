@@ -21,14 +21,8 @@
   "requester": {
     "reference": "Practitioner/Practitioner1"
   },
-  "medicationCodeableConcept": {
-    "coding": [
-      {
-        "code": "376988009",
-        "system": "http://snomed.info/sct",
-        "display": "Levothyroxine sodium 75 microgram oral tablet"
-      }
-    ]
+  "medicationReference": {
+    "reference": "Medication/PastMedication"
   },
   "dosageInstruction": [
     {

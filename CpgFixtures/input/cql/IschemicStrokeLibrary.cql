@@ -27,13 +27,14 @@ define "Condition Code Value":
 define "Had Ischemic Stroke":
   "Condition Code Value" = "Ischemic Stroke"
 
-define "Medication":
-  First([MedicationRequest] M
-    sort by authoredOn
-  )
+define "Medications":
+  [Medication]
+
+define "Active Medication":
+  Medications.where(status = 'active')
 
 define "Medication Reference":
-  if "Medication" is not null then
-    Tuple { reference: 'Medication/' + "Medication".id }
+  if "Active Medication" is not null then
+    Tuple { reference: 'Medication/' + "Active Medication".id }
   else
-    Tuple { reference: 'Condition/unknown' }
+    Tuple { reference: 'Medication/unknown' }

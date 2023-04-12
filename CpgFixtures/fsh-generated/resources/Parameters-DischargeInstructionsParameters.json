@@ -162,6 +162,13 @@
           {
             "resource": {
               "resourceType": "Medication",
+              "id": "CurrentMedication",
+              "status": "active"
+            }
+          },
+          {
+            "resource": {
+              "resourceType": "Medication",
               "id": "PastMedication",
               "form": {
                 "coding": [
@@ -171,7 +178,8 @@
                     "display": "Pill"
                   }
                 ]
-              }
+              },
+              "status": "inactive"
             }
           },
           {

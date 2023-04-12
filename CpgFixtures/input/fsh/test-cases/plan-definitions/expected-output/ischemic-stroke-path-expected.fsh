@@ -76,7 +76,7 @@ Usage: #inline
 * requester = Reference(Practitioner/Practitioner1)
 * encounter = Reference(Encounter/Encounter1)
 * doNotPerform = false
-* medicationReference = Reference(PastMedication)
+* medicationReference = Reference(CurrentMedication)
 * dosageInstruction
   * sequence = 1
   * text = "75mcg daily"

@@ -9,7 +9,7 @@ Usage: #example
 * priority = #routine
 * doNotPerform = false
 * intent = #proposal
-* productCodeableConcept = http://snomed.info/sct#376988009 "Levothyroxine sodium 75 microgram oral tablet"
+* productReference = Reference(PastMedication)
 * dosage
   * sequence = 1
   * text = "75mcg daily"

@@ -8,7 +8,7 @@ Usage: #example
 * subject = Reference(Patient1)
 * encounter = Reference(Encounter1)
 * requester = Reference(Practitioner1)
-* medicationCodeableConcept = http://snomed.info/sct#376988009 "Levothyroxine sodium 75 microgram oral tablet"
+* medicationReference = Reference(PastMedication)
 * dosageInstruction
   * sequence = 1
   * text = "75mcg daily"

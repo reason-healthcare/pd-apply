@@ -165,7 +165,7 @@
         },
         "doNotPerform": false,
         "medicationReference": {
-          "reference": "Medication/PastMedication"
+          "reference": "Medication/CurrentMedication"
         },
         "dosageInstruction": [
           {
