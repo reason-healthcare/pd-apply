@@ -183,7 +183,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Report Height and Weight Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -322,7 +322,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Discharge Follow Up Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -393,7 +393,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Iron Deficiency Treatment Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -483,7 +483,7 @@
 							"}",
 							"",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Ischemic Stroke Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -576,7 +576,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Anemia Screening Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -761,7 +761,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: CKD Management Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -888,7 +888,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Send Message Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -979,7 +979,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Registration Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -1278,7 +1278,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: CKD Pathway $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -1403,7 +1403,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Neurological Assessment Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -1529,7 +1529,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"pm.test(\"PlanDefinition: Discharge Instructions Plan $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
@@ -1786,7 +1786,7 @@
 							"  ]",
 							"}",
 							"",
-							"pm.test(\"PlanDefinition: IschemicStrokePathway $apply\", function () {",
+							"pm.test(\"PlanDefinition: Ischemic Stroke Pathway $apply\", function () {",
 							"    pm.response.to.have.status(200)",
 							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
 							"})"
