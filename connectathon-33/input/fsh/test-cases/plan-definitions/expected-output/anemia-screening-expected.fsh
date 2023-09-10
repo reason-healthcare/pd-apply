@@ -19,3 +19,8 @@ Usage: #inline
   * title = "Order CBC Lab Panel"
   * description = "Order CBC Lab Panel to screen for anemia"
   * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
+  * condition
+    * kind = #applicability
+    * expression
+      * language = #text/cql-identifier
+      * expression = "Needs CBC"

@@ -20,3 +20,8 @@ Usage: #inline
   * description = "Recommendation to administer TPA if patient had Ischemic Stroke"
   * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#dispense-medications "Dispense Medications"
   * textEquivalent = "Administer TPA intravenously"
+  * condition
+    * kind = #applicability
+    * expression
+      * language = #text/cql-identifier
+      * expression = "Had Ischemic Stroke"

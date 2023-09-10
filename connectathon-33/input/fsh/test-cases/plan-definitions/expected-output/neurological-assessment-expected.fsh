@@ -28,7 +28,7 @@ InstanceOf: ServiceRequest
 Usage: #inline
 * meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest"
 * status = #draft
-* intent = #option
+* intent = #proposal
 * instantiatesCanonical = "http://example.org/ActivityDefinition/OrderServiceActivity|0.1.0"
 * subject = Reference(Patient/Patient1)
 * encounter = Reference(Encounter/Encounter1)

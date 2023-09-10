@@ -42,7 +42,7 @@ Usage: #inline
 Instance: InlineCKDFollowUpRequestGroup
 InstanceOf: RequestGroup
 Usage: #inline
-* intent = #option
+* intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
@@ -56,7 +56,7 @@ Usage: #inline
 Instance: InlineCkdEducationRequestGroup
 InstanceOf: RequestGroup
 Usage: #inline
-* intent = #option
+* intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
@@ -81,7 +81,7 @@ Usage: #inline
 Instance: InlineCKDManagementRequestGroup
 InstanceOf: RequestGroup
 Usage: #inline
-* intent = #option
+* intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
@@ -101,7 +101,7 @@ Usage: #inline
 Instance: InlineSendMessageRequestGroup
 InstanceOf: RequestGroup
 Usage: #inline
-* intent = #option
+* intent = #proposal
 * status = #draft
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)

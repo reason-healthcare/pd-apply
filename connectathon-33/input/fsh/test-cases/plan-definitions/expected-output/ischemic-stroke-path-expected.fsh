@@ -40,7 +40,7 @@ Instance: GenerateReportRequest
 InstanceOf: Task
 Usage: #inline
 * status = #draft
-* intent = #option
+* intent = #proposal
 * instantiatesCanonical = "http://example.org/ActivityDefinition/GenerateReportActivity|0.1.0"
 * for = Reference(Patient/Patient1)
 * encounter = Reference(Encounter/Encounter1)
@@ -54,7 +54,7 @@ Usage: #inline
 Instance: InlineIschemicStrokeRequestGroup
 InstanceOf: RequestGroup
 Usage: #inline
-* intent = #option
+* intent = #proposal
 * status = #draft
 * subject = Reference(Patient/Patient1)
 * instantiatesCanonical = "http://example.org/PlanDefinition/IschemicStrokePlan|0.1.0"
@@ -70,7 +70,7 @@ Instance: OrderMedicationRequest
 InstanceOf: MedicationRequest
 Usage: #inline
 * status = #draft
-* intent = #option
+* intent = #proposal
 * instantiatesCanonical = "http://example.org/ActivityDefinition/OrderMedicationActivity|0.1.0"
 * subject = Reference(Patient/Patient1)
 * requester = Reference(Practitioner/Practitioner1)
