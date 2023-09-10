@@ -34,6 +34,6 @@ Instance: WeightTargetGoal
 InstanceOf: $cpg-goal
 Usage: #inline
 * subject = Reference(Patient1)
-* lifecycleStatus = #planned
+* lifecycleStatus = #proposed
 * description
   * text = "Weight target"
