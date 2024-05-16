@@ -35,6 +35,6 @@ define "Active Medication":
 
 define "Medication Reference":
   if "Active Medication" is not null then
-    Tuple { reference: 'Medication/' + "Active Medication".id }
+    FHIRHelpers.reference('Medication/' + "Active Medication".id)
   else
-    Tuple { reference: 'Medication/unknown' }
+    FHIRHelpers.reference('Medication/unknown')

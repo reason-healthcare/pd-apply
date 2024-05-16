@@ -13,6 +13,6 @@ define "Detected Issue":
 
 define "Record Detected Issue Reference":
   if "Detected Issue" is not null then
-    Tuple { reference: 'DetectedIssue/' + "Detected Issue".id }
+    FHIRHelpers.reference('DetectedIssue/' + "Detected Issue".id)
   else
-    Tuple { reference: 'DetectedIssue/unknown' }
+    FHIRHelpers.reference('DetectedIssue/unknown')

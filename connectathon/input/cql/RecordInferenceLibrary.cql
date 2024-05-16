@@ -13,6 +13,6 @@ define "Inference":
 
 define "Record Inference Reference":
   if "Inference" is not null then
-    Tuple { reference: 'Observation/' + "Inference".id }
+    FHIRHelpers.reference('Observation/' + "Inference".id)
   else
-    Tuple { reference: 'Observation/unknown' }
+    FHIRHelpers.reference('Observation/unknown')

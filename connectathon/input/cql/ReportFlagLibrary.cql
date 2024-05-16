@@ -13,6 +13,6 @@ define "Flag":
 
 define "Report Flag Reference":
   if "Flag" is not null then
-    Tuple { reference: 'Flag/' + "Flag".id }
+    FHIRHelpers.reference('Flag/' + "Flag".id)
   else
-    Tuple { reference: 'Flag/unknown' }
+    FHIRHelpers.reference('Flag/unknown')

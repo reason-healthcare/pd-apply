@@ -18,7 +18,7 @@ Usage: #example
     * path = "description"
     * expression
       * language = #text/fhirpath
-      * expression = "description + ' for patient ' + %subject.name.given.first()"
+      * expression = "%context.description + ' for patient ' + %subject.name.given.first()"
   * definitionCanonical = "http://example.org/ActivityDefinition/GenerateReportActivity"
 * action[+]
   * title = "Ischemic Stroke Plan"

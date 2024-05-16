@@ -12,4 +12,4 @@ Usage: #example
   * path = "payload[0].contentString"
   * expression
     * language = #text/fhirpath
-    * expression = "'Greeting: Hello! ' + %subject.name.given.first() + ' Message: ' + description + ' Practitioner: ' + %practitioner.name.given.first()"
+    * expression = "'Greeting: Hello! ' + %subject.name.given.first() + ' Message: ' + %context.description + ' Practitioner: ' + %practitioner.name.given.first()"

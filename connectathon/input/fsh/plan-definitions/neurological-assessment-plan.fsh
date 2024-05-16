@@ -7,6 +7,7 @@ Usage: #example
 * library = "http://example.org/Library/NeurologicalAssessmentLibrary"
 * action
   * title = "Order neurological exam"
+  * type = http://terminology.hl7.org/CodeSystem/action-type#create
   * dynamicValue
     * path = "occurrencePeriod.start"
     * expression

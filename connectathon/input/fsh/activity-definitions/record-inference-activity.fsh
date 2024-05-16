@@ -12,7 +12,7 @@ Usage: #example
   * path = "input[0].type"
   * expression
     * language = #text/fhirpath
-    * expression = "code"
+    * expression = "%context.code"
 * dynamicValue[+]
   * path = "input[0].valueReference"
   * expression

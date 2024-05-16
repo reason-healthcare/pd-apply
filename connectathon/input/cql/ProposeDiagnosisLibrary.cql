@@ -13,6 +13,6 @@ define "Condition":
 
 define "Propose Diagnosis Reference":
   if "Condition" is not null then
-    Tuple { reference: 'Condition/' + "Condition".id }
+    FHIRHelpers.reference('Condition/' + "Condition".id)
   else
-    Tuple { reference: 'Condition/unknown' }
+    FHIRHelpers.reference('Condition/unknown')

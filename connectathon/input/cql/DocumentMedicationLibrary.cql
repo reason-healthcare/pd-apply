@@ -19,6 +19,6 @@ define "Medication Proposal":
 
 define "Medication Proposal Reference":
   if "Medication Proposal" is not null then
-    Tuple { reference: 'MedicationRequest/' + "Medication Proposal".id }
+    FHIRHelpers.reference('MedicationRequest/' + "Medication Proposal".id)
   else
-    Tuple { reference: 'MedicationRequest/unknown' }
+    FHIRHelpers.reference('MedicationRequest/unknown')

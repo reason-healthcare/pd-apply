@@ -13,9 +13,9 @@ Usage: #example
   * path = "input[0].type"
   * expression
     * language = #text/fhirpath
-    * expression = "code"
+    * expression = "%context.code"
 * dynamicValue[+]
   * path = "input[0].valueCanonical"
   * expression
     * language = #text/fhirpath
-    * expression = "extension.where(url='http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith').value"
+    * expression = "%context.extension.where(url='http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith').value"

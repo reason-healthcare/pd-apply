@@ -21,5 +21,5 @@ define "Condition":
 define "Condition Code Value":
   "Condition".code.coding.first()
 
-define "Has anemia":
+define "Has Anemia":
   "Condition Code Value" = "anemia"
