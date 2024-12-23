@@ -13,6 +13,6 @@ define "Condition":
 
 define "Propose Diagnosis Reference":
   if "Condition" is not null then
-    FHIRHelpers.reference('Condition/' + "Condition".id)
+    { reference: 'Condition/' + "Condition".id }
   else
-    FHIRHelpers.reference('Condition/unknown')
+    null

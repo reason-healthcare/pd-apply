@@ -13,6 +13,6 @@ define "Flag":
 
 define "Report Flag Reference":
   if "Flag" is not null then
-    FHIRHelpers.reference('Flag/' + "Flag".id)
+    { reference: 'Flag/' + "Flag".id }
   else
-    FHIRHelpers.reference('Flag/unknown')
+    null

@@ -13,6 +13,6 @@ define "Detected Issue":
 
 define "Record Detected Issue Reference":
   if "Detected Issue" is not null then
-    FHIRHelpers.reference('DetectedIssue/' + "Detected Issue".id)
+    { reference: 'DetectedIssue/' + "Detected Issue".id }
   else
-    FHIRHelpers.reference('DetectedIssue/unknown')
+    null

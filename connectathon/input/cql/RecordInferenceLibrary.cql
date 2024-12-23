@@ -13,6 +13,6 @@ define "Inference":
 
 define "Record Inference Reference":
   if "Inference" is not null then
-    FHIRHelpers.reference('Observation/' + "Inference".id)
+    { reference: 'Observation/' + "Inference".id }
   else
-    FHIRHelpers.reference('Observation/unknown')
+    null

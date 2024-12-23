@@ -19,6 +19,6 @@ define "Medication Proposal":
 
 define "Medication Proposal Reference":
   if "Medication Proposal" is not null then
-    FHIRHelpers.reference('MedicationRequest/' + "Medication Proposal".id)
+    { reference: 'MedicationRequest/' + "Medication Proposal".id }
   else
-    FHIRHelpers.reference('MedicationRequest/unknown')
+    null

@@ -35,6 +35,6 @@ define "Active Medication":
 
 define "Medication Reference":
   if "Active Medication" is not null then
-    FHIRHelpers.reference('Medication/' + "Active Medication".id)
+    { reference: 'Medication/' + "Active Medication".id }
   else
-    FHIRHelpers.reference('Medication/unknown')
+    null

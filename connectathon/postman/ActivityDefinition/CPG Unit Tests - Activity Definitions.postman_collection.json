@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "95200d46-c710-4618-8f75-0dd0b51d06dc",
+		"_postman_id": "048a13b0-b51a-4f4b-8445-1a2360f3864b",
 		"name": "CPG Unit Tests - Activity Definitions",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25403373"
 	},
 	"item": [
 		{
@@ -983,8 +984,6 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"//const date = new Date()",
-							"//const today = date.toISOString() -- times will not math",
 							"const expected = {",
 							"  \"resourceType\": \"ImmunizationRecommendation\",",
 							"  \"id\": \"RecommendImmunizationExpected\",",
@@ -996,7 +995,7 @@
 							"  \"patient\": {",
 							"    \"reference\": \"Patient/Patient1\"",
 							"  },",
-							"  //\"date\": today,",
+							"//   \"date\": today,",
 							"  \"recommendation\": [",
 							"    {",
 							"      \"vaccineCode\": [",
@@ -1023,8 +1022,6 @@
 							"  ]",
 							"}",
 							"",
-							"//should have element * status = #draft, but this is not a part of the immunization recommendation specification",
-							"",
 							"delete expected.date",
 							"let response = pm.response.json()",
 							"",
@@ -1040,7 +1037,8 @@
 							"    _.expectToDeepEqual(response, expected, console)",
 							"})"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -1498,22 +1496,22 @@
 		},
 		{
 			"key": "contentEndpointAddress",
-			"value": "http://hapi.fhir.org/baseR4",
+			"value": "file:///Users/taylorkingston/projects/pd-apply/connectathon/output",
 			"type": "string"
 		},
 		{
 			"key": "contentEndpointType",
-			"value": "hl7-fhir-rest",
+			"value": "hl7-fhir-file",
 			"type": "string"
 		},
 		{
 			"key": "terminologyEndpointAddress",
-			"value": "http://hapi.fhir.org/baseR4",
+			"value": "file:///Users/taylorkingston/projects/pd-apply/connectathon/output",
 			"type": "string"
 		},
 		{
 			"key": "terminologyEndpointType",
-			"value": "hl7-fhir-rest",
+			"value": "hl7-fhir-file",
 			"type": "string"
 		}
 	]
