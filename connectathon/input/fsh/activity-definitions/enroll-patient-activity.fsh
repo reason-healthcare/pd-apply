@@ -6,7 +6,7 @@ Usage: #example
 * description = "Example Activity Definition for a recommendation to enroll a patient in a pathway"
 * kind = #Task
 * profile = $cpg-enrollmenttask
-* code = $cpg-activity-type#enrollment "Enroll in a pathway or strategy"
+* code = $cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

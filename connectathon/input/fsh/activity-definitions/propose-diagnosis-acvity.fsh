@@ -5,7 +5,7 @@ Usage: #example
 * description = "Example Activity Definition for a recommendation to propose a diagnosis"
 * kind = #Task
 * profile = $cpg-proposediagnosistask
-* code = $cpg-activity-type#propose-diagnosis "Propose a diagnosis"
+* code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

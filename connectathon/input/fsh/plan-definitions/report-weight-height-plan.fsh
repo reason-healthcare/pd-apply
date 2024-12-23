@@ -1,5 +1,5 @@
 Instance: ReportWeightHeightPlan
-InstanceOf: $cpg-computableplandefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(ReportWeightHeightPlan, PlanDefinition)
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"

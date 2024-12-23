@@ -1,5 +1,5 @@
 Instance: SendMessagePlan
-InstanceOf: $cpg-computableplandefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(SendMessagePlan, PlanDefinition)
 * type = http://terminology.hl7.org/CodeSystem/plan-definition-type#eca-rule

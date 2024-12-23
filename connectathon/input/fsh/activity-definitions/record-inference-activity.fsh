@@ -5,7 +5,7 @@ Usage: #example
 * description = "Example Activity Definition for a recommendation to record an inference"
 * kind = #Task
 * profile = $cpg-recordinferencetask
-* code = $cpg-activity-type#record-inference "Record an inference"
+* code = $cpg-activity-type-cs#record-inference "Record an inference"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

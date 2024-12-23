@@ -5,7 +5,7 @@ Usage: #example
 * description = "Order a medication activity"
 * kind = #MedicationRequest
 * profile = $cpg-medicationrequest
-* code = $cpg-activity-type#order-medication "Order a medication"
+* code = $cpg-activity-type-cs#order-medication "Order a medication"
 * priority = #routine
 * doNotPerform = false
 * intent = #proposal

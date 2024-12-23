@@ -1,5 +1,5 @@
 Instance: IschemicStrokePlan
-InstanceOf: $cpg-computableplandefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(IschemicStrokePlan, PlanDefinition)
 * description = "Definition of a plan to administer TPA if patient had ischemic stroke"

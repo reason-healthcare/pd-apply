@@ -1,5 +1,5 @@
 Instance: DischargeFollowUpPlan
-InstanceOf: $cpg-computableplandefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(DischargeFollowUpPlan, PlanDefinition)
 * description = "Definition of plan to monitor patient following discharge"

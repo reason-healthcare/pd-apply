@@ -1,8 +1,4 @@
 Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
-Alias: $cpg-computableactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity
-Alias: $cpg-knowledgeCapability = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability
-Alias: $cpg-knowledgeRepresentationLevel = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel
-Alias: $cpg-computablelibrary = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
 Alias: $cpg-task = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task
 
 Alias: $cpg-medicationrequestactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequestactivity
@@ -19,6 +15,7 @@ Alias: $cpg-proposediagnosisactivity = http://hl7.org/fhir/uv/cpg/StructureDefin
 Alias: $cpg-recorddetectedissueactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissueactivity
 Alias: $cpg-recordinferenceactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferenceactivity
 Alias: $cpg-reportflagactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagactivity
+Alias: $cpg-immunizationrequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrequest
 
 Alias: $cpg-documentmedicationtask = 	http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
 Alias: $cpg-administermedicationtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask
@@ -36,10 +33,8 @@ Alias: $cpg-recorddetectedissuetask = http://hl7.org/fhir/uv/cpg/StructureDefini
 Alias: $cpg-recordinferencetask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask
 Alias: $cpg-reportflagtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask
 
-Alias: $cpg-activity-type = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type
+Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs
 Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
-Alias: $cpg-shareablequestionnaire = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire
 
-Alias: $cpg-computableplandefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition
 Alias: $cpg-plan-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 Alias: $cpg-goal = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal

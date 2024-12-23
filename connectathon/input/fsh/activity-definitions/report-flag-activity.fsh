@@ -5,7 +5,7 @@ Usage: #example
 * description = "Example Activity Definition for a recommendation to report a flag"
 * kind = #Task
 * profile = $cpg-reportflagtask
-* code = $cpg-activity-type#report-flag "Report a flag"
+* code = $cpg-activity-type-cs#report-flag "Report a flag"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

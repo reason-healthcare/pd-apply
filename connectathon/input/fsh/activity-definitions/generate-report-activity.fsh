@@ -6,7 +6,7 @@ Usage: #example
 * description = "Example Activity Definition for a recommendation to generate a report"
 * kind = #Task
 * profile = $cpg-generatereporttask
-* code = $cpg-activity-type#generate-report "Generate a metric or case report"
+* code = $cpg-activity-type-cs#generate-report "Generate a metric or case report"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

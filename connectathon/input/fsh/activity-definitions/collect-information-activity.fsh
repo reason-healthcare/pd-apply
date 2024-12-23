@@ -6,7 +6,7 @@ Usage: #example
 * description = "Example Activity Definition for a recommendation to collect information"
 * kind = #Task
 * profile = $cpg-questionnairetask
-* code = $cpg-activity-type#collect-information "Collect information"
+* code = $cpg-activity-type-cs#collect-information "Collect information"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

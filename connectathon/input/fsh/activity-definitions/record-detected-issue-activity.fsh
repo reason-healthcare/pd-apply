@@ -5,7 +5,7 @@ Usage: #example
 * description = "Example Activity Definition for a recommendation to record a detected issue"
 * kind = #Task
 * profile = $cpg-recorddetectedissuetask
-* code = $cpg-activity-type#record-detected-issue "Record a detected issue"
+* code = $cpg-activity-type-cs#record-detected-issue "Record a detected issue"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

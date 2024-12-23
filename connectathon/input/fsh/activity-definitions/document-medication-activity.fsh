@@ -1,11 +1,11 @@
 Instance: DocumentMedicationActivity
-InstanceOf: FixedCPGComputableActivityDefinitionDocumentMedication
+InstanceOf: CPGDocumentMedicationActivity
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(DocumentMedicationActivity, ActivityDefinition)
 * description = "Example Activity Definition for a recommendation to document a medication"
 * kind = #Task
 * profile = $cpg-documentmedicationtask
-* code = $cpg-activity-type#document-medication "Document a medication"
+* code = $cpg-activity-type-cs#document-medication "Document a medication"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

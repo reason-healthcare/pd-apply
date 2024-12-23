@@ -1,5 +1,5 @@
 Instance: NeurologicalAssessmentPlan
-InstanceOf: $cpg-computableplandefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(NeurologicalAssessmentPlan, PlanDefinition)
 * description = "Definition of a plan to recommend nuerological assessment"

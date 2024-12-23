@@ -5,7 +5,7 @@ Usage: #example
 * description = "Dispense medication activity"
 * kind = #Task
 * profile = $cpg-dispensemedicationtask
-* code = $cpg-activity-type#dispense-medication "Dispense a medication"
+* code = $cpg-activity-type-cs#dispense-medication "Dispense a Medication"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

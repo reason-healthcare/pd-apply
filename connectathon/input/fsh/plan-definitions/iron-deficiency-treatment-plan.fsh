@@ -1,5 +1,5 @@
 Instance: IronDeficiencyTreatmentPlan
-InstanceOf: $cpg-computableplandefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(IronDeficiencyTreatmentPlan, PlanDefinition)
 * description = "Definition of a plan to prescribe iron supplement if patient has diagnosis or iron deficiency anemia"

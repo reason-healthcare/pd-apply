@@ -1,5 +1,5 @@
 Instance: RegistrationQuestionnaire
-InstanceOf: $cpg-shareablequestionnaire
+InstanceOf: CPGComputableQuestionnaire
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(RegistrationQuestionnaire, Questionnaire)
 * description = "Questionnaire to collect identifying infomration"

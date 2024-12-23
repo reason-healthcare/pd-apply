@@ -1,7 +1,7 @@
 Instance: RegistrationPlan
-InstanceOf: $cpg-computableplandefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #example
-* insert KnowledgeArtifactDefinitionMetadata(RegistrationPlan, $cpg-computableplandefinition)
+* insert KnowledgeArtifactDefinitionMetadata(RegistrationPlan, PlanDefinition)
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
 * description = "Definition of plan to collect information for patient registration"
 * action

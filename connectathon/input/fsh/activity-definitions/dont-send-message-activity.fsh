@@ -5,7 +5,7 @@ Usage: #example
 * description = "Example Activity Definition for a recommendation not to send a message"
 * kind = #CommunicationRequest
 * profile = $cpg-communicationrequest
-* code = $cpg-activity-type#send-message "Send a message"
+* code = $cpg-activity-type-cs#send-message "Send a message"
 * doNotPerform = true
 * intent = #proposal
 * dynamicValue[+]

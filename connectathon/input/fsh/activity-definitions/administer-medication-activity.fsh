@@ -1,11 +1,11 @@
 Instance: AdministerMedicationActivity
-InstanceOf: $cpg-administermedication
+InstanceOf: CPGAdministerMedicationActivity
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(AdministerMedicationActivity, ActivityDefinition)
 * description = "Example Activity Definition for a recommendation to administer a medication"
 * kind = #Task
 * profile = $cpg-administermedicationtask
-* code = $cpg-activity-type#administer-medication "Administer a medication"
+* code = $cpg-activity-type-cs#administer-medication "Administer a medication"
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]

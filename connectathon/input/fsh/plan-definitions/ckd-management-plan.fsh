@@ -1,5 +1,5 @@
 Instance: CKDManagementPlan
-InstanceOf: $cpg-computableplandefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(CKDManagementPlan, PlanDefinition)
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"

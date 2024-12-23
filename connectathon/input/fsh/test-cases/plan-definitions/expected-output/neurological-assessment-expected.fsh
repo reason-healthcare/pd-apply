@@ -34,5 +34,5 @@ Usage: #inline
 * encounter = Reference(Encounter/Encounter1)
 * requester = Reference(Practitioner/Practitioner1)
 * doNotPerform = false
-* code = $cpg-activity-type#order-service "Order a service"
+* code = $cpg-activity-type-cs#order-service "Order a service"
 * occurrencePeriod.start = "2023-01-01"
