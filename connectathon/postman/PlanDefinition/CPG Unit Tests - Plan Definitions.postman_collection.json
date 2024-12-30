@@ -1600,6 +1600,129 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "PlanDefinition - DischargeInstructions2 Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const expected = {",
+							"  \"resourceType\": \"Bundle\",",
+							"  \"id\": \"DischargeInstructionsExpected2\",",
+							"  \"type\": \"collection\",",
+							"  \"entry\": [",
+							"    {",
+							"      \"fullUrl\": \"http://apply-processor/RequestGroup/DischargeInstructionsRequestGroup\",",
+							"      \"resource\": {",
+							"        \"resourceType\": \"RequestGroup\",",
+							"        \"id\": \"DischargeInstructionsRequestGroup\",",
+							"        \"intent\": \"proposal\",",
+							"        \"status\": \"draft\",",
+							"        \"subject\": {",
+							"          \"reference\": \"Patient/Patient1\"",
+							"        },",
+							"        \"author\": {",
+							"          \"reference\": \"Practitioner/Practitioner1\"",
+							"        },",
+							"        \"encounter\": {",
+							"          \"reference\": \"Encounter/Encounter1\"",
+							"        },",
+							"        \"instantiatesCanonical\": [",
+							"          \"http://example.org/PlanDefinition/DischargeInstructionsPlan|0.1.0\"",
+							"        ],",
+							"        \"action\": [",
+							"          {",
+							"            \"title\": \"Send message with discharge instructions\",",
+							"            \"code\": [",
+							"              {",
+							"                \"coding\": [",
+							"                  {",
+							"                    \"code\": \"provide-counseling\",",
+							"                    \"system\": \"http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs\",",
+							"                    \"display\": \"Provide Counseling\"",
+							"                  }",
+							"                ]",
+							"              }",
+							"            ],",
+							"            \"type\": {",
+							"              \"coding\": [",
+							"                {",
+							"                  \"code\": \"create\",",
+							"                  \"system\": \"http://terminology.hl7.org/CodeSystem/action-type\"",
+							"                }",
+							"              ]",
+							"            },",
+							"            \"resource\": {",
+							"              \"reference\": \"CommunicationRequest/DischargeMessageRequest\"",
+							"            }",
+							"          }",
+							"        ]",
+							"      }",
+							"    },",
+							"    {",
+							"      \"fullUrl\": \"http://apply-processor/CommunicationRequest/DischargeMessageRequest\",",
+							"      \"resource\": {",
+							"        \"resourceType\": \"CommunicationRequest\",",
+							"        \"id\": \"DischargeMessageRequest\",",
+							"        \"status\": \"draft\",",
+							"        \"subject\": {",
+							"          \"reference\": \"Patient/Patient1\"",
+							"        },",
+							"        \"requester\": {",
+							"          \"reference\": \"Practitioner/Practitioner1\"",
+							"        },",
+							"        \"encounter\": {",
+							"          \"reference\": \"Encounter/Encounter1\"",
+							"        },",
+							"        \"doNotPerform\": false,",
+							"        \"payload\": [",
+							"          {",
+							"            \"contentString\": \"Provide patient discharge instructions for Alice\"",
+							"          }",
+							"        ]",
+							"      }",
+							"    }",
+							"  ]",
+							"}",
+							"",
+							"",
+							"pm.test(\"PlanDefinition: CKD Education Plan $apply\", function () {",
+							"    pm.response.to.have.status(200)",
+							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
+							"})"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json+fhir",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"resourceType\": \"Parameters\",\n    \"id\": \"DischargeInstructionsParameters\",\n    \"parameter\": [\n        {\n            \"name\": \"subject\",\n            \"valueString\": \"Patient/Patient1\"\n        },\n        {\n            \"name\": \"practitioner\",\n            \"valueString\": \"Practitioner/Practitioner1\"\n        },\n        {\n            \"name\": \"encounter\",\n            \"valueString\": \"Encounter/Encounter1\"\n        },\n        {\n        \"name\": \"planDefinition\",\n        \"resource\": {\n            \"resourceType\": \"PlanDefinition\",\n            \"id\": \"DischargeInstructionsPlan2\",\n            \"meta\": {\n            \"profile\": [\n                \"http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition\"\n            ]\n            },\n            \"url\": \"http://example.org/PlanDefinition/DischargeInstructionsPlan2\",\n            \"name\": \"DischargeInstructionsPlan2\",\n            \"title\": \"PlanDefinition DischargeInstructionsPlan2\",\n            \"status\": \"draft\",\n            \"experimental\": true,\n            \"publisher\": \"Example\",\n            \"jurisdiction\": [\n            {\n                \"coding\": [\n                {\n                    \"code\": \"001\",\n                    \"system\": \"http://unstats.un.org/unsd/methods/m49/m49.htm\",\n                    \"display\": \"World\"\n                }\n                ]\n            }\n            ],\n            \"version\": \"0.1.0\",\n            \"description\": \"Provide patient discharge instructions\",\n            \"type\": {\n            \"coding\": [\n                {\n                \"code\": \"clinical-protocol\",\n                \"system\": \"http://terminology.hl7.org/CodeSystem/plan-definition-type\",\n                \"display\": \"Clinical Protocol\"\n                }\n            ]\n            },\n            \"action\": [\n            {\n                \"title\": \"Send message with discharge instructions\",\n                \"type\": {\n                \"coding\": [\n                    {\n                    \"code\": \"create\",\n                    \"system\": \"http://terminology.hl7.org/CodeSystem/action-type\"\n                    }\n                ]\n                },\n                \"code\": [\n                {\n                    \"coding\": [\n                    {\n                        \"code\": \"provide-counseling\",\n                        \"system\": \"http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs\",\n                        \"display\": \"Provide Counseling\"\n                    }\n                    ]\n                }\n                ],\n                \"dynamicValue\": [\n                {\n                    \"path\": \"payload[0].contentString\",\n                    \"expression\": {\n                    \"language\": \"text/fhirpath\",\n                    \"expression\": \"%action.title + ' for ' + %subject.name.given.first()\"\n                    }\n                }\n                ],\n                \"definitionCanonical\": \"http://example.org/ActivityDefinition/SendMessageActivity\"\n            }\n            ]\n        }\n        },\n        {\n            \"name\": \"contentEndpoint\",\n            \"resource\": {\n                \"resourceType\": \"Endpoint\",\n                \"address\": \"{{contentEndpointAddress}}\",\n                \"status\": \"active\",\n                \"payloadType\": [\n                    {\n                        \"coding\": [\n                            {\n                                \"code\": \"content\"\n                            }\n                        ]\n                    }\n                ],\n                \"connectionType\": {\n                    \"code\": \"{{contentEndpointType}}\"\n                }\n            }\n        },\n        {\n            \"name\": \"terminologyEndpoint\",\n            \"resource\": {\n                \"resourceType\": \"Endpoint\",\n                \"address\": \"{{terminologyEndpointAddress}}\",\n                \"status\": \"active\",\n                \"payloadType\": [\n                    {\n                        \"coding\": [\n                            {\n                                \"code\": \"terminology\"\n                            }\n                        ]\n                    }\n                ],\n                \"connectionType\": {\n                    \"code\": \"{{terminologyEndpointType}}\"\n                }\n            }\n        },\n        {\n            \"name\": \"data\",\n            \"resource\": {\n                \"resourceType\": \"Bundle\",\n                \"id\": \"PatientTestBundle1\",\n                \"type\": \"collection\",\n                \"entry\": [\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Patient\",\n                            \"id\": \"Patient1\",\n                            \"name\": [\n                                {\n                                    \"given\": [\n                                        \"Alice\"\n                                    ]\n                                }\n                            ]\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Encounter\",\n                            \"id\": \"Encounter1\",\n                            \"status\": \"in-progress\",\n                            \"class\": {\n                                \"code\": \"AMB\",\n                                \"system\": \"http://terminology.hl7.org/CodeSystem/v3-ActCode\"\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"participant\": [\n                                {\n                                    \"individual\": {\n                                        \"reference\": \"Practitioner/Practitioner1\"\n                                    }\n                                }\n                            ]\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Practitioner\",\n                            \"id\": \"Practitioner1\",\n                            \"name\": [\n                                {\n                                    \"given\": [\n                                        \"Michael\"\n                                    ]\n                                }\n                            ]\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"MedicationRequest\",\n                            \"id\": \"PastMedicationRequest\",\n                            \"status\": \"active\",\n                            \"intent\": \"order\",\n                            \"authoredOn\": \"2023-01-01\",\n                            \"medicationCodeableConcept\": {\n                                \"text\": \"Some medication\"\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            }\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"DetectedIssue\",\n                            \"id\": \"DetectedIssue1\",\n                            \"status\": \"final\",\n                            \"code\": {\n                                \"coding\": [\n                                    {\n                                        \"code\": \"TIME\",\n                                        \"system\": \"http://terminology.hl7.org/CodeSystem/v3-ActCode\",\n                                        \"display\": \"Time-related Detected Issue\"\n                                    }\n                                ]\n                            },\n                            \"severity\": \"high\",\n                            \"patient\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"identifiedDateTime\": \"2023-01-01\"\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Condition\",\n                            \"id\": \"Condition1\",\n                            \"clinicalStatus\": {\n                                \"coding\": [\n                                    {\n                                        \"code\": \"active\",\n                                        \"system\": \"http://terminology.hl7.org/CodeSystem/condition-clinical\"\n                                    }\n                                ]\n                            },\n                            \"verificationStatus\": {\n                                \"coding\": [\n                                    {\n                                        \"code\": \"provisional\",\n                                        \"system\": \"http://terminology.hl7.org/CodeSystem/condition-ver-status\"\n                                    }\n                                ]\n                            },\n                            \"category\": [\n                                {\n                                    \"coding\": [\n                                        {\n                                            \"code\": \"problem-list-item\",\n                                            \"system\": \"http://terminology.hl7.org/CodeSystem/condition-category\"\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"code\": {\n                                \"coding\": [\n                                    {\n                                        \"code\": \"422504002\",\n                                        \"system\": \"http://snomed.info/sct\",\n                                        \"display\": \"Ischemic stroke (disorder)\"\n                                    }\n                                ]\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"recordedDate\": \"2023-01-01\"\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Observation\",\n                            \"id\": \"Inference1\",\n                            \"status\": \"final\",\n                            \"code\": {\n                                \"text\": \"Inference\",\n                                \"coding\": [\n                                    {\n                                        \"code\": \"448765001\",\n                                        \"system\": \"http://snomed.info/sct\",\n                                        \"display\": \"Unintentional weight loss (finding)\"\n                                    }\n                                ]\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"effectiveDateTime\": \"2023-01-01\"\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Flag\",\n                            \"id\": \"Flag1\",\n                            \"status\": \"active\",\n                            \"category\": [\n                                {\n                                    \"coding\": [\n                                        {\n                                            \"code\": \"admin\",\n                                            \"system\": \"http://terminology.hl7.org/CodeSystem/flag-category\",\n                                            \"display\": \"Administrative\"\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"code\": {\n                                \"text\": \"Flag\"\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"period\": {\n                                \"start\": \"2023-01-01\",\n                                \"end\": \"2024-01-01\"\n                            }\n                        }\n                    }\n                ]\n            }\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{cpgServer}}/PlanDefinition/$apply",
+					"host": [
+						"{{cpgServer}}"
+					],
+					"path": [
+						"PlanDefinition",
+						"$apply"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [

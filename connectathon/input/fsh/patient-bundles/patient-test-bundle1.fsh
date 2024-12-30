@@ -1,18 +1,18 @@
 Instance: Patient1
 InstanceOf: Patient
-Usage: #inline
+Usage: #example
 * name
   * given = "Alice"
 
 Instance: Practitioner1
 InstanceOf: Practitioner
-Usage: #inline
+Usage: #example
 * name
   * given = "Michael"
 
 Instance: Encounter1
 InstanceOf: Encounter
-Usage: #inline
+Usage: #example
 * status = #in-progress
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
 * subject = Reference(Patient1)
@@ -20,7 +20,7 @@ Usage: #inline
 
 Instance: PastMedicationRequest
 InstanceOf: MedicationRequest
-Usage: #inline
+Usage: #example
 * status = #active
 * intent = #order
 * authoredOn = "2023-01-01"
@@ -29,18 +29,18 @@ Usage: #inline
 
 Instance: CurrentMedication
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * status = #active
 
 Instance: PastMedication
 InstanceOf: Medication
-Usage: #inline
+Usage: #example
 * form = http://snomed.info/sct#pill "Pill"
 * status = #inactive
 
 Instance: DetectedIssue1
 InstanceOf: DetectedIssue
-Usage: #inline
+Usage: #example
 * status = #final
 * code = http://terminology.hl7.org/CodeSystem/v3-ActCode#TIME "Time-related Detected Issue"
 * severity = #high
@@ -49,7 +49,7 @@ Usage: #inline
 
 Instance: Condition1
 InstanceOf: Condition
-Usage: #inline
+Usage: #example
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
@@ -59,7 +59,7 @@ Usage: #inline
 
 Instance: Inference1
 InstanceOf: Observation
-Usage: #inline
+Usage: #example
 * status = #final
 * code
   * text = "Inference"
@@ -69,7 +69,7 @@ Usage: #inline
 
 Instance: Flag1
 InstanceOf: Flag
-Usage: #inline
+Usage: #example
 * status = #active
 * category = http://terminology.hl7.org/CodeSystem/flag-category#admin "Administrative"
 * code

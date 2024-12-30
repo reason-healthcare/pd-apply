@@ -34,7 +34,16 @@ Alias: $cpg-recordinferencetask = http://hl7.org/fhir/uv/cpg/StructureDefinition
 Alias: $cpg-reportflagtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask
 
 Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs
-Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
+Alias: $codesystem-observation-status = http://hl7.org/fhir/observation-status
+
+Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs
 
 Alias: $cpg-plan-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 Alias: $cpg-goal = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
+
+
+// Questionnaires
+Alias: $launch-context = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext
+Alias: $launch-context-codes = http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext
+Alias: $item-population-context = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext
+Alias: $initial-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression
