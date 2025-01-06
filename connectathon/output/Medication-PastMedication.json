@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Medication",
+  "id" : "PastMedication",
+  "status" : "inactive",
+  "form" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "pill",
+      "display" : "Pill"
+    }]
+  }
+}
