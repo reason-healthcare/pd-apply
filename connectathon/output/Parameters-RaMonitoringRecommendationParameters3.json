@@ -1,6 +1,6 @@
 {
   "resourceType" : "Parameters",
-  "id" : "RaMonitoringRecommendationParameters-QR",
+  "id" : "RaMonitoringRecommendationParameters3",
   "parameter" : [{
     "name" : "subject",
     "valueString" : "Patient/Patient1"
@@ -242,6 +242,29 @@
             "end" : "2024-01-01"
           }
         }
+      },
+      {
+        "resource" : {
+          "resourceType" : "Observation",
+          "id" : "ActiveRaTreatmentFeature1",
+          "meta" : {
+            "profile" : ["http://example.org/StructureDefinition/ActiveRaTreatmentFeature"]
+          },
+          "status" : "final",
+          "code" : {
+            "coding" : [{
+              "system" : "http://example.org/CodeSystem/CaseFeatureCodes",
+              "code" : "on-ra-treatment"
+            }]
+          },
+          "subject" : {
+            "reference" : "Patient/Patient1"
+          },
+          "valueBoolean" : true,
+          "derivedFrom" : [{
+            "reference" : "QuestionnaireResponse/RaQuestionnaireResponse3"
+          }]
+        }
       }]
     }
   },
@@ -249,10 +272,10 @@
     "name" : "questionnaireResponse",
     "resource" : {
       "resourceType" : "QuestionnaireResponse",
-      "id" : "RaQuestionnaireResponse2",
+      "id" : "RaQuestionnaireResponse3",
       "contained" : [{
         "resourceType" : "Questionnaire",
-        "id" : "RaQuestionnaire2",
+        "id" : "RaQuestionnaire3",
         "extension" : [{
           "extension" : [{
             "url" : "name",
@@ -350,7 +373,7 @@
           "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation.valueBoolean",
           "text" : "Actual result",
           "answer" : [{
-            "valueBoolean" : true
+            "valueBoolean" : false
           }]
         },
         {

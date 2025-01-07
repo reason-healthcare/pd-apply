@@ -1,54 +1,28 @@
-Instance: RaMonitoringRecommendationExpected-QR
+Instance: RaMonitoringRecommendationExpected3
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
 * entry[0]
-  * fullUrl = "http://apply-processor/RequestGroup/RaMonitoringRecommendationRequestGroup2"
-  * resource = RaMonitoringRecommendationRequestGroup2
+  * fullUrl = "http://apply-processor/RequestGroup/RaMonitoringRecommendationRequestGroup3"
+  * resource = RaMonitoringRecommendationRequestGroup3
 * entry[+]
-  * fullUrl = "http://apply-processor/ServiceRequest/OrderTestingRequest2"
-  * resource = OrderTestingRequest2
+  * fullUrl = "http://apply-processor/QuestionnaireResponse/RaQuestionnaireResponse3"
+  * resource = RaQuestionnaireResponse3
 * entry[+]
-  * fullUrl = "http://apply-processor/QuestionnaireResponse/RaQuestionnaireResponse2"
-  * resource = RaQuestionnaireResponse2
-* entry[+]
-  * fullUrl = "http://apply-processor/Observation/ActiveRaTreatmentFeature2"
-  * resource = ActiveRaTreatmentFeature2
+  * fullUrl = "http://apply-processor/Observation/ActiveRaTreatmentFeature3"
+  * resource = ActiveRaTreatmentFeature3
 
-Instance: RaMonitoringRecommendationRequestGroup2
+Instance: RaMonitoringRecommendationRequestGroup3
 InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
 * status = #draft
 * subject = Reference(Patient/Patient1)
 * instantiatesCanonical = Canonical(RaMonitoringRecommendation)
-* action
-  * title = "Order monitoring tests for antirheumatic drug therapy."
-  * description = "Order monitoring tests for antirheumatic drug therapy."
-  * code = $cpg-common-process#diagnostic-testing
-  * type = http://terminology.hl7.org/CodeSystem/action-type#create
-  * condition
-    * kind = #applicability
-    * expression
-      * language = #text/cql-identifier
-      * expression = "Order monitoring tests if on RA treatment"
-  * resource = Reference(OrderTestingRequest2)
 
-Instance: OrderTestingRequest2
-InstanceOf: $cpg-servicerequest
-Usage: #inline
-* status = #draft
-* doNotPerform = false
-* intent = #proposal
-* instantiatesCanonical = Canonical(OrderServiceActivity)
-* code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#order-service "Order a service"
-* subject = Reference(Patient1)
-* encounter = Reference(Encounter1)
-* requester = Reference(Practitioner1)
-
-Instance: RaQuestionnaireResponse2
+Instance: RaQuestionnaireResponse3
 InstanceOf: QuestionnaireResponse
-Usage: #inline
+Usage: #example
 * insert QuestionnaireResponseMetaData(RaQuestionnaire2)
 * subject = Reference(Patient/Patient1)
 * authored  = "2023-12-06T11:45:33+11:00"
@@ -59,7 +33,7 @@ Usage: #inline
   * item[+]
     * insert QuestionnaireItem(ActiveRaTreatmentFeature, Observation.valueBoolean)
     * text = "Actual result"
-    * answer[+].valueBoolean = true
+    * answer[+].valueBoolean = false
   * item[+]
     * insert QuestionnaireItem(ActiveRaTreatmentFeature, Observation.status)
     * text = "registered | preliminary | final | amended +"
@@ -68,9 +42,9 @@ Usage: #inline
     * insert QuestionnaireItem(ActiveRaTreatmentFeature, Observation.code)
     * text = "Type of observation (code / type)"
     * answer[+].valueCoding = CaseFeatureCodes#on-ra-treatment
-* contained[+] = RaQuestionnaire2
+* contained[+] = RaQuestionnaire3
 
-Instance: RaQuestionnaire2
+Instance: RaQuestionnaire3
 InstanceOf: Questionnaire
 Usage: #example
 * insert QuestionnaireMetaData(RaQuestionnaire2)
@@ -116,12 +90,12 @@ Usage: #example
         * language = #text/cql-expression
         * expression = "%ActiveRaTreatmentFeature.value[x]"
 
-Instance: ActiveRaTreatmentFeature2
+Instance: ActiveRaTreatmentFeature3
 InstanceOf: ActiveRaTreatmentFeature
 Usage: #inline
-* derivedFrom = Reference(QuestionnaireResponse/RaQuestionnaireResponse2)
+* derivedFrom = Reference(QuestionnaireResponse/RaQuestionnaireResponse3)
 * status = #final
 * code = CaseFeatureCodes#on-ra-treatment
 * subject = Reference(Patient/Patient1)
-* valueBoolean = true
+* valueBoolean = false
 

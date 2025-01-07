@@ -124,16 +124,16 @@
       "codes" : {
          "def" : [ {
             "localId" : "5",
-            "locator" : "8:1-8:84",
+            "locator" : "8:1-8:73",
             "name" : "On RA Treatment Feature",
-            "id" : "on-medication-RA Treatment",
+            "id" : "on-ra-treatment",
             "accessLevel" : "Public",
             "annotation" : [ {
                "type" : "Annotation",
                "s" : {
                   "r" : "5",
                   "s" : [ {
-                     "value" : [ "","code ","\"On RA Treatment Feature\"",": ","'on-medication-RA Treatment'"," from " ]
+                     "value" : [ "","code ","\"On RA Treatment Feature\"",": ","'on-ra-treatment'"," from " ]
                   }, {
                      "r" : "4",
                      "s" : [ {
@@ -144,7 +144,7 @@
             } ],
             "codeSystem" : {
                "localId" : "4",
-               "locator" : "8:67-8:84",
+               "locator" : "8:56-8:73",
                "name" : "CaseFeatureCodes"
             }
          }, {

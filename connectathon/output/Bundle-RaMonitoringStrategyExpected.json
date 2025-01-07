@@ -1,12 +1,12 @@
 {
   "resourceType" : "Bundle",
-  "id" : "RaMonitoringRecommendationExpected-QR",
+  "id" : "RaMonitoringStrategyExpected",
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://apply-processor/RequestGroup/RaMonitoringRecommendationRequestGroup2",
+    "fullUrl" : "http://apply-processor/RequestGroup/RaMonitoringRecommendationRequestGroup4",
     "resource" : {
       "resourceType" : "RequestGroup",
-      "id" : "RaMonitoringRecommendationRequestGroup2",
+      "id" : "RaMonitoringRecommendationRequestGroup4",
       "instantiatesCanonical" : ["http://example.org/PlanDefinition/RaMonitoringRecommendation"],
       "status" : "draft",
       "intent" : "proposal",
@@ -36,49 +36,19 @@
           }]
         },
         "resource" : {
-          "reference" : "ServiceRequest/OrderTestingRequest2"
+          "reference" : "ServiceRequest/OrderTestingRequest4"
         }
       }]
     }
   },
   {
-    "fullUrl" : "http://apply-processor/ServiceRequest/OrderTestingRequest2",
-    "resource" : {
-      "resourceType" : "ServiceRequest",
-      "id" : "OrderTestingRequest2",
-      "meta" : {
-        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest"]
-      },
-      "instantiatesCanonical" : ["http://example.org/ActivityDefinition/OrderServiceActivity"],
-      "status" : "draft",
-      "intent" : "proposal",
-      "doNotPerform" : false,
-      "code" : {
-        "coding" : [{
-          "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
-          "code" : "order-service",
-          "display" : "Order a service"
-        }]
-      },
-      "subject" : {
-        "reference" : "Patient/Patient1"
-      },
-      "encounter" : {
-        "reference" : "Encounter/Encounter1"
-      },
-      "requester" : {
-        "reference" : "Practitioner/Practitioner1"
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://apply-processor/QuestionnaireResponse/RaQuestionnaireResponse2",
+    "fullUrl" : "http://apply-processor/QuestionnaireResponse/OrderTestingRequest1",
     "resource" : {
       "resourceType" : "QuestionnaireResponse",
-      "id" : "RaQuestionnaireResponse2",
+      "id" : "RaQuestionnaireResponse4",
       "contained" : [{
         "resourceType" : "Questionnaire",
-        "id" : "RaQuestionnaire2",
+        "id" : "RaQuestionnaire4",
         "extension" : [{
           "extension" : [{
             "url" : "name",
@@ -93,7 +63,7 @@
           }],
           "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
         }],
-        "url" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",
+        "url" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire1",
         "status" : "draft",
         "item" : [{
           "extension" : [{
@@ -158,7 +128,7 @@
           }]
         }]
       }],
-      "questionnaire" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",
+      "questionnaire" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire1",
       "status" : "completed",
       "subject" : {
         "reference" : "Patient/Patient1"
@@ -176,7 +146,7 @@
           "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation.valueBoolean",
           "text" : "Actual result",
           "answer" : [{
-            "valueBoolean" : true
+            "valueBoolean" : false
           }]
         },
         {
@@ -201,30 +171,6 @@
             }
           }]
         }]
-      }]
-    }
-  },
-  {
-    "fullUrl" : "http://apply-processor/Observation/ActiveRaTreatmentFeature2",
-    "resource" : {
-      "resourceType" : "Observation",
-      "id" : "ActiveRaTreatmentFeature2",
-      "meta" : {
-        "profile" : ["http://example.org/StructureDefinition/ActiveRaTreatmentFeature"]
-      },
-      "status" : "final",
-      "code" : {
-        "coding" : [{
-          "system" : "http://example.org/CodeSystem/CaseFeatureCodes",
-          "code" : "on-ra-treatment"
-        }]
-      },
-      "subject" : {
-        "reference" : "Patient/Patient1"
-      },
-      "valueBoolean" : true,
-      "derivedFrom" : [{
-        "reference" : "QuestionnaireResponse/RaQuestionnaireResponse2"
       }]
     }
   }]

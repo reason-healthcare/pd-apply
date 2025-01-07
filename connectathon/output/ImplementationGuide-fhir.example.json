@@ -5,7 +5,7 @@
   "version" : "0.2.0",
   "name" : "CpgFixtures",
   "status" : "draft",
-  "date" : "2025-01-06T15:11:28-05:00",
+  "date" : "2025-01-07T16:44:00-05:00",
   "publisher" : "Example Publisher",
   "packageId" : "fhir.example",
   "license" : "CC0-1.0",
@@ -1696,9 +1696,9 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/RaMonitoringRecommendationExpected"
+        "reference" : "Bundle/RaMonitoringRecommendationExpected1"
       },
-      "name" : "RaMonitoringRecommendationExpected",
+      "name" : "RaMonitoringRecommendationExpected1",
       "exampleBoolean" : true
     },
     {
@@ -1707,9 +1707,20 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Bundle/RaMonitoringRecommendationExpected-QR"
+        "reference" : "Bundle/RaMonitoringRecommendationExpected2"
       },
-      "name" : "RaMonitoringRecommendationExpected-QR",
+      "name" : "RaMonitoringRecommendationExpected2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/RaMonitoringRecommendationExpected3"
+      },
+      "name" : "RaMonitoringRecommendationExpected3",
       "exampleBoolean" : true
     },
     {
@@ -1729,9 +1740,9 @@
         "valueString" : "Parameters"
       }],
       "reference" : {
-        "reference" : "Parameters/RaMonitoringRecommendationParameters"
+        "reference" : "Parameters/RaMonitoringRecommendationParameters1"
       },
-      "name" : "RaMonitoringRecommendationParameters",
+      "name" : "RaMonitoringRecommendationParameters1",
       "exampleBoolean" : true
     },
     {
@@ -1740,9 +1751,54 @@
         "valueString" : "Parameters"
       }],
       "reference" : {
-        "reference" : "Parameters/RaMonitoringRecommendationParameters-QR"
+        "reference" : "Parameters/RaMonitoringRecommendationParameters2"
       },
-      "name" : "RaMonitoringRecommendationParameters-QR",
+      "name" : "RaMonitoringRecommendationParameters2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/RaMonitoringRecommendationParameters3"
+      },
+      "name" : "RaMonitoringRecommendationParameters3",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RaMonitoringStrategy"
+      },
+      "name" : "RA Monitoring Strategy",
+      "description" : "Strategy for monitoring tests for antirheumatic drug therapy for Ra.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/RaMonitoringStrategyExpected"
+      },
+      "name" : "RaMonitoringStrategyExpected",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/RaMonitoringStrategyParameters"
+      },
+      "name" : "RaMonitoringStrategyParameters",
       "exampleBoolean" : true
     },
     {
@@ -1754,6 +1810,39 @@
         "reference" : "Questionnaire/RaQuestionnaire2"
       },
       "name" : "RaQuestionnaire2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/RaQuestionnaire3"
+      },
+      "name" : "RaQuestionnaire3",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/RaQuestionnaireResponse2"
+      },
+      "name" : "RaQuestionnaireResponse2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/RaQuestionnaireResponse3"
+      },
+      "name" : "RaQuestionnaireResponse3",
       "exampleBoolean" : true
     },
     {
@@ -1923,7 +2012,7 @@
         "reference" : "Questionnaire/RegistrationQuestionnaire"
       },
       "name" : "RegistrationQuestionnaire",
-      "description" : "Questionnaire to collect identifying infomration",
+      "description" : "Questionnaire to collect identifying information",
       "exampleBoolean" : true
     },
     {

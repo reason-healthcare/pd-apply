@@ -308,6 +308,13 @@
     "name" : "RaMonitoringRecommendation"
   },
   {
+    "id" : "RaMonitoringStrategy",
+    "type" : "PlanDefinition",
+    "url" : "http://example.org/PlanDefinition/RaMonitoringStrategy",
+    "version" : "0.2.0",
+    "name" : "RaMonitoringStrategy"
+  },
+  {
     "id" : "RegistrationPlan",
     "type" : "PlanDefinition",
     "url" : "http://example.org/PlanDefinition/RegistrationPlan",
@@ -365,6 +372,12 @@
   },
   {
     "id" : "RaQuestionnaire2",
+    "type" : "Questionnaire",
+    "url" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",
+    "version" : "0.2.0"
+  },
+  {
+    "id" : "RaQuestionnaire3",
     "type" : "Questionnaire",
     "url" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",
     "version" : "0.2.0"

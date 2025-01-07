@@ -1,4 +1,4 @@
-Instance: RaMonitoringRecommendationParameters
+Instance: RaMonitoringRecommendationParameters3
 InstanceOf: Parameters
 Usage: #example
 * parameter[+]
@@ -16,3 +16,6 @@ Usage: #example
 * parameter[+]
   * name = "data"
   * resource = PatientTestBundle1
+* parameter[+]
+  * name = "questionnaireResponse"
+  * resource = RaQuestionnaireResponse3

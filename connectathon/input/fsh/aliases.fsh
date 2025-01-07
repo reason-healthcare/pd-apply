@@ -47,3 +47,5 @@ Alias: $launch-context = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-ques
 Alias: $launch-context-codes = http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext
 Alias: $item-population-context = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext
 Alias: $initial-expression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression
+
+Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm

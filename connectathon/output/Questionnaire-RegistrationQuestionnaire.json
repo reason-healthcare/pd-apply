@@ -10,9 +10,9 @@
   "title" : "Questionnaire RegistrationQuestionnaire",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-06T15:11:28-05:00",
+  "date" : "2025-01-07T16:44:00-05:00",
   "publisher" : "Example Publisher",
-  "description" : "Questionnaire to collect identifying infomration",
+  "description" : "Questionnaire to collect identifying information",
   "item" : [{
     "linkId" : "name",
     "text" : "Name",

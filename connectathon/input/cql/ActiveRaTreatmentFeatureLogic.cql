@@ -5,7 +5,7 @@ using FHIR version '4.0.1'
 include FHIRHelpers version '0.1.0'
 
 codesystem "CaseFeatureCodes": 'http://example.org/CodeSystem/CaseFeatureCodes'
-code "On RA Treatment Feature": 'on-medication-RA Treatment' from "CaseFeatureCodes"
+code "On RA Treatment Feature": 'on-ra-treatment' from "CaseFeatureCodes"
 
 codesystem "RxNorm": 'http://www.nlm.nih.gov/research/umls/rxnorm'
 code "RA Treatment":
