@@ -8,7 +8,7 @@ Usage: #example
 * entry[+]
   * fullUrl = "http://apply-processor/ServiceRequest/OrderTestingRequest4"
   * resource = OrderTestingRequest4
-* entry[0]
+* entry[+]
   * fullUrl = "http://apply-processor/RequestGroup/RaMonitoringRecommendationRequestGroup4"
   * resource = RaMonitoringRecommendationRequestGroup4
 * entry[+]
