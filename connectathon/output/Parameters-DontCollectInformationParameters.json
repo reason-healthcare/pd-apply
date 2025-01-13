@@ -26,7 +26,7 @@
         "valueCanonical" : "http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile"
       }],
       "url" : "http://example.org/ActivityDefinition/DontCollectInformationActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "DontCollectInformationActivity",
       "title" : "ActivityDefinition DontCollectInformationActivity",
       "status" : "draft",

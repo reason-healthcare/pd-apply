@@ -7,7 +7,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "SendMessageRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/SendMessagePlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/SendMessagePlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {

@@ -14,7 +14,7 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/RegistrationPlan|0.1.0"
+* instantiatesCanonical = "http://example.org/PlanDefinition/RegistrationPlan|0.2.0"
 * action
   * title = "Registration with questionnaire"
   * description = "Register patient using questionnaire"

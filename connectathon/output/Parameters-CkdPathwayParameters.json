@@ -19,7 +19,7 @@
       "resourceType" : "PlanDefinition",
       "id" : "CkdPathway",
       "url" : "http://example.org/PlanDefinition/CkdPathway",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "CkdPathway",
       "title" : "PlanDefinition CkdPathway",
       "type" : {

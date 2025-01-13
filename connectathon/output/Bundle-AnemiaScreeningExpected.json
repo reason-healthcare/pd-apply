@@ -7,7 +7,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "AnemiaScreeningRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/AnemiaScreeningPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/AnemiaScreeningPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {

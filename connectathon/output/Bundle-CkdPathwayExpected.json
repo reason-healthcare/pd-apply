@@ -7,7 +7,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "CkdPathwayRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CkdPathway|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CkdPathway|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {
@@ -40,7 +40,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "InlineCKDManagementRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDManagementPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDManagementPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {
@@ -87,7 +87,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "InlineCkdEducationRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDEducationPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDEducationPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {
@@ -117,7 +117,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "InlineCKDFollowUpRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDFollowUpPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDFollowUpPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {
@@ -147,7 +147,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "InlineSendMessageRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/SendMessagePlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/SendMessagePlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {

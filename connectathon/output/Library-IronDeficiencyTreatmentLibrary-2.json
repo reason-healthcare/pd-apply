@@ -19,14 +19,14 @@
          "s" : {
             "r" : "25",
             "s" : [ {
-               "value" : [ "","library IronDeficiencyTreatmentLibrary version '0.1.0'" ]
+               "value" : [ "","library IronDeficiencyTreatmentLibrary version '0.2.0'" ]
             } ]
          }
       } ],
       "identifier" : {
          "id" : "IronDeficiencyTreatmentLibrary",
          "system" : "http://example.org",
-         "version" : "0.1.0"
+         "version" : "0.2.0"
       },
       "schemaIdentifier" : {
          "id" : "urn:hl7-org:elm",

@@ -34,14 +34,14 @@
          "s" : {
             "r" : "20",
             "s" : [ {
-               "value" : [ "","library RecordInferenceLibrary version '0.1.0'" ]
+               "value" : [ "","library RecordInferenceLibrary version '0.2.0'" ]
             } ]
          }
       } ],
       "identifier" : {
          "id" : "RecordInferenceLibrary",
          "system" : "http://example.org",
-         "version" : "0.1.0"
+         "version" : "0.2.0"
       },
       "schemaIdentifier" : {
          "id" : "urn:hl7-org:elm",

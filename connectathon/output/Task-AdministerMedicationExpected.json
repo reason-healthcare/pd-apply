@@ -4,7 +4,7 @@
   "meta" : {
     "profile" : ["http://example.org/StructureDefinition/FixedCPGTaskAdministerMedication"]
   },
-  "instantiatesCanonical" : "http://example.org/ActivityDefinition/AdministerMedicationActivity|0.1.0",
+  "instantiatesCanonical" : "http://example.org/ActivityDefinition/AdministerMedicationActivity|0.2.0",
   "status" : "draft",
   "intent" : "proposal",
   "code" : {

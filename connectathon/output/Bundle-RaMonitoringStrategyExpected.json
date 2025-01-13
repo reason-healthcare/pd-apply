@@ -3,6 +3,49 @@
   "id" : "RaMonitoringStrategyExpected",
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "http://apply-processor/RequestGroup/RaMonitoringStrategyRequestGroup4",
+    "resource" : {
+      "resourceType" : "RequestGroup",
+      "id" : "RaMonitoringStrategyRequestGroup4",
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/RaMonitoringStrategy"],
+      "status" : "draft",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "Patient/Patient1"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://apply-processor/ServiceRequest/OrderTestingRequest4",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "OrderTestingRequest4",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest"]
+      },
+      "instantiatesCanonical" : ["http://example.org/ActivityDefinition/OrderServiceActivity"],
+      "status" : "draft",
+      "intent" : "proposal",
+      "doNotPerform" : false,
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+          "code" : "order-service",
+          "display" : "Order a service"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Patient1"
+      },
+      "encounter" : {
+        "reference" : "Encounter/Encounter1"
+      },
+      "requester" : {
+        "reference" : "Practitioner/Practitioner1"
+      }
+    }
+  },
+  {
     "fullUrl" : "http://apply-processor/RequestGroup/RaMonitoringRecommendationRequestGroup4",
     "resource" : {
       "resourceType" : "RequestGroup",

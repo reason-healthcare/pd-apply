@@ -26,7 +26,7 @@
         "valueCanonical" : "http://example.org/PlanDefinition/CkdPathway"
       }],
       "url" : "http://example.org/ActivityDefinition/EnrollPatientActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "EnrollPatientActivity",
       "title" : "ActivityDefinition EnrollPatientActivity",
       "status" : "draft",

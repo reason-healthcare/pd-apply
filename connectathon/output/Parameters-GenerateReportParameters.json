@@ -26,7 +26,7 @@
         "valueCanonical" : "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport"
       }],
       "url" : "http://example.org/ActivityDefinition/GenerateReportActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "GenerateReportActivity",
       "title" : "ActivityDefinition GenerateReportActivity",
       "status" : "draft",

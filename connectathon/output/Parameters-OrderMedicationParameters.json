@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequestactivity"]
       },
       "url" : "http://example.org/ActivityDefinition/OrderMedicationActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "OrderMedicationActivity",
       "title" : "ActivityDefinition OrderMedicationActivity",
       "status" : "draft",

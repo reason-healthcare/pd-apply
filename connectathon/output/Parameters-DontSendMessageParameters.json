@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationactivity"]
       },
       "url" : "http://example.org/ActivityDefinition/DontSendMessageActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "DontSendMessageActivity",
       "title" : "ActivityDefinition DontSendMessageActivity",
       "status" : "draft",

@@ -19,7 +19,7 @@
   "requester" : {
     "reference" : "Practitioner/Practitioner1"
   },
-  "instantiatesCanonical" : ["http://example.org/ActivityDefinition/OrderMedicationActivity|0.1.0"],
+  "instantiatesCanonical" : ["http://example.org/ActivityDefinition/OrderMedicationActivity|0.2.0"],
   "dosageInstruction" : [{
     "sequence" : 1,
     "text" : "75mcg daily",

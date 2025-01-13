@@ -24,14 +24,14 @@
          "s" : {
             "r" : "25",
             "s" : [ {
-               "value" : [ "","library DocumentMedicationLibrary version '0.1.0'" ]
+               "value" : [ "","library DocumentMedicationLibrary version '0.2.0'" ]
             } ]
          }
       } ],
       "identifier" : {
          "id" : "DocumentMedicationLibrary",
          "system" : "http://example.org",
-         "version" : "0.1.0"
+         "version" : "0.2.0"
       },
       "schemaIdentifier" : {
          "id" : "urn:hl7-org:elm",

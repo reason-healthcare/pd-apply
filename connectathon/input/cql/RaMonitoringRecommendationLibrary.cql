@@ -1,9 +1,9 @@
-library RaMonitoringRecommendationLibrary version '0.1.0'
+library RaMonitoringRecommendationLibrary version '0.2.0'
 
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '0.1.0'
-include ActiveRaTreatmentFeatureLogic version '0.1.0' called ActiveRaTreatmentFeature
+include ActiveRaTreatmentFeatureLogic version '0.2.0' called ActiveRaTreatmentFeature
 
 context Patient
 

@@ -3,7 +3,7 @@ InstanceOf: FixedCPGTaskDispenseMedication
 Usage: #example
 * status = #draft
 * intent = #proposal
-* instantiatesCanonical = "http://example.org/ActivityDefinition/DispenseMedicationActivity|0.1.0"
+* instantiatesCanonical = "http://example.org/ActivityDefinition/DispenseMedicationActivity|0.2.0"
 * code = $cpg-activity-type-cs#dispense-medication "Dispense a Medication"
 * for = Reference(Patient1)
 * encounter = Reference(Encounter1)

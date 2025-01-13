@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagactivity"]
       },
       "url" : "http://example.org/ActivityDefinition/ReportFlagActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "ReportFlagActivity",
       "title" : "ActivityDefinition ReportFlagActivity",
       "status" : "draft",

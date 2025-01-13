@@ -7,7 +7,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "CKDManagementRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDManagementPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDManagementPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {
@@ -54,7 +54,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "InlineCKDEducationRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDEducationPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDEducationPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {
@@ -84,7 +84,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "CKDFollowUpRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDFollowUpPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDFollowUpPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {

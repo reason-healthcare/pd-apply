@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationactivity"]
       },
       "url" : "http://example.org/ActivityDefinition/DocumentMedicationActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "DocumentMedicationActivity",
       "title" : "ActivityDefinition DocumentMedicationActivity",
       "status" : "draft",

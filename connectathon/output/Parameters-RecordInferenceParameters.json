@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferenceactivity"]
       },
       "url" : "http://example.org/ActivityDefinition/RecordInferenceActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "RecordInferenceActivity",
       "title" : "ActivityDefinition RecordInferenceActivity",
       "status" : "draft",

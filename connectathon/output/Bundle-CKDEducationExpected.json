@@ -7,7 +7,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "CKDEducationRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDEducationPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/CKDEducationPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {

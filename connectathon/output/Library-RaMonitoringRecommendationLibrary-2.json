@@ -9,14 +9,14 @@
          "s" : {
             "r" : "14",
             "s" : [ {
-               "value" : [ "","library RaMonitoringRecommendationLibrary version '0.1.0'" ]
+               "value" : [ "","library RaMonitoringRecommendationLibrary version '0.2.0'" ]
             } ]
          }
       } ],
       "identifier" : {
          "id" : "RaMonitoringRecommendationLibrary",
          "system" : "http://example.org",
-         "version" : "0.1.0"
+         "version" : "0.2.0"
       },
       "schemaIdentifier" : {
          "id" : "urn:hl7-org:elm",
@@ -76,7 +76,7 @@
             "locator" : "6:1-6:85",
             "localIdentifier" : "ActiveRaTreatmentFeature",
             "path" : "http://example.org/ActiveRaTreatmentFeatureLogic",
-            "version" : "0.1.0",
+            "version" : "0.2.0",
             "annotation" : [ {
                "type" : "Annotation",
                "s" : {
@@ -88,7 +88,7 @@
                         "value" : [ "ActiveRaTreatmentFeatureLogic" ]
                      } ]
                   }, {
-                     "value" : [ " version ","'0.1.0'"," called ","ActiveRaTreatmentFeature" ]
+                     "value" : [ " version ","'0.2.0'"," called ","ActiveRaTreatmentFeature" ]
                   } ]
                }
             } ]

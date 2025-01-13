@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"]
       },
       "url" : "http://example.org/PlanDefinition/IschemicStrokePlan",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "IschemicStrokePlan",
       "title" : "PlanDefinition IschemicStrokePlan",
       "type" : {

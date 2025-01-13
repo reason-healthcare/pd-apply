@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity"]
       },
       "url" : "http://example.org/ActivityDefinition/OrderServiceActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "OrderServiceActivity",
       "title" : "ActivityDefinition OrderServiceActivity",
       "status" : "draft",

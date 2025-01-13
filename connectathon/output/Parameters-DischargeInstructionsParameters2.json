@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"]
       },
       "url" : "http://example.org/PlanDefinition/DischargeInstructionsPlan2",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "DischargeInstructionsPlan2",
       "title" : "PlanDefinition DischargeInstructionsPlan2",
       "type" : {

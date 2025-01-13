@@ -7,7 +7,7 @@
     "resource" : {
       "resourceType" : "RequestGroup",
       "id" : "DischargeInstructionsRequestGroup",
-      "instantiatesCanonical" : ["http://example.org/PlanDefinition/DischargeInstructionsPlan|0.1.0"],
+      "instantiatesCanonical" : ["http://example.org/PlanDefinition/DischargeInstructionsPlan|0.2.0"],
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {

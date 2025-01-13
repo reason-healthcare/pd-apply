@@ -4,6 +4,6 @@ SCRIPT_DIR="$(cd -P "$(dirname -- "${BASH_SOURCE}")" >/dev/null 2>&1 && pwd)"
 
 BUNDLE_FILENAME=$SCRIPT_DIR/../temp/Bundle-generated.json
 
-FHIR_SERVER=${1:-http://localhost:8080/fhir}
+FHIR_SERVER=${1:-https://reason-framework-test-content-abdc3f75e0f9.herokuapp.com/fhir}
 
 curl -d @${BUNDLE_FILENAME} --header "Content-Type: application/fhir+json" -v $FHIR_SERVER

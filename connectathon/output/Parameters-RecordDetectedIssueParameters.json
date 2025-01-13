@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissueactivity"]
       },
       "url" : "http://example.org/ActivityDefinition/RecordDetectedIssueActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "RecordDetectedIssueActivity",
       "title" : "ActivityDefinition RecordDetectedIssueActivity",
       "status" : "draft",

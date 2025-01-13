@@ -3,7 +3,7 @@ InstanceOf: $cpg-generatereporttask
 Usage: #example
 * status = #draft
 * intent = #proposal
-* instantiatesCanonical = "http://example.org/ActivityDefinition/GenerateReportActivity|0.1.0"
+* instantiatesCanonical = "http://example.org/ActivityDefinition/GenerateReportActivity|0.2.0"
 * code = $cpg-activity-type-cs#generate-report "Generate a metric or case report"
 * for = Reference(Patient1)
 * encounter = Reference(Encounter1)

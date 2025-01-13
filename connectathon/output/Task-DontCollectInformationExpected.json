@@ -8,7 +8,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/request-doNotPerform",
     "valueBoolean" : true
   }],
-  "instantiatesCanonical" : "http://example.org/ActivityDefinition/DontCollectInformationActivity|0.1.0",
+  "instantiatesCanonical" : "http://example.org/ActivityDefinition/DontCollectInformationActivity|0.2.0",
   "status" : "draft",
   "intent" : "proposal",
   "code" : {

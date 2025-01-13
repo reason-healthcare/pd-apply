@@ -22,7 +22,7 @@
         "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity"]
       },
       "url" : "http://example.org/ActivityDefinition/RecommendImmunizationActivity",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "name" : "RecommendImmunizationActivity",
       "title" : "ActivityDefinition RecommendImmunizationActivity",
       "status" : "draft",
