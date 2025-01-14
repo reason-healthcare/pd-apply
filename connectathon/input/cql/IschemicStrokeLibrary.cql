@@ -26,15 +26,3 @@ define "Condition Code Value":
 
 define "Had Ischemic Stroke":
   "Condition Code Value" = "Ischemic Stroke"
-
-define "Medications":
-  [Medication]
-
-define "Active Medication":
-  Medications.where(status = 'active')[0]
-
-define "Medication Reference":
-  if "Active Medication" is not null then
-    { reference: 'Medication/' + "Active Medication".id }
-  else
-    null
