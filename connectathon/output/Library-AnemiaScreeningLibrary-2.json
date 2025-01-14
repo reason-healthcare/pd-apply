@@ -75,7 +75,7 @@
             "locator" : "5:1-5:35",
             "localIdentifier" : "FHIRHelpers",
             "path" : "http://example.org/FHIRHelpers",
-            "version" : "0.1.0",
+            "version" : "0.2.0",
             "annotation" : [ {
                "type" : "Annotation",
                "s" : {
@@ -87,7 +87,7 @@
                         "value" : [ "FHIRHelpers" ]
                      } ]
                   }, {
-                     "value" : [ " version ","'0.1.0'" ]
+                     "value" : [ " version ","'0.2.0'" ]
                   } ]
                }
             } ]

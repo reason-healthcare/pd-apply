@@ -2,7 +2,7 @@ library ActiveRaTreatmentFeatureLogic version '0.2.0'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '0.1.0'
+include FHIRHelpers version '0.2.0'
 
 codesystem "CaseFeatureCodes": 'http://example.org/CodeSystem/CaseFeatureCodes'
 code "On RA Treatment Feature": 'on-ra-treatment' from "CaseFeatureCodes"
