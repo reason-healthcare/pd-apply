@@ -13,16 +13,16 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "action" : [{
     "title" : "CKD Management",
     "description" : "Definition of plan for new diagnosis of CKD",
-    "definitionCanonical" : "http://example.org/PlanDefinition/CKDManagementPlan"
+    "definitionCanonical" : "http://example.org/PlanDefinition/CKDManagementPlan|0.2.0"
   },
   {
     "title" : "Greet patient",
     "description" : "Greet patient at time of patient portal sign up",
-    "definitionCanonical" : "http://example.org/PlanDefinition/SendMessagePlan"
+    "definitionCanonical" : "http://example.org/PlanDefinition/SendMessagePlan|0.2.0"
   }]
 }

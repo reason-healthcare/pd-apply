@@ -59,7 +59,7 @@
         "expression" : {
           "language" : "text/cql-identifier",
           "expression" : "Medication Proposal Reference",
-          "reference" : "http://example.org/Library/AdministerMedicationLibrary"
+          "reference" : "http://example.org/Library/AdministerMedicationLibrary|0.2.0"
         }
       }]
     }

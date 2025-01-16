@@ -59,7 +59,7 @@
         "expression" : {
           "language" : "text/cql-identifier",
           "expression" : "Record Inference Reference",
-          "reference" : "http://example.org/Library/RecordInferenceLibrary"
+          "reference" : "http://example.org/Library/RecordInferenceLibrary|0.2.0"
         }
       }]
     }

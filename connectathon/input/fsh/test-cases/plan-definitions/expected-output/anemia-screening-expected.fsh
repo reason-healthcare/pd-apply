@@ -15,12 +15,15 @@ Usage: #inline
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.org/PlanDefinition/AnemiaScreeningPlan|0.2.0"
-* action
-  * title = "Order CBC Lab Panel"
-  * description = "Order CBC Lab Panel to screen for anemia"
+* action[+]
+  * title = "Recommend CBC Lab Panel"
+  * description = "Recommend CBC Lab Panel"
   * code = $cpg-common-process#diagnostic-testing "Conduct Diagnostic Tests"
   * condition
     * kind = #applicability
     * expression
       * language = #text/cql-identifier
       * expression = "Needs CBC"
+  * action[+]
+    * title = "Order CBC Lab Panel"
+    * description = "Order CBC Lab Panel to screen for anemia"

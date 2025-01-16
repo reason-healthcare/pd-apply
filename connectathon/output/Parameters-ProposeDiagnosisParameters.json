@@ -59,7 +59,7 @@
         "expression" : {
           "language" : "text/cql-identifier",
           "expression" : "Propose Diagnosis Reference",
-          "reference" : "http://example.org/Library/ProposeDiagnosisLibrary"
+          "reference" : "http://example.org/Library/ProposeDiagnosisLibrary|0.2.0"
         }
       }]
     }

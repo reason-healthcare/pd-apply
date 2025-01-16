@@ -42,7 +42,7 @@
           "display" : "World"
         }]
       }],
-      "library" : ["http://example.org/Library/RaMonitoringRecommendationLibrary"],
+      "library" : ["http://example.org/Library/RaMonitoringRecommendationLibrary|0.2.0"],
       "action" : [{
         "title" : "Order monitoring tests for antirheumatic drug therapy.",
         "description" : "Order monitoring tests for antirheumatic drug therapy.",
@@ -63,7 +63,7 @@
           "type" : "Observation",
           "profile" : ["http://example.org/StructureDefinition/ActiveRaTreatmentFeature"]
         }],
-        "definitionCanonical" : "http://example.org/ActivityDefinition/OrderServiceActivity"
+        "definitionCanonical" : "http://example.org/ActivityDefinition/OrderServiceActivity|0.2.0"
       }]
     }
   },

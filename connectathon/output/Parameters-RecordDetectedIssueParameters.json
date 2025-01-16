@@ -59,7 +59,7 @@
         "expression" : {
           "language" : "text/cql-identifier",
           "expression" : "Record Detected Issue Reference",
-          "reference" : "http://example.org/Library/RecordDetectedIssueLibrary"
+          "reference" : "http://example.org/Library/RecordDetectedIssueLibrary|0.2.0"
         }
       }]
     }

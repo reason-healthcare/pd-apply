@@ -58,7 +58,7 @@
             "code" : "create"
           }]
         },
-        "definitionCanonical" : "http://example.org/ActivityDefinition/SendMessageActivity",
+        "definitionCanonical" : "http://example.org/ActivityDefinition/SendMessageActivity|0.2.0",
         "dynamicValue" : [{
           "path" : "payload[0].contentString",
           "expression" : {

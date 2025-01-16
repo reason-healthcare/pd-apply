@@ -43,9 +43,9 @@
           "display" : "World"
         }]
       }],
-      "library" : ["http://example.org/Library/IronDeficiencyTreatmentLibrary"],
+      "library" : ["http://example.org/Library/IronDeficiencyTreatmentLibrary|0.2.0"],
       "action" : [{
-        "title" : "Iron Supplementation",
+        "title" : "Recommend Iron Supplementation",
         "textEquivalent" : "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemia",
         "code" : [{
           "coding" : [{
@@ -60,6 +60,10 @@
             "language" : "text/cql-identifier",
             "expression" : "Has Anemia"
           }
+        }],
+        "action" : [{
+          "title" : "Iron Supplementation",
+          "description" : "Administer iron supplementation"
         }]
       }]
     }

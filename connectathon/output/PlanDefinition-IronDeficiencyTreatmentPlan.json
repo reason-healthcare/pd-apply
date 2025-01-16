@@ -17,12 +17,12 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Definition of a plan to prescribe iron supplement if patient has diagnosis or iron deficiency anemia",
-  "library" : ["http://example.org/Library/IronDeficiencyTreatmentLibrary"],
+  "library" : ["http://example.org/Library/IronDeficiencyTreatmentLibrary|0.2.0"],
   "action" : [{
-    "title" : "Iron Supplementation",
+    "title" : "Recommend Iron Supplementation",
     "textEquivalent" : "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemia",
     "code" : [{
       "coding" : [{
@@ -37,6 +37,10 @@
         "language" : "text/cql-identifier",
         "expression" : "Has Anemia"
       }
+    }],
+    "action" : [{
+      "title" : "Iron Supplementation",
+      "description" : "Administer iron supplementation"
     }]
   }]
 }

@@ -18,4 +18,4 @@ Usage: #example
   * expression
     * language = #text/cql-identifier
     * expression = "Medication Proposal Reference"
-    * reference = Canonical(DispenseMedicationLibrary)
+    * reference = Canonical(DispenseMedicationLibrary|0.2.0)

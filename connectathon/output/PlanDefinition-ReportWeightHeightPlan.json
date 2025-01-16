@@ -17,7 +17,7 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Plan to report weight and height of patient upon admission",
   "goal" : [{
@@ -26,25 +26,33 @@
     }
   }],
   "action" : [{
-    "title" : "Report Weight",
-    "description" : "Report weight metric upon admission",
+    "title" : "Recommend Weight Measurement",
+    "description" : "Recommend Weight Measurement",
     "code" : [{
       "coding" : [{
         "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
         "code" : "diagnostic-testing",
         "display" : "Conduct Diagnostic Tests"
       }]
+    }],
+    "action" : [{
+      "title" : "Report Weight",
+      "description" : "Report weight metric upon admission"
     }]
   },
   {
-    "title" : "Report Height",
-    "description" : "Report height metric upon admission",
+    "title" : "Recommend Height Measurement",
+    "description" : "Recommend Height Measurement",
     "code" : [{
       "coding" : [{
         "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
         "code" : "diagnostic-testing",
         "display" : "Conduct Diagnostic Tests"
       }]
+    }],
+    "action" : [{
+      "title" : "Report Height",
+      "description" : "Report height metric upon admission"
     }]
   }]
 }

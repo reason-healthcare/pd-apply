@@ -59,7 +59,7 @@
         "expression" : {
           "language" : "text/cql-identifier",
           "expression" : "Report Flag Reference",
-          "reference" : "http://example.org/Library/ReportFlagLibrary"
+          "reference" : "http://example.org/Library/ReportFlagLibrary|0.2.0"
         }
       }]
     }

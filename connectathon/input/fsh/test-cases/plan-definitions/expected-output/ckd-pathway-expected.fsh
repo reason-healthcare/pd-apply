@@ -9,8 +9,8 @@ Usage: #example
   * fullUrl = "http://apply-processor/RequestGroup/InlineCKDManagementRequestGroup"
   * resource = InlineCKDManagementRequestGroup
 * entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/InlineCkdEducationRequestGroup"
-  * resource = InlineCkdEducationRequestGroup
+  * fullUrl = "http://apply-processor/RequestGroup/InlineCKDEducationRequestGroup"
+  * resource = InlineCKDEducationRequestGroup
 * entry[+]
   * fullUrl = "http://apply-processor/RequestGroup/InlineCKDFollowUpRequestGroup"
   * resource = InlineCKDFollowUpRequestGroup
@@ -51,15 +51,15 @@ Usage: #inline
 * action[+]
   * title = "CKD Education"
   * description = "CKD Education at time of diagnosis"
-  * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#provide-counseling "Provide Counseling"
-  * resource = Reference(RequestGroup/InlineCKDEducationRequestGroup)
+  * code = $cpg-common-process#provide-counseling "Provide Counseling"
+  * resource = Reference(InlineCKDEducationRequestGroup)
 * action[+]
   * title = "Follow Up Plan"
   * description = "Schedule follow up with nephrologist"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
-  * resource = Reference(RequestGroup/InlineCKDFollowUpRequestGroup)
+  * resource = Reference(CKDFollowUpRequestGroup)
 
-Instance: InlineCkdEducationRequestGroup
+Instance: InlineCKDEducationRequestGroup
 InstanceOf: RequestGroup
 Usage: #inline
 * intent = #proposal
@@ -69,9 +69,12 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.org/PlanDefinition/CKDEducationPlan|0.2.0"
 * action
-  * title = "CKD Patient Education"
-  * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
+  * title = "Recommend CKD Patient Education"
+  * description = "Recommend verbal and written education on disease state at time of CKD diagnosis"
   * code = $cpg-common-process#provide-counseling "Provide Counseling"
+  * action
+    * title = "Provide CKD Patient Education"
+    * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
 
 Instance: InlineCKDFollowUpRequestGroup
 InstanceOf: RequestGroup
@@ -83,9 +86,12 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.org/PlanDefinition/CKDFollowUpPlan|0.2.0"
 * action
-  * title = "CKD Follow Up Plan"
-  * description = "Schedule follow up with a nephrologist at time of CKD diagnosis"
+  * title = "Recommend CKD Follow Up"
+  * description = "Recommend CKD Follow Up"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
+  * action
+    * title = "CKD Follow Up Plan"
+    * description = "Schedule follow up with a nephrologist at time of CKD diagnosis"
 
 Instance: InlineSendMessageRequestGroup
 InstanceOf: RequestGroup

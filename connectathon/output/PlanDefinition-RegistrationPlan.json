@@ -17,7 +17,7 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Definition of plan to collect information for patient registration",
   "action" : [{
@@ -30,6 +30,6 @@
         "display" : "Registration"
       }]
     }],
-    "definitionCanonical" : "http://example.org/Questionnaire/RegistrationQuestionnaire"
+    "definitionCanonical" : "http://example.org/Questionnaire/RegistrationQuestionnaire|0.2.0"
   }]
 }

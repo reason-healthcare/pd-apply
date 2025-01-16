@@ -16,10 +16,10 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Monitoring tests for antirheumatic drug therapy for Ra.",
-  "library" : ["http://example.org/Library/RaMonitoringRecommendationLibrary"],
+  "library" : ["http://example.org/Library/RaMonitoringRecommendationLibrary|0.2.0"],
   "action" : [{
     "title" : "Order monitoring tests for antirheumatic drug therapy.",
     "description" : "Order monitoring tests for antirheumatic drug therapy.",
@@ -40,6 +40,6 @@
       "type" : "Observation",
       "profile" : ["http://example.org/StructureDefinition/ActiveRaTreatmentFeature"]
     }],
-    "definitionCanonical" : "http://example.org/ActivityDefinition/OrderServiceActivity"
+    "definitionCanonical" : "http://example.org/ActivityDefinition/OrderServiceActivity|0.2.0"
   }]
 }

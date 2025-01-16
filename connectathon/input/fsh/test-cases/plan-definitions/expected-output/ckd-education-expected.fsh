@@ -16,6 +16,9 @@ Usage: #inline
 * encounter = Reference(Encounter1)
 * instantiatesCanonical = "http://example.org/PlanDefinition/CKDEducationPlan|0.2.0"
 * action
-  * title = "CKD Patient Education"
-  * description = "Provide verbal and written education on disease state at time of CKD diagnosis"
+  * title = "Recommend CKD Patient Education"
+  * description = "Recommend verbal and written education on disease state at time of CKD diagnosis"
   * code = $cpg-common-process#provide-counseling "Provide Counseling"
+  * action
+    * title = "Provide CKD Patient Education"
+    * description = "Provide verbal and written education on disease state at time of CKD diagnosis"

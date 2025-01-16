@@ -51,7 +51,7 @@
             "code" : "guideline-based-care"
           }]
         }],
-        "definitionCanonical" : "http://example.org/PlanDefinition/RaMonitoringRecommendation"
+        "definitionCanonical" : "http://example.org/PlanDefinition/RaMonitoringRecommendation|0.2.0"
       }]
     }
   },

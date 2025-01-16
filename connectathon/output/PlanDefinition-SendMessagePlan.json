@@ -16,7 +16,7 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Definition of plan recommendation to send a message",
   "action" : [{
@@ -35,6 +35,6 @@
         "code" : "create"
       }]
     },
-    "definitionCanonical" : "http://example.org/ActivityDefinition/SendMessageActivity"
+    "definitionCanonical" : "http://example.org/ActivityDefinition/SendMessageActivity|0.2.0"
   }]
 }

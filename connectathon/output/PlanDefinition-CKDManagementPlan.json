@@ -17,7 +17,7 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Management strategy for patients with newly diagnosed Chronic Kidney Disease",
   "action" : [{
@@ -30,7 +30,7 @@
         "display" : "Provide Counseling"
       }]
     }],
-    "definitionCanonical" : "http://example.org/PlanDefinition/CKDEducationPlan"
+    "definitionCanonical" : "http://example.org/PlanDefinition/CKDEducationPlan|0.2.0"
   },
   {
     "title" : "Follow Up Plan",
@@ -42,6 +42,6 @@
         "display" : "Monitor and Follow-up of Patient"
       }]
     }],
-    "definitionCanonical" : "http://example.org/PlanDefinition/CKDFollowUpPlan"
+    "definitionCanonical" : "http://example.org/PlanDefinition/CKDFollowUpPlan|0.2.0"
   }]
 }

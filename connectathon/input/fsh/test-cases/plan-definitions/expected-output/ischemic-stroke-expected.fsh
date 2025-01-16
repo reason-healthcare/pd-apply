@@ -16,12 +16,15 @@ Usage: #inline
 * author = Reference(Practitioner/Practitioner1)
 * encounter = Reference(Encounter/Encounter1)
 * action
-  * title = "Ischemic Stroke Treatment"
+  * title = "Recommend Ischemic Stroke Treatment"
   * description = "Recommendation to administer TPA if patient had Ischemic Stroke"
-  * code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process#dispense-medications "Dispense Medications"
   * textEquivalent = "Administer TPA intravenously"
+  * code = $cpg-common-process#dispense-medications "Dispense Medications"
   * condition
     * kind = #applicability
     * expression
       * language = #text/cql-identifier
       * expression = "Had Ischemic Stroke"
+  * action
+    * title = "Ischemic Stroke Treatment"
+    * description = "Administer TPA for ischemic stroke"

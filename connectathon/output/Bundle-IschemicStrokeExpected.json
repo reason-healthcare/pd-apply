@@ -20,12 +20,12 @@
         "reference" : "Practitioner/Practitioner1"
       },
       "action" : [{
-        "title" : "Ischemic Stroke Treatment",
+        "title" : "Recommend Ischemic Stroke Treatment",
         "description" : "Recommendation to administer TPA if patient had Ischemic Stroke",
         "textEquivalent" : "Administer TPA intravenously",
         "code" : [{
           "coding" : [{
-            "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
             "code" : "dispense-medications",
             "display" : "Dispense Medications"
           }]
@@ -36,6 +36,10 @@
             "language" : "text/cql-identifier",
             "expression" : "Had Ischemic Stroke"
           }
+        }],
+        "action" : [{
+          "title" : "Ischemic Stroke Treatment",
+          "description" : "Administer TPA for ischemic stroke"
         }]
       }]
     }

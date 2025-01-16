@@ -53,7 +53,7 @@
             "display" : "Registration"
           }]
         }],
-        "definitionCanonical" : "http://example.org/Questionnaire/RegistrationQuestionnaire"
+        "definitionCanonical" : "http://example.org/Questionnaire/RegistrationQuestionnaire|0.2.0"
       }]
     }
   },

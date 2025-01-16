@@ -40,10 +40,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication",
-      "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
       "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
+      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -129,9 +129,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.433"],
       "uses" : {
       },
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication",
+      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
       "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication"
+      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -178,9 +178,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication",
+      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
       "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication"
+      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/task-intent",
@@ -197,9 +197,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1240"],
       "uses" : {
       },
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication",
+      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
       "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication"
+      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/task-status",
@@ -213,9 +213,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.790"],
       "uses" : {
       },
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication",
+      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
       "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication"
+      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
     },
     {
       "url" : "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-activity-type-vs",
@@ -229,9 +229,9 @@
       "sources" : ["2.16.840.1.113883.4.642.40.48.48.3"],
       "uses" : {
       },
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication",
+      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
       "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication"
+      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
     }
   ]
 }

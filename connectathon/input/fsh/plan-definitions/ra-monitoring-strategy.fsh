@@ -8,4 +8,4 @@ Title: "RA Monitoring Strategy"
   * title = "Recommend monitoring tests for antirheumatic drug therapy."
   * description = "Recommend monitoring tests for antirheumatic drug therapy."
   * code = $cpg-common-process#guideline-based-care
-  * definitionCanonical = Canonical(RaMonitoringRecommendation)
+  * definitionCanonical = Canonical(RaMonitoringRecommendation|0.2.0)

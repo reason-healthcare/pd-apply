@@ -30,7 +30,7 @@
   "name" : "ActiveRaTreatmentFeature",
   "title" : "Active RA Treatment Feature",
   "status" : "active",
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Case feature definition: patient has active RA treatment",
   "fhirVersion" : "4.0.1",

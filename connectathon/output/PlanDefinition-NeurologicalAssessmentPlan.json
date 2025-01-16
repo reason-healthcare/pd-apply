@@ -17,10 +17,10 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Definition of a plan to recommend nuerological assessment",
-  "library" : ["http://example.org/Library/NeurologicalAssessmentLibrary"],
+  "library" : ["http://example.org/Library/NeurologicalAssessmentLibrary|0.2.0"],
   "action" : [{
     "title" : "Order neurological exam",
     "type" : {
@@ -29,7 +29,7 @@
         "code" : "create"
       }]
     },
-    "definitionCanonical" : "http://example.org/ActivityDefinition/OrderServiceActivity",
+    "definitionCanonical" : "http://example.org/ActivityDefinition/OrderServiceActivity|0.2.0",
     "dynamicValue" : [{
       "path" : "occurrencePeriod.start",
       "expression" : {

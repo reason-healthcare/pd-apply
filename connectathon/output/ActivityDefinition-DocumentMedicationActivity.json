@@ -10,7 +10,7 @@
   "title" : "ActivityDefinition DocumentMedicationActivity",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-14T11:47:03-05:00",
+  "date" : "2025-01-15T21:55:48-05:00",
   "publisher" : "Example Publisher",
   "description" : "Example Activity Definition for a recommendation to document a medication",
   "kind" : "Task",
@@ -36,7 +36,7 @@
     "expression" : {
       "language" : "text/cql-identifier",
       "expression" : "Medication Proposal Reference",
-      "reference" : "http://example.org/Library/DocumentMedicationLibrary"
+      "reference" : "http://example.org/Library/DocumentMedicationLibrary|0.2.0"
     }
   }]
 }
