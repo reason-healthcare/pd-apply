@@ -10,4 +10,4 @@ Usage: #example
 * requester = Reference(Practitioner1)
 * input[definition]
   * type = $cpg-activity-type-cs#generate-report "Generate a metric or case report"
-  * valueCanonical = "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport"
+  * valueCanonical = "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport-measure"

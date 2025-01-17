@@ -8,7 +8,7 @@ Usage: #example
 * action
   * title = "Recommend Iron Supplementation"
   * textEquivalent = "Daily elemental iron should be prescribed if diagnosed with iron deficiency anemia"
-  * code = $cpg-common-process#dispense-medication "Dispense Medications"
+  * code = $cpg-common-process#dispense-medications "Dispense Medications"
   * condition
     * kind = #applicability
     * expression
