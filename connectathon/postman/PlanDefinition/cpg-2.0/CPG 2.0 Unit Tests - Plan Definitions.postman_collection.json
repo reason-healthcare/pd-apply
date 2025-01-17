@@ -1785,6 +1785,139 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "PlanDefinition - OrderServicePlan",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const expected = {",
+							"  \"resourceType\": \"Bundle\",",
+							"  \"id\": \"OrderServicePlanExpected\",",
+							"  \"type\": \"collection\",",
+							"  \"entry\": [",
+							"    {",
+							"      \"fullUrl\": \"http://apply-processor/RequestGroup/OrderServiceRequestGroup\",",
+							"      \"resource\": {",
+							"        \"resourceType\": \"RequestGroup\",",
+							"        \"id\": \"OrderServiceRequestGroup\",",
+							"        \"intent\": \"proposal\",",
+							"        \"status\": \"draft\",",
+							"        \"subject\": {",
+							"          \"reference\": \"Patient/Patient1\"",
+							"        },",
+							"        \"instantiatesCanonical\": [",
+							"          \"http://example.org/PlanDefinition/OrderServicePlan|0.2.0\"",
+							"        ],",
+							"        \"author\": {",
+							"          \"reference\": \"Practitioner/Practitioner1\"",
+							"        },",
+							"        \"encounter\": {",
+							"          \"reference\": \"Encounter/Encounter1\"",
+							"        },",
+							"        \"action\": [",
+							"          {",
+							"            \"title\": \"Order Service\",",
+							"            \"description\": \"Order Service\",",
+							"            \"code\": [",
+							"              {",
+							"                \"coding\": [",
+							"                  {",
+							"                    \"code\": \"guideline-based-care\",",
+							"                    \"system\": \"http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs\",",
+							"                    \"display\": \"Guideline-based Care\"",
+							"                  }",
+							"                ]",
+							"              }",
+							"            ],",
+							"            \"type\": {",
+							"              \"coding\": [",
+							"                {",
+							"                  \"code\": \"create\",",
+							"                  \"system\": \"http://terminology.hl7.org/CodeSystem/action-type\"",
+							"                }",
+							"              ]",
+							"            },",
+							"            \"resource\": {",
+							"              \"reference\": \"428515b4-f576-468e-87a6-025aae5b2dd5\"",
+							"            }",
+							"          }",
+							"        ]",
+							"      }",
+							"    },",
+							"    {",
+							"      \"fullUrl\": \"http://apply-processor/RequestGroup/OrderServiceVersionTestExpected\",",
+							"      \"resource\": {",
+							"        \"resourceType\": \"ServiceRequest\",",
+							"        \"id\": \"OrderServiceVersionTestExpected\",",
+							"        \"status\": \"draft\",",
+							"        \"intent\": \"proposal\",",
+							"        \"instantiatesCanonical\": [",
+							"          \"http://example.org/ActivityDefinition/OrderServiceActivityVersionTest|0.2.0\"",
+							"        ],",
+							"        \"subject\": {",
+							"          \"reference\": \"Patient/Patient1\"",
+							"        },",
+							"        \"encounter\": {",
+							"          \"reference\": \"Encounter/Encounter1\"",
+							"        },",
+							"        \"requester\": {",
+							"          \"reference\": \"Practitioner/Practitioner1\"",
+							"        },",
+							"        \"doNotPerform\": true,",
+							"        \"code\": {",
+							"          \"coding\": [",
+							"            {",
+							"              \"code\": \"order-service\",",
+							"              \"system\": \"http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs\",",
+							"              \"display\": \"Order a service\"",
+							"            }",
+							"          ]",
+							"        }",
+							"      }",
+							"    }",
+							"  ]",
+							"}",
+							"",
+							"",
+							"",
+							"pm.test(\"PlanDefinition: Discharge Instructions 2 $apply\", function () {",
+							"    pm.response.to.have.status(200)",
+							"    _.expectToDeepEqual(pm.response.json(), expected, console)",
+							"})"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json+fhir",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"resourceType\": \"Parameters\",\n    \"id\": \"DischargeInstructionsParameters\",\n    \"parameter\": [\n        {\n            \"name\": \"subject\",\n            \"valueString\": \"Patient/Patient1\"\n        },\n        {\n            \"name\": \"practitioner\",\n            \"valueString\": \"Practitioner/Practitioner1\"\n        },\n        {\n            \"name\": \"encounter\",\n            \"valueString\": \"Encounter/Encounter1\"\n        },\n        {\n        \"name\": \"planDefinition\",\n        \"resource\": {\n        \"resourceType\": \"PlanDefinition\",\n        \"id\": \"OrderServicePlan\",\n        \"meta\": {\n            \"profile\": [\n            \"http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition\"\n            ]\n        },\n        \"url\": \"http://example.org/PlanDefinition/OrderServicePlan\",\n        \"name\": \"OrderServicePlan\",\n        \"title\": \"PlanDefinition OrderServicePlan\",\n        \"status\": \"draft\",\n        \"experimental\": true,\n        \"publisher\": \"Example\",\n        \"jurisdiction\": [\n            {\n            \"coding\": [\n                {\n                \"code\": \"001\",\n                \"system\": \"http://unstats.un.org/unsd/methods/m49/m49.htm\",\n                \"display\": \"World\"\n                }\n            ]\n            }\n        ],\n        \"version\": \"0.2.0\",\n        \"type\": {\n            \"coding\": [\n            {\n                \"code\": \"eca-rule\",\n                \"system\": \"http://terminology.hl7.org/CodeSystem/plan-definition-type\"\n            }\n            ]\n        },\n        \"description\": \"Definition of plan recommendation to order service\",\n        \"action\": [\n            {\n            \"title\": \"Order Service\",\n            \"type\": {\n                \"coding\": [\n                {\n                    \"code\": \"create\",\n                    \"system\": \"http://terminology.hl7.org/CodeSystem/action-type\"\n                }\n                ]\n            },\n            \"description\": \"Order Service\",\n            \"code\": [\n                {\n                \"coding\": [\n                    {\n                    \"code\": \"guideline-based-care\",\n                    \"system\": \"http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs\",\n                    \"display\": \"Guideline-based Care\"\n                    }\n                ]\n                }\n            ],\n            \"definitionCanonical\": \"http://example.org/ActivityDefinition/OrderServiceActivityVersionTest\"\n            }\n        ]\n        }\n        },\n        {\n            \"name\": \"contentEndpoint\",\n            \"resource\": {\n                \"resourceType\": \"Endpoint\",\n                \"address\": \"{{contentEndpointAddress}}\",\n                \"status\": \"active\",\n                \"payloadType\": [\n                    {\n                        \"coding\": [\n                            {\n                                \"code\": \"content\"\n                            }\n                        ]\n                    }\n                ],\n                \"connectionType\": {\n                    \"code\": \"{{contentEndpointType}}\"\n                }\n            }\n        },\n        {\n            \"name\": \"terminologyEndpoint\",\n            \"resource\": {\n                \"resourceType\": \"Endpoint\",\n                \"address\": \"{{terminologyEndpointAddress}}\",\n                \"status\": \"active\",\n                \"payloadType\": [\n                    {\n                        \"coding\": [\n                            {\n                                \"code\": \"terminology\"\n                            }\n                        ]\n                    }\n                ],\n                \"connectionType\": {\n                    \"code\": \"{{terminologyEndpointType}}\"\n                }\n            }\n        },\n        {\n            \"name\": \"data\",\n            \"resource\": {\n                \"resourceType\": \"Bundle\",\n                \"id\": \"PatientTestBundle1\",\n                \"type\": \"collection\",\n                \"entry\": [\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Patient\",\n                            \"id\": \"Patient1\",\n                            \"name\": [\n                                {\n                                    \"given\": [\n                                        \"Alice\"\n                                    ]\n                                }\n                            ]\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Encounter\",\n                            \"id\": \"Encounter1\",\n                            \"status\": \"in-progress\",\n                            \"class\": {\n                                \"code\": \"AMB\",\n                                \"system\": \"http://terminology.hl7.org/CodeSystem/v3-ActCode\"\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"participant\": [\n                                {\n                                    \"individual\": {\n                                        \"reference\": \"Practitioner/Practitioner1\"\n                                    }\n                                }\n                            ]\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Practitioner\",\n                            \"id\": \"Practitioner1\",\n                            \"name\": [\n                                {\n                                    \"given\": [\n                                        \"Michael\"\n                                    ]\n                                }\n                            ]\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"MedicationRequest\",\n                            \"id\": \"PastMedicationRequest\",\n                            \"status\": \"active\",\n                            \"intent\": \"order\",\n                            \"authoredOn\": \"2023-01-01\",\n                            \"medicationCodeableConcept\": {\n                                \"text\": \"Some medication\"\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            }\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"DetectedIssue\",\n                            \"id\": \"DetectedIssue1\",\n                            \"status\": \"final\",\n                            \"code\": {\n                                \"coding\": [\n                                    {\n                                        \"code\": \"TIME\",\n                                        \"system\": \"http://terminology.hl7.org/CodeSystem/v3-ActCode\",\n                                        \"display\": \"Time-related Detected Issue\"\n                                    }\n                                ]\n                            },\n                            \"severity\": \"high\",\n                            \"patient\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"identifiedDateTime\": \"2023-01-01\"\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Condition\",\n                            \"id\": \"Condition1\",\n                            \"clinicalStatus\": {\n                                \"coding\": [\n                                    {\n                                        \"code\": \"active\",\n                                        \"system\": \"http://terminology.hl7.org/CodeSystem/condition-clinical\"\n                                    }\n                                ]\n                            },\n                            \"verificationStatus\": {\n                                \"coding\": [\n                                    {\n                                        \"code\": \"provisional\",\n                                        \"system\": \"http://terminology.hl7.org/CodeSystem/condition-ver-status\"\n                                    }\n                                ]\n                            },\n                            \"category\": [\n                                {\n                                    \"coding\": [\n                                        {\n                                            \"code\": \"problem-list-item\",\n                                            \"system\": \"http://terminology.hl7.org/CodeSystem/condition-category\"\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"code\": {\n                                \"coding\": [\n                                    {\n                                        \"code\": \"422504002\",\n                                        \"system\": \"http://snomed.info/sct\",\n                                        \"display\": \"Ischemic stroke (disorder)\"\n                                    }\n                                ]\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"recordedDate\": \"2023-01-01\"\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Observation\",\n                            \"id\": \"Inference1\",\n                            \"status\": \"final\",\n                            \"code\": {\n                                \"text\": \"Inference\",\n                                \"coding\": [\n                                    {\n                                        \"code\": \"448765001\",\n                                        \"system\": \"http://snomed.info/sct\",\n                                        \"display\": \"Unintentional weight loss (finding)\"\n                                    }\n                                ]\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"effectiveDateTime\": \"2023-01-01\"\n                        }\n                    },\n                    {\n                        \"resource\": {\n                            \"resourceType\": \"Flag\",\n                            \"id\": \"Flag1\",\n                            \"status\": \"active\",\n                            \"category\": [\n                                {\n                                    \"coding\": [\n                                        {\n                                            \"code\": \"admin\",\n                                            \"system\": \"http://terminology.hl7.org/CodeSystem/flag-category\",\n                                            \"display\": \"Administrative\"\n                                        }\n                                    ]\n                                }\n                            ],\n                            \"code\": {\n                                \"text\": \"Flag\"\n                            },\n                            \"subject\": {\n                                \"reference\": \"Patient/Patient1\"\n                            },\n                            \"period\": {\n                                \"start\": \"2023-01-01\",\n                                \"end\": \"2024-01-01\"\n                            }\n                        }\n                    }\n                ]\n            }\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{cpgServer}}/PlanDefinition/{{applyOperationName}}",
+					"host": [
+						"{{cpgServer}}"
+					],
+					"path": [
+						"PlanDefinition",
+						"{{applyOperationName}}"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -1931,27 +2064,27 @@
 	"variable": [
 		{
 			"key": "cpgServer",
-			"value": "https://reason-framework-9830c4af7a50.herokuapp.com",
+			"value": "localhost:9001",
 			"type": "string"
 		},
 		{
 			"key": "contentEndpointAddress",
-			"value": "https://reason-framework-test-content-abdc3f75e0f9.herokuapp.com/fhir",
+			"value": "file:///Users/taylorkingston/projects/pd-apply/connectathon/output",
 			"type": "string"
 		},
 		{
 			"key": "contentEndpointType",
-			"value": "hl7-fhir-rest",
+			"value": "hl7-fhir-file",
 			"type": "string"
 		},
 		{
 			"key": "terminologyEndpointAddress",
-			"value": "https://reason-framework-test-content-abdc3f75e0f9.herokuapp.com/fhir",
+			"value": "file:///Users/taylorkingston/projects/pd-apply/connectathon/output",
 			"type": "string"
 		},
 		{
 			"key": "terminologyEndpointType",
-			"value": "hl7-fhir-rest",
+			"value": "hl7-fhir-file",
 			"type": "string"
 		},
 		{
