@@ -35,7 +35,7 @@ Usage: #example
 Instance: PastMedication
 InstanceOf: Medication
 Usage: #example
-* form = http://snomed.info/sct#pill "Pill"
+* form = $sct#pill "Pill"
 * status = #inactive
 
 Instance: ActiveRaTreatmentFeature1
@@ -62,7 +62,7 @@ Usage: #example
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
-* code = http://snomed.info/sct#422504002 "Ischemic stroke (disorder)"
+* code = $sct#422504002 "Ischemic stroke (disorder)"
 * subject = Reference(Patient/Patient1)
 * recordedDate = "2023-01-01"
 
@@ -72,7 +72,7 @@ Usage: #example
 * status = #final
 * code
   * text = "Inference"
-  * coding = http://snomed.info/sct#448765001 "Unintentional weight loss (finding)"
+  * coding = $sct#448765001 "Unintentional weight loss (finding)"
 * subject = Reference(Patient/Patient1)
 * effectiveDateTime = "2023-01-01"
 

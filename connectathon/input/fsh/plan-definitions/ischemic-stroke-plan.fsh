@@ -4,7 +4,7 @@ Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(IschemicStrokePlan, PlanDefinition)
 * description = "Definition of a plan to administer TPA if patient had ischemic stroke"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
-* library = "http://example.org/Library/IschemicStrokeLibrary|0.2.0"
+* library = Canonical(IschemicStrokeLibrary|0.2.0)
 * action
   * title = "Recommend Ischemic Stroke Treatment"
   * description = "Recommendation to administer TPA if patient had Ischemic Stroke"

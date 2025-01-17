@@ -13,10 +13,8 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/ReportWeightHeightPlan|0.2.0"
-* extension
-  * url = "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"
-  * valueReference = Reference(WeightTargetGoal)
+* instantiatesCanonical = Canonical(ReportWeightHeightPlan|0.2.0)
+* extension[resource-pertainsToGoal].valueReference = Reference(WeightTargetGoal)
 * action[+]
   * title = "Recommend Weight Measurement"
   * description = "Recommend Weight Measurement"

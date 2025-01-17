@@ -2,24 +2,12 @@ Instance: CkdPathwayExpected
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/CkdPathwayRequestGroup"
-  * resource = CkdPathwayRequestGroup
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/InlineCKDManagementRequestGroup"
-  * resource = InlineCKDManagementRequestGroup
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/InlineCKDEducationRequestGroup"
-  * resource = InlineCKDEducationRequestGroup
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/InlineCKDFollowUpRequestGroup"
-  * resource = InlineCKDFollowUpRequestGroup
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/InlineSendMessageRequestGroup"
-  * resource = InlineSendMessageRequestGroup
-* entry[+]
-  * fullUrl = "http://apply-processor/CommunicationRequest/InlineCommunicationRequest"
-  * resource = InlineCommunicationRequest
+* insert BundleEntry (CkdPathwayRequestGroup, RequestGroup)
+* insert BundleEntry (InlineCKDManagementRequestGroup, RequestGroup)
+* insert BundleEntry (InlineCKDEducationRequestGroup, RequestGroup)
+* insert BundleEntry (InlineCKDFollowUpRequestGroup, RequestGroup)
+* insert BundleEntry (InlineSendMessageRequestGroup, RequestGroup)
+* insert BundleEntry(InlineCommunicationRequest, CommunicationRequest)
 
 Instance: CkdPathwayRequestGroup
 InstanceOf: RequestGroup
@@ -29,7 +17,7 @@ Usage: #inline
 * subject = Reference(Patient/Patient1)
 * author = Reference(Practitioner/Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/CkdPathway|0.2.0"
+* instantiatesCanonical = Canonical(CkdPathway|0.2.0)
 * action[+]
   * title = "CKD Management"
   * description = "Definition of plan for new diagnosis of CKD"
@@ -47,7 +35,7 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/CKDManagementPlan|0.2.0"
+* instantiatesCanonical = Canonical(CKDManagementPlan|0.2.0)
 * action[+]
   * title = "CKD Education"
   * description = "CKD Education at time of diagnosis"
@@ -67,7 +55,7 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/CKDEducationPlan|0.2.0"
+* instantiatesCanonical = Canonical(CKDEducationPlan|0.2.0)
 * action
   * title = "Recommend CKD Patient Education"
   * description = "Recommend verbal and written education on disease state at time of CKD diagnosis"
@@ -84,7 +72,7 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/CKDFollowUpPlan|0.2.0"
+* instantiatesCanonical = Canonical(CKDFollowUpPlan|0.2.0)
 * action
   * title = "Recommend CKD Follow Up"
   * description = "Recommend CKD Follow Up"
@@ -101,12 +89,12 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/SendMessagePlan|0.2.0"
+* instantiatesCanonical = Canonical(SendMessagePlan|0.2.0)
 * action
   * title = "Greet the patient"
   * description = "Send a message with a greeting"
   * code = $cpg-common-process#alerts-reminders-education "Alerts Reminders Education"
-  * type = http://terminology.hl7.org/CodeSystem/action-type#create
+  * type = $action-type#create
   * resource = Reference(CommunicationRequest/InlineCommunicationRequest)
 
 Instance: InlineCommunicationRequest

@@ -2,15 +2,9 @@ Instance: CKDManagementExpected
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/CKDManagementRequestGroup"
-  * resource = CKDManagementRequestGroup
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/CKDEducationRequestGroup2"
-  * resource = CKDEducationRequestGroup2
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/CKDFollowUpRequestGroup"
-  * resource = CKDFollowUpRequestGroup
+* insert BundleEntry (CKDManagementRequestGroup, RequestGroup)
+* insert BundleEntry (CKDEducationRequestGroup2, RequestGroup)
+* insert BundleEntry (CKDFollowUpRequestGroup, RequestGroup)
 
 Instance: CKDManagementRequestGroup
 InstanceOf: RequestGroup
@@ -20,7 +14,7 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/CKDManagementPlan|0.2.0"
+* instantiatesCanonical = Canonical(CKDManagementPlan|0.2.0)
 * action[+]
   * title = "CKD Education"
   * description = "CKD Education at time of diagnosis"
@@ -40,7 +34,7 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/CKDEducationPlan|0.2.0"
+* instantiatesCanonical = Canonical(CKDEducationPlan|0.2.0)
 * action
   * title = "Recommend CKD Patient Education"
   * description = "Recommend verbal and written education on disease state at time of CKD diagnosis"
@@ -57,7 +51,7 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/CKDFollowUpPlan|0.2.0"
+* instantiatesCanonical = Canonical(CKDFollowUpPlan|0.2.0)
 * action
   * title = "Recommend CKD Follow Up"
   * description = "Recommend CKD Follow Up"

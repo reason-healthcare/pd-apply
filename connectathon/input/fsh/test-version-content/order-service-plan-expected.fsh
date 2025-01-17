@@ -2,17 +2,13 @@ Instance: OrderServicePlanExpected
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry[0]
-  * fullUrl = "http://apply-processor/RequestGroup/OrderServiceRequestGroup"
-  * resource = OrderServiceRequestGroup
-* entry[+]
-  * fullUrl = "http://apply-processor/ServiceRequest/OrderServiceVersionTestExpected"
-  * resource = OrderServiceVersionTestExpected
+* insert BundleEntry(OrderServiceRequestGroup, RequestGroup)
+* insert BundleEntry(OrderServiceVersionTestExpected, ServiceRequest)
 
 Instance: OrderServiceRequestGroup
 InstanceOf: RequestGroup
 Usage: #inline
-* instantiatesCanonical = "http://example.org/PlanDefinition/OrderServicePlan|0.2.0"
+* instantiatesCanonical = Canonical(OrderServicePlan|0.2.0)
 * status = #draft
 * intent = #proposal
 * subject = Reference(Patient/Patient1)
@@ -22,13 +18,13 @@ Usage: #inline
   * title = "Order Service"
   * description = "Order Service"
   * code = $cpg-common-process#guideline-based-care "Guideline-based Care"
-  * type = http://terminology.hl7.org/CodeSystem/action-type#create
+  * type = $action-type#create
   * resource = Reference(ServiceRequest/OrderServiceVersionTestExpected)
 
 Instance: OrderServiceVersionTestExpected
 InstanceOf: ServiceRequest
 Usage: #inline
-* instantiatesCanonical = "http://example.org/ActivityDefinition/OrderServiceActivityVersionTest|0.2.0"
+* instantiatesCanonical = "http://example.org/ActivityDefinition/OrderServiceActivityVersionTest"
 * status = #draft
 * intent = #proposal
 * doNotPerform = true

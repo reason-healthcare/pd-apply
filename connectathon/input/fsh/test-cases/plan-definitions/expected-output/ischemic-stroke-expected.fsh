@@ -2,9 +2,7 @@ Instance: IschemicStrokeExpected
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry
-  * fullUrl = "http://apply-processor/RequestGroup/IschemicStrokeRequestGroup"
-  * resource = IschemicStrokeRequestGroup
+* insert BundleEntry(IschemicStrokeRequestGroup, RequestGroup)
 
 Instance: IschemicStrokeRequestGroup
 InstanceOf: RequestGroup
@@ -12,7 +10,7 @@ Usage: #inline
 * intent = #proposal
 * status = #draft
 * subject = Reference(Patient/Patient1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/IschemicStrokePlan|0.2.0"
+* instantiatesCanonical = Canonical(IschemicStrokePlan|0.2.0)
 * author = Reference(Practitioner/Practitioner1)
 * encounter = Reference(Encounter/Encounter1)
 * action

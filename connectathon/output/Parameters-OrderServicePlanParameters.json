@@ -33,9 +33,15 @@
       },
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-01-16T17:40:36-05:00",
-      "publisher" : "Example Publisher",
+      "publisher" : "Example",
       "description" : "Definition of plan recommendation to order service",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
       "action" : [{
         "title" : "Order Service",
         "description" : "Order Service",

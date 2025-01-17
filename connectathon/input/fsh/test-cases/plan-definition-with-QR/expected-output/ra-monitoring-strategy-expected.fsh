@@ -34,7 +34,7 @@ Usage: #inline
   * title = "Order monitoring tests for antirheumatic drug therapy."
   * description = "Order monitoring tests for antirheumatic drug therapy."
   * code = $cpg-common-process#diagnostic-testing
-  * type = http://terminology.hl7.org/CodeSystem/action-type#create
+  * type = $action-type#create
   * condition
     * kind = #applicability
     * expression
@@ -119,7 +119,7 @@ Usage: #inline
 * doNotPerform = false
 * intent = #proposal
 * instantiatesCanonical = Canonical(OrderServiceActivity)
-* code = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#order-service "Order a service"
+* code = $cpg-activity-type-cs#order-service "Order a service"
 * subject = Reference(Patient1)
 * encounter = Reference(Encounter1)
 * requester = Reference(Practitioner1)

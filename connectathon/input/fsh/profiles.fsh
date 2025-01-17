@@ -14,14 +14,14 @@ Description: "fixes problem in cpg spec"
 Profile: FixedCPGTaskDispenseMedication
 Parent: $cpg-task
 Description: "fixes problem in cpg spec"
-* code = $cpg-activity-type-cs#dispense-medications "Dispense a Medication" (exactly)
+* code = $cpg-activity-type-cs#dispense-medication "Dispense a Medication" (exactly)
 * input ^slicing.discriminator.type = #pattern
 * input ^slicing.discriminator.path = "code"
 * input ^slicing.rules = #open
 * input ^slicing.description = "Slice based on the input.code pattern"
 * input contains medicationDispense 1..1 MS
 * input[medicationDispense]
-  * type = $cpg-activity-type-cs#dispense-medications "Dispense a Medication" (exactly)
+  * type = $cpg-activity-type-cs#dispense-medication "Dispense a Medication" (exactly)
   * valueReference 1..1 MS
 
 Profile: FixedCPGTaskDocumentMedication

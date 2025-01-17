@@ -10,7 +10,7 @@
   "title" : "ActivityDefinition OrderMedicationActivity",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-17T10:51:50-05:00",
+  "date" : "2025-01-17T11:53:21-05:00",
   "publisher" : "Example Publisher",
   "description" : "Order a medication activity",
   "kind" : "MedicationRequest",

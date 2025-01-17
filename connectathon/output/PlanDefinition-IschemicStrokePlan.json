@@ -17,7 +17,7 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-17T10:51:50-05:00",
+  "date" : "2025-01-17T11:53:21-05:00",
   "publisher" : "Example Publisher",
   "description" : "Definition of a plan to administer TPA if patient had ischemic stroke",
   "library" : ["http://example.org/Library/IschemicStrokeLibrary|0.2.0"],
@@ -28,7 +28,7 @@
     "code" : [{
       "coding" : [{
         "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
-        "code" : "dispense-medications",
+        "code" : "dispense-medicationss",
         "display" : "Dispense Medications"
       }]
     }],

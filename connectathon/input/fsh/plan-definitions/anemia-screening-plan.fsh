@@ -4,7 +4,7 @@ Usage: #example
 * insert KnowledgeArtifactDefinitionMetadata(AnemiaScreeningPlan, PlanDefinition)
 * description = "Definition of plan to screen for iron defeciency anemia"
 * type = $cpg-plan-type#clinical-protocol "Clinical Protocol"
-* library = "http://example.org/Library/AnemiaScreeningLibrary|0.2.0"
+* library = Canonical(AnemiaScreeningLibrary|0.2.0)
 * action[+]
   * title = "Recommend CBC Lab Panel"
   * description = "Recommend CBC Lab Panel"

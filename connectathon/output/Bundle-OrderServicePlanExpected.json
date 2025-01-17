@@ -46,7 +46,7 @@
     "resource" : {
       "resourceType" : "ServiceRequest",
       "id" : "OrderServiceVersionTestExpected",
-      "instantiatesCanonical" : ["http://example.org/ActivityDefinition/OrderServiceActivityVersionTest|0.2.0"],
+      "instantiatesCanonical" : ["http://example.org/ActivityDefinition/OrderServiceActivityVersionTest"],
       "status" : "draft",
       "intent" : "proposal",
       "doNotPerform" : true,

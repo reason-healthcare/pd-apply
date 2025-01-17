@@ -2,9 +2,7 @@ Instance: AnemiaScreeningExpected
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry
-  * fullUrl = "http://apply-processor/RequestGroup/AnemiaScreeningRequestGroup"
-  * resource = AnemiaScreeningRequestGroup
+* insert BundleEntry(AnemiaScreeningRequestGroup, RequestGroup)
 
 Instance: AnemiaScreeningRequestGroup
 InstanceOf: RequestGroup
@@ -14,7 +12,7 @@ Usage: #inline
 * subject = Reference(Patient1)
 * author = Reference(Practitioner1)
 * encounter = Reference(Encounter1)
-* instantiatesCanonical = "http://example.org/PlanDefinition/AnemiaScreeningPlan|0.2.0"
+* instantiatesCanonical = Canonical(AnemiaScreeningPlan|0.2.0)
 * action[+]
   * title = "Recommend CBC Lab Panel"
   * description = "Recommend CBC Lab Panel"
