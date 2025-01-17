@@ -57,7 +57,7 @@ Usage: #inline
   * title = "Follow Up Plan"
   * description = "Schedule follow up with nephrologist"
   * code = $cpg-common-process#monitor-and-follow-up-of-patient "Monitor and Follow-up of Patient"
-  * resource = Reference(CKDFollowUpRequestGroup)
+  * resource = Reference(InlineCKDFollowUpRequestGroup)
 
 Instance: InlineCKDEducationRequestGroup
 InstanceOf: RequestGroup

@@ -6,7 +6,7 @@ Usage: #example
   * fullUrl = "http://apply-processor/RequestGroup/OrderServiceRequestGroup"
   * resource = OrderServiceRequestGroup
 * entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/OrderServiceVersionTestExpected"
+  * fullUrl = "http://apply-processor/ServiceRequest/OrderServiceVersionTestExpected"
   * resource = OrderServiceVersionTestExpected
 
 Instance: OrderServiceRequestGroup
@@ -22,8 +22,8 @@ Usage: #inline
   * title = "Order Service"
   * description = "Order Service"
   * code = $cpg-common-process#guideline-based-care "Guideline-based Care"
-  * type = http://terminology.hl7.org/CodeSystem/plan-definition-type#create
-  * resource = Reference(428515b4-f576-468e-87a6-025aae5b2dd5)
+  * type = http://terminology.hl7.org/CodeSystem/action-type#create
+  * resource = Reference(ServiceRequest/OrderServiceVersionTestExpected)
 
 Instance: OrderServiceVersionTestExpected
 InstanceOf: ServiceRequest

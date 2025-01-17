@@ -70,6 +70,20 @@
     "name" : "OrderServiceActivity"
   },
   {
+    "id" : "OrderServiceActivityV1",
+    "type" : "ActivityDefinition",
+    "url" : "http://example.org/ActivityDefinition/OrderServiceActivityVersionTest",
+    "version" : "0.1.0",
+    "name" : "OrderServiceActivity"
+  },
+  {
+    "id" : "OrderServiceActivityV2",
+    "type" : "ActivityDefinition",
+    "url" : "http://example.org/ActivityDefinition/OrderServiceActivityVersionTest",
+    "version" : "0.2.0",
+    "name" : "OrderServiceActivity"
+  },
+  {
     "id" : "ProposeDiagnosisActivity",
     "type" : "ActivityDefinition",
     "url" : "http://example.org/ActivityDefinition/ProposeDiagnosisActivity",
@@ -299,6 +313,13 @@
     "url" : "http://example.org/PlanDefinition/NeurologicalAssessmentPlan",
     "version" : "0.2.0",
     "name" : "NeurologicalAssessmentPlan"
+  },
+  {
+    "id" : "OrderServicePlan",
+    "type" : "PlanDefinition",
+    "url" : "http://example.org/PlanDefinition/OrderServicePlan",
+    "version" : "0.2.0",
+    "name" : "OrderServicePlan"
   },
   {
     "id" : "RaMonitoringRecommendation",

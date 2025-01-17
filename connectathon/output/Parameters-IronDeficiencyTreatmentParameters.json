@@ -75,6 +75,7 @@
       "id" : "PatientTestBundle1",
       "type" : "collection",
       "entry" : [{
+        "fullUrl" : "http://apply-processor/Patient/Patient1",
         "resource" : {
           "resourceType" : "Patient",
           "id" : "Patient1",
@@ -84,6 +85,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/Encounter/Encounter1",
         "resource" : {
           "resourceType" : "Encounter",
           "id" : "Encounter1",
@@ -103,6 +105,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/Practitioner/Practitioner1",
         "resource" : {
           "resourceType" : "Practitioner",
           "id" : "Practitioner1",
@@ -112,6 +115,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/PastMedicationRequest/PastMedicationRequest",
         "resource" : {
           "resourceType" : "MedicationRequest",
           "id" : "PastMedicationRequest",
@@ -127,6 +131,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/CurrentMedication/CurrentMedication",
         "resource" : {
           "resourceType" : "Medication",
           "id" : "CurrentMedication",
@@ -134,6 +139,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/PastMedication/PastMedication",
         "resource" : {
           "resourceType" : "Medication",
           "id" : "PastMedication",
@@ -148,6 +154,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/DetectedIssue/DetectedIssue1",
         "resource" : {
           "resourceType" : "DetectedIssue",
           "id" : "DetectedIssue1",
@@ -156,7 +163,7 @@
             "coding" : [{
               "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
               "code" : "TIME",
-              "display" : "Time-related Detected Issue"
+              "display" : "timing detected issue"
             }]
           },
           "severity" : "high",
@@ -167,6 +174,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/Condition/Condition1",
         "resource" : {
           "resourceType" : "Condition",
           "id" : "Condition1",
@@ -202,6 +210,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/Inference/Inference1",
         "resource" : {
           "resourceType" : "Observation",
           "id" : "Inference1",
@@ -221,6 +230,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/Flag/Flag1",
         "resource" : {
           "resourceType" : "Flag",
           "id" : "Flag1",
@@ -245,6 +255,7 @@
         }
       },
       {
+        "fullUrl" : "http://apply-processor/ActiveRaTreatmentFeature/ActiveRaTreatmentFeature1",
         "resource" : {
           "resourceType" : "Observation",
           "id" : "ActiveRaTreatmentFeature1",

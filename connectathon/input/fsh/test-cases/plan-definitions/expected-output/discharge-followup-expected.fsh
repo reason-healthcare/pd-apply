@@ -6,6 +6,7 @@ Usage: #example
   * fullUrl = "http://apply-processor/RequestGroup/DischargeRequestGroup"
   * resource = DischargeRequestGroup
 * entry[+]
+  * fullUrl = "http://apply-processor/Goal/PatientMonitoringGoal"
   * resource = PatientMonitoringGoal
 
 Instance: DischargeRequestGroup

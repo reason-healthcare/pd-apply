@@ -77,7 +77,7 @@
           }]
         }],
         "resource" : {
-          "reference" : "RequestGroup/CKDFollowUpRequestGroup"
+          "reference" : "RequestGroup/InlineCKDFollowUpRequestGroup"
         }
       }]
     }

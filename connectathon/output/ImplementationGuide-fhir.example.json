@@ -5,7 +5,7 @@
   "version" : "0.2.0",
   "name" : "CpgFixtures",
   "status" : "draft",
-  "date" : "2025-01-15T21:55:48-05:00",
+  "date" : "2025-01-17T10:51:50-05:00",
   "publisher" : "Example Publisher",
   "packageId" : "fhir.example",
   "license" : "CC0-1.0",
@@ -79,7 +79,18 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "generation-off"
+        "valueString" : "no-narrative"
+      },
+      {
+        "url" : "value",
+        "valueString" : "*/*"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "default-version"
       },
       {
         "url" : "value",
@@ -90,11 +101,11 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "no-narrative"
+        "valueString" : "apply-version"
       },
       {
         "url" : "value",
-        "valueString" : "*/*"
+        "valueString" : "false"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -277,17 +288,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueString" : "apply-wg"
       },
       {
@@ -391,7 +391,18 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "generation-off"
+        "valueCode" : "no-narrative"
+      },
+      {
+        "url" : "value",
+        "valueString" : "*/*"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "default-version"
       },
       {
         "url" : "value",
@@ -402,11 +413,11 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "no-narrative"
+        "valueCode" : "apply-version"
       },
       {
         "url" : "value",
-        "valueString" : "*/*"
+        "valueString" : "false"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -579,17 +590,6 @@
       "extension" : [{
         "url" : "code",
         "valueCode" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-version"
       },
       {
         "url" : "value",
@@ -1559,6 +1559,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/OrderServiceActivityV1"
+      },
+      "name" : "OrderServiceActivityV1",
+      "description" : "Example Activity Definition for a recommendation to order a service",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/OrderServiceActivityV2"
+      },
+      "name" : "OrderServiceActivityV2",
+      "description" : "Example Activity Definition for a recommendation to order a service",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
@@ -1576,6 +1600,40 @@
         "reference" : "Parameters/OrderServiceParameters"
       },
       "name" : "OrderServiceParameters",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/OrderServicePlan"
+      },
+      "name" : "OrderServicePlan",
+      "description" : "Definition of plan recommendation to order service",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/OrderServicePlanExpected"
+      },
+      "name" : "OrderServicePlanExpected",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/OrderServicePlanParameters"
+      },
+      "name" : "OrderServicePlanParameters",
       "exampleBoolean" : true
     },
     {

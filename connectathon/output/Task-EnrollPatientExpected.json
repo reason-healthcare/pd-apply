@@ -31,6 +31,6 @@
         "display" : "Enroll in a pathway or strategy"
       }]
     },
-    "valueCanonical" : "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway"
+    "valueCanonical" : "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway-pd"
   }]
 }

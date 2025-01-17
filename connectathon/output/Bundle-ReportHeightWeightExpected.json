@@ -58,6 +58,7 @@
     }
   },
   {
+    "fullUrl" : "http://apply-processor/Goal/WeightTargetGoal",
     "resource" : {
       "resourceType" : "Goal",
       "id" : "WeightTargetGoal",

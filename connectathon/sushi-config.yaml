@@ -70,7 +70,6 @@ dependencies:
 #   validation: [allow-any-extensions, no-broken-links]
 parameters:
   path-binary: ./input/cql
-  generation-off: true
   no-narrative:
     - '*/*'
   default-version: true

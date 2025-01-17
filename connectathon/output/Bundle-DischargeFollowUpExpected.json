@@ -59,6 +59,7 @@
     }
   },
   {
+    "fullUrl" : "http://apply-processor/Goal/PatientMonitoringGoal",
     "resource" : {
       "resourceType" : "Goal",
       "id" : "PatientMonitoringGoal",

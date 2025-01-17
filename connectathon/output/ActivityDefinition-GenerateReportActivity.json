@@ -6,7 +6,7 @@
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith",
-    "valueCanonical" : "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport"
+    "valueCanonical" : "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport-measure"
   }],
   "url" : "http://example.org/ActivityDefinition/GenerateReportActivity",
   "version" : "0.2.0",
@@ -14,7 +14,7 @@
   "title" : "ActivityDefinition GenerateReportActivity",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-15T21:55:48-05:00",
+  "date" : "2025-01-17T10:51:50-05:00",
   "publisher" : "Example Publisher",
   "description" : "Example Activity Definition for a recommendation to generate a report",
   "kind" : "Task",

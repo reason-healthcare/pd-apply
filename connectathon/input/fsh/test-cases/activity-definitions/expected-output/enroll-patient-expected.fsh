@@ -10,4 +10,4 @@ Usage: #example
 * requester = Reference(Practitioner1)
 * input[pathway]
   * type = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"
-  * valueCanonical = "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway"
+  * valueCanonical = "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway-pd"

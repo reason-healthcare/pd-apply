@@ -2,11 +2,8 @@ Instance: ReportHeightWeightExpected
 InstanceOf: Bundle
 Usage: #example
 * type = #collection
-* entry[+]
-  * fullUrl = "http://apply-processor/RequestGroup/ReportHeightWeightRequestGroup"
-  * resource = ReportHeightWeightRequestGroup
-* entry[+]
-  * resource = WeightTargetGoal
+* insert BundleEntry(ReportHeightWeightRequestGroup, RequestGroup)
+* insert BundleEntry(WeightTargetGoal, Goal)
 
 Instance: ReportHeightWeightRequestGroup
 InstanceOf: RequestGroup

@@ -51,7 +51,7 @@ Instance: DetectedIssue1
 InstanceOf: DetectedIssue
 Usage: #example
 * status = #final
-* code = http://terminology.hl7.org/CodeSystem/v3-ActCode#TIME "Time-related Detected Issue"
+* code = http://terminology.hl7.org/CodeSystem/v3-ActCode#TIME "timing detected issue"
 * severity = #high
 * patient = Reference(Patient/Patient1)
 * identifiedDateTime = "2023-01-01"
@@ -92,14 +92,14 @@ Usage: #example
 Instance: PatientTestBundle1
 InstanceOf: Bundle
 * type = #collection
-* entry[+].resource = Patient1
-* entry[+].resource = Encounter1
-* entry[+].resource = Practitioner1
-* entry[+].resource = PastMedicationRequest
-* entry[+].resource = CurrentMedication
-* entry[+].resource = PastMedication
-* entry[+].resource = DetectedIssue1
-* entry[+].resource = Condition1
-* entry[+].resource = Inference1
-* entry[+].resource = Flag1
-* entry[+].resource = ActiveRaTreatmentFeature1
+* insert BundleEntry(Patient1, Patient)
+* insert BundleEntry(Encounter1, Encounter)
+* insert BundleEntry(Practitioner1, Practitioner)
+* insert BundleEntry(PastMedicationRequest, PastMedicationRequest)
+* insert BundleEntry(CurrentMedication, CurrentMedication)
+* insert BundleEntry(PastMedication, PastMedication)
+* insert BundleEntry(DetectedIssue1, DetectedIssue)
+* insert BundleEntry(Condition1, Condition)
+* insert BundleEntry(Inference1, Inference)
+* insert BundleEntry(Flag1, Flag)
+* insert BundleEntry(ActiveRaTreatmentFeature1, ActiveRaTreatmentFeature)

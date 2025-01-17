@@ -47,3 +47,8 @@ RuleSet: CaseFeatureExpressions(reference, baseExpression)
 * ^extension[CPGFeatureExpression].valueExpression.language = #text/cql-identifier
 * ^extension[CPGFeatureExpression].valueExpression.reference = "http://example.org/Library/{reference}"
 * ^extension[CPGFeatureExpression].valueExpression.expression = "{baseExpression}"
+
+RuleSet: BundleEntry(id, type)
+* entry[+]
+  * fullUrl = "http://apply-processor/{type}/{id}"
+  * resource = {id}
