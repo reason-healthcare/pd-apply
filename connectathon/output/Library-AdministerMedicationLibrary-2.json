@@ -22,7 +22,7 @@
       }, {
          "type" : "Annotation",
          "s" : {
-            "r" : "25",
+            "r" : "30",
             "s" : [ {
                "value" : [ "","library AdministerMedicationLibrary version '0.2.0'" ]
             } ]
@@ -267,25 +267,111 @@
                }
             }
          }, {
-            "localId" : "25",
-            "locator" : "20:1-24:8",
+            "localId" : "20",
+            "locator" : "20:1-21:129",
+            "name" : "Medication Request Code",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "20",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Medication Request Code\"",":\n  " ]
+                  }, {
+                     "r" : "19",
+                     "s" : [ {
+                        "value" : [ "{" ]
+                     }, {
+                        "s" : [ {
+                           "value" : [ "system",": " ]
+                        }, {
+                           "r" : "16",
+                           "s" : [ {
+                              "value" : [ "'http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs'" ]
+                           } ]
+                        } ]
+                     }, {
+                        "value" : [ ", " ]
+                     }, {
+                        "s" : [ {
+                           "value" : [ "code",": " ]
+                        }, {
+                           "r" : "17",
+                           "s" : [ {
+                              "value" : [ "'order-medication'" ]
+                           } ]
+                        } ]
+                     }, {
+                        "value" : [ ", " ]
+                     }, {
+                        "s" : [ {
+                           "value" : [ "display",": " ]
+                        }, {
+                           "r" : "18",
+                           "s" : [ {
+                              "value" : [ "'Order a medication'" ]
+                           } ]
+                        } ]
+                     }, {
+                        "value" : [ "}" ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "19",
+               "locator" : "21:3-21:129",
+               "type" : "Tuple",
+               "element" : [ {
+                  "name" : "system",
+                  "value" : {
+                     "localId" : "16",
+                     "locator" : "21:12-21:71",
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+                     "type" : "Literal"
+                  }
+               }, {
+                  "name" : "code",
+                  "value" : {
+                     "localId" : "17",
+                     "locator" : "21:80-21:97",
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "order-medication",
+                     "type" : "Literal"
+                  }
+               }, {
+                  "name" : "display",
+                  "value" : {
+                     "localId" : "18",
+                     "locator" : "21:109-21:128",
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "Order a medication",
+                     "type" : "Literal"
+                  }
+               } ]
+            }
+         }, {
+            "localId" : "30",
+            "locator" : "23:1-27:8",
             "name" : "Medication Proposal Reference",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ {
                "type" : "Annotation",
                "s" : {
-                  "r" : "25",
+                  "r" : "30",
                   "s" : [ {
                      "value" : [ "","define ","\"Medication Proposal Reference\"",":\n  " ]
                   }, {
-                     "r" : "24",
+                     "r" : "29",
                      "s" : [ {
                         "value" : [ "if " ]
                      }, {
-                        "r" : "17",
+                        "r" : "22",
                         "s" : [ {
-                           "r" : "16",
+                           "r" : "21",
                            "s" : [ {
                               "value" : [ "\"Medication Proposal\"" ]
                            } ]
@@ -295,32 +381,32 @@
                      }, {
                         "value" : [ " then\n    " ]
                      }, {
-                        "r" : "22",
+                        "r" : "27",
                         "s" : [ {
                            "value" : [ "{ " ]
                         }, {
                            "s" : [ {
                               "value" : [ "reference",": " ]
                            }, {
-                              "r" : "21",
+                              "r" : "26",
                               "s" : [ {
-                                 "r" : "18",
+                                 "r" : "23",
                                  "s" : [ {
                                     "value" : [ "'MedicationRequest/'" ]
                                  } ]
                               }, {
                                  "value" : [ " + " ]
                               }, {
-                                 "r" : "20",
+                                 "r" : "25",
                                  "s" : [ {
-                                    "r" : "19",
+                                    "r" : "24",
                                     "s" : [ {
                                        "value" : [ "\"Medication Proposal\"" ]
                                     } ]
                                  }, {
                                     "value" : [ "." ]
                                  }, {
-                                    "r" : "20",
+                                    "r" : "25",
                                     "s" : [ {
                                        "value" : [ "id" ]
                                     } ]
@@ -331,44 +417,44 @@
                            "value" : [ " }" ]
                         } ]
                      }, {
-                        "r" : "23",
+                        "r" : "28",
                         "value" : [ "\n  else\n    ","null" ]
                      } ]
                   } ]
                }
             } ],
             "expression" : {
-               "localId" : "24",
-               "locator" : "21:3-24:8",
+               "localId" : "29",
+               "locator" : "24:3-27:8",
                "type" : "If",
                "condition" : {
-                  "localId" : "17",
-                  "locator" : "21:6-21:38",
+                  "localId" : "22",
+                  "locator" : "24:6-24:38",
                   "type" : "Not",
                   "operand" : {
-                     "locator" : "21:6-21:38",
+                     "locator" : "24:6-24:38",
                      "type" : "IsNull",
                      "operand" : {
-                        "localId" : "16",
-                        "locator" : "21:6-21:26",
+                        "localId" : "21",
+                        "locator" : "24:6-24:26",
                         "name" : "Medication Proposal",
                         "type" : "ExpressionRef"
                      }
                   }
                },
                "then" : {
-                  "localId" : "22",
-                  "locator" : "22:5-22:66",
+                  "localId" : "27",
+                  "locator" : "25:5-25:66",
                   "type" : "Tuple",
                   "element" : [ {
                      "name" : "reference",
                      "value" : {
-                        "localId" : "21",
-                        "locator" : "22:18-22:64",
+                        "localId" : "26",
+                        "locator" : "25:18-25:64",
                         "type" : "Concatenate",
                         "operand" : [ {
-                           "localId" : "18",
-                           "locator" : "22:18-22:37",
+                           "localId" : "23",
+                           "locator" : "25:18-25:37",
                            "valueType" : "{urn:hl7-org:elm-types:r1}String",
                            "value" : "MedicationRequest/",
                            "type" : "Literal"
@@ -377,13 +463,13 @@
                            "libraryName" : "FHIRHelpers",
                            "type" : "FunctionRef",
                            "operand" : [ {
-                              "localId" : "20",
-                              "locator" : "22:41-22:64",
+                              "localId" : "25",
+                              "locator" : "25:41-25:64",
                               "path" : "id",
                               "type" : "Property",
                               "source" : {
-                                 "localId" : "19",
-                                 "locator" : "22:41-22:61",
+                                 "localId" : "24",
+                                 "locator" : "25:41-25:61",
                                  "name" : "Medication Proposal",
                                  "type" : "ExpressionRef"
                               }
@@ -395,8 +481,8 @@
                "else" : {
                   "type" : "As",
                   "operand" : {
-                     "localId" : "23",
-                     "locator" : "24:5-24:8",
+                     "localId" : "28",
+                     "locator" : "27:5-27:8",
                      "type" : "Null"
                   },
                   "asTypeSpecifier" : {

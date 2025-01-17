@@ -10,7 +10,7 @@
   "title" : "ActivityDefinition AdministerMedicationActivity",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-17T11:53:21-05:00",
+  "date" : "2025-01-17T14:41:38-05:00",
   "publisher" : "Example Publisher",
   "description" : "Example Activity Definition for a recommendation to administer a medication",
   "kind" : "Task",
@@ -25,10 +25,11 @@
   "intent" : "proposal",
   "doNotPerform" : false,
   "dynamicValue" : [{
-    "path" : "input[0].type",
+    "path" : "input[0].type.coding[0]",
     "expression" : {
-      "language" : "text/fhirpath",
-      "expression" : "%context.code"
+      "language" : "text/cql-identifier",
+      "expression" : "Medication Request Code",
+      "reference" : "http://example.org/Library/AdministerMedicationLibrary|0.2.0"
     }
   },
   {

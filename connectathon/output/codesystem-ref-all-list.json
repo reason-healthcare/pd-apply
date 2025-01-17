@@ -13,66 +13,6 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
-      "url" : "http://hl7.org/fhir/request-intent",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestIntent",
-      "title" : "RequestIntent",
-      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.114"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
-    },
-    {
-      "url" : "http://hl7.org/fhir/request-priority",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestPriority",
-      "title" : "RequestPriority",
-      "description" : "Identifies the level of importance to be assigned to actioning the request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.116"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
-    },
-    {
-      "url" : "http://hl7.org/fhir/task-intent",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "TaskIntent",
-      "title" : "TaskIntent",
-      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1241"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
-    },
-    {
-      "url" : "http://hl7.org/fhir/task-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "TaskStatus",
-      "title" : "TaskStatus",
-      "description" : "The current status of the task.",
-      "oids" : ["2.16.840.1.113883.4.642.4.791"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-task-status.html" : "TaskStatus"
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
-      "version" : "2.0.0",
-      "status" : "active",
-      "name" : "CPGActivityTypeCS",
-      "title" : "CPG Activity Type Code System",
-      "description" : "A type of activity that can be performed as part of the delivery of guideline-based care.",
-      "oids" : ["2.16.840.1.113883.4.642.40.48.16.3"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/uv/cpg/STU2/ValueSet-cpg-activity-type-vs.html" : "CPG Activity Type Value Set"
-    },
-    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -94,10 +34,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",

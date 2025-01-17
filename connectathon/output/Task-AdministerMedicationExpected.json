@@ -2,7 +2,7 @@
   "resourceType" : "Task",
   "id" : "AdministerMedicationExpected",
   "meta" : {
-    "profile" : ["http://example.org/StructureDefinition/FixedCPGTaskAdministerMedication"]
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask"]
   },
   "instantiatesCanonical" : "http://example.org/ActivityDefinition/AdministerMedicationActivity|0.2.0",
   "status" : "draft",
@@ -27,8 +27,8 @@
     "type" : {
       "coding" : [{
         "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
-        "code" : "administer-medication",
-        "display" : "Administer a medication"
+        "code" : "order-medication",
+        "display" : "Order a medication"
       }]
     },
     "valueReference" : {

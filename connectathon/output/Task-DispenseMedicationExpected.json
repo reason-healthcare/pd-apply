@@ -2,7 +2,7 @@
   "resourceType" : "Task",
   "id" : "DispenseMedicationExpected",
   "meta" : {
-    "profile" : ["http://example.org/StructureDefinition/FixedCPGTaskDispenseMedication"]
+    "profile" : ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask"]
   },
   "instantiatesCanonical" : "http://example.org/ActivityDefinition/DispenseMedicationActivity|0.2.0",
   "status" : "draft",
@@ -27,8 +27,8 @@
     "type" : {
       "coding" : [{
         "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
-        "code" : "dispense-medication",
-        "display" : "Dispense a Medication"
+        "code" : "order-medication",
+        "display" : "Order a Medication"
       }]
     },
     "valueReference" : {

@@ -40,10 +40,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
-      "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -118,22 +115,6 @@
       "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ProcedurePerformerRoleCodes",
-      "title" : "Procedure Performer Role Codes",
-      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.433"],
-      "sources" : ["2.16.840.1.113883.4.642.3.433"],
-      "uses" : {
-      },
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
-      "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
       "version" : "4.0.1",
       "status" : "draft",
@@ -165,73 +146,6 @@
       "uses" : {
       },
       "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestPriority",
-      "title" : "Request priority",
-      "description" : "The clinical priority of a diagnostic order.",
-      "systems" : ["http://hl7.org/fhir/request-priority"],
-      "oids" : ["2.16.840.1.113883.4.642.3.115"],
-      "sources" : ["2.16.840.1.113883.4.642.3.115"],
-      "uses" : {
-      },
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
-      "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/task-intent",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "TaskIntent",
-      "title" : "TaskIntent",
-      "description" : "Distinguishes whether the task is a proposal, plan or full order.",
-      "systems" : [
-        "http://hl7.org/fhir/request-intent",
-        "http://hl7.org/fhir/task-intent"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.1240"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1240"],
-      "uses" : {
-      },
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
-      "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/task-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "TaskStatus",
-      "title" : "TaskStatus",
-      "description" : "The current status of the task.",
-      "systems" : ["http://hl7.org/fhir/task-status"],
-      "oids" : ["2.16.840.1.113883.4.642.3.790"],
-      "sources" : ["2.16.840.1.113883.4.642.3.790"],
-      "uses" : {
-      },
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
-      "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-activity-type-vs",
-      "version" : "2.0.0",
-      "status" : "active",
-      "name" : "CPGActivityTypeVS",
-      "title" : "CPG Activity Type Value Set",
-      "description" : "A type of activity that can be performed as part of the delivery of guideline-based care",
-      "systems" : ["http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"],
-      "oids" : ["2.16.840.1.113883.4.642.40.48.48.3"],
-      "sources" : ["2.16.840.1.113883.4.642.40.48.48.3"],
-      "uses" : {
-      },
-      "StructureDefinition-FixedCPGTaskAdministerMedication.html" : "FixedCPGTaskAdministerMedication",
-      "StructureDefinition-FixedCPGTaskDocumentMedication.html" : "FixedCPGTaskDocumentMedication",
-      "StructureDefinition-FixedCPGTaskDispenseMedication.html" : "FixedCPGTaskDispenseMedication"
     }
   ]
 }

@@ -1,5 +1,5 @@
 Instance: DispenseMedicationExpected
-InstanceOf: FixedCPGTaskDispenseMedication
+InstanceOf: CPGDispenseMedicationTask
 Usage: #example
 * status = #draft
 * intent = #proposal
@@ -8,6 +8,6 @@ Usage: #example
 * for = Reference(Patient1)
 * encounter = Reference(Encounter1)
 * requester = Reference(Practitioner1)
-* input[medicationDispense]
-  * type = $cpg-activity-type-cs#dispense-medication "Dispense a Medication"
+* input[medicationRequest]
+  * type = $cpg-activity-type-cs#order-medication "Order a Medication"
   * valueReference = Reference(PastMedicationRequest)

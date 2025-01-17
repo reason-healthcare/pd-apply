@@ -35,7 +35,7 @@ Usage: #example
 Instance: PastMedication
 InstanceOf: Medication
 Usage: #example
-* form = $sct#pill "Pill"
+* form = $rxnorm#212033 "Aspirin 325 mg oral tablet"
 * status = #inactive
 
 Instance: ActiveRaTreatmentFeature1
@@ -75,6 +75,8 @@ Usage: #example
   * coding = $sct#448765001 "Unintentional weight loss (finding)"
 * subject = Reference(Patient/Patient1)
 * effectiveDateTime = "2023-01-01"
+* performer = Reference(Practitioner/Practitioner1)
+* effectiveDateTime = "2025-01-15"
 
 Instance: Flag1
 InstanceOf: Flag

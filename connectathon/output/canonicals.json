@@ -371,27 +371,6 @@
     "name" : "ActiveRaTreatmentFeature"
   },
   {
-    "id" : "FixedCPGTaskAdministerMedication",
-    "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/FixedCPGTaskAdministerMedication",
-    "version" : "0.2.0",
-    "name" : "FixedCPGTaskAdministerMedication"
-  },
-  {
-    "id" : "FixedCPGTaskDispenseMedication",
-    "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/FixedCPGTaskDispenseMedication",
-    "version" : "0.2.0",
-    "name" : "FixedCPGTaskDispenseMedication"
-  },
-  {
-    "id" : "FixedCPGTaskDocumentMedication",
-    "type" : "StructureDefinition",
-    "url" : "http://example.org/StructureDefinition/FixedCPGTaskDocumentMedication",
-    "version" : "0.2.0",
-    "name" : "FixedCPGTaskDocumentMedication"
-  },
-  {
     "id" : "RaQuestionnaire2",
     "type" : "Questionnaire",
     "url" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",

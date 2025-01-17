@@ -17,6 +17,9 @@ define "Medication Proposal":
       sort by authoredOn
   )
 
+define "Medication Request Code":
+  {system: 'http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs', code: 'order-medication', display: 'Order a medication'}
+
 define "Medication Proposal Reference":
   if "Medication Proposal" is not null then
     { reference: 'MedicationRequest/' + "Medication Proposal".id }

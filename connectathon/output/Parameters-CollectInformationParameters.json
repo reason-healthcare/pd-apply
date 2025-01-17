@@ -145,9 +145,9 @@
           "status" : "inactive",
           "form" : {
             "coding" : [{
-              "system" : "http://snomed.info/sct",
-              "code" : "pill",
-              "display" : "Pill"
+              "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code" : "212033",
+              "display" : "Aspirin 325 mg oral tablet"
             }]
           }
         }
@@ -225,7 +225,10 @@
           "subject" : {
             "reference" : "Patient/Patient1"
           },
-          "effectiveDateTime" : "2023-01-01"
+          "effectiveDateTime" : "2025-01-15",
+          "performer" : [{
+            "reference" : "Practitioner/Practitioner1"
+          }]
         }
       },
       {

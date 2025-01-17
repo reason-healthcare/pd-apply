@@ -13,5 +13,8 @@
   "subject" : {
     "reference" : "Patient/Patient1"
   },
-  "effectiveDateTime" : "2023-01-01"
+  "effectiveDateTime" : "2025-01-15",
+  "performer" : [{
+    "reference" : "Practitioner/Practitioner1"
+  }]
 }

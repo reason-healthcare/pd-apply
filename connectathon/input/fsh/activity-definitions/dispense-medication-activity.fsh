@@ -9,10 +9,11 @@ Usage: #example
 * doNotPerform = false
 * intent = #proposal
 * dynamicValue[+]
-  * path = "input[0].type"
+  * path = "input[0].type.coding[0]"
   * expression
-    * language = #text/fhirpath
-    * expression = "%context.code"
+    * language = #text/cql-identifier
+    * expression = "Medication Request Code"
+    * reference = Canonical(DispenseMedicationLibrary|0.2.0)
 * dynamicValue[+]
   * path = "input[0].valueReference"
   * expression
