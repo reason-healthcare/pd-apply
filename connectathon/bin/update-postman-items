@@ -1,8 +1,14 @@
 #!/usr/bin/env node
 
+/** Must provide path to Postman file via command line
+ * Resource IDs must follow convention:
+ * {Name}{Expected} for Expected Resource
+ * {Name}{Parameters} for Parameters and Postman Test Name
+ */
+
+
 const path = require('path')
 const fs = require('fs')
-const Item = require('postman-collection').Item
 
 const args = process.argv.slice(2)
 if (!args.length) {
@@ -13,6 +19,9 @@ const postmanFile = path.resolve(path.resolve(args.join(' ')))
 const fshResourcesDirectory = path.resolve(path.join(__dirname), '..', 'fsh-generated', 'resources')
 
 let postmanData
+if (!fs.existsSync(postmanFile)) {
+  throw new Error(`Postman file ${postmanFile} does not exist`)
+}
 try {
   const postmanDataRaw = fs.readFileSync(postmanFile)?.toString()
   postmanData = JSON.parse(postmanDataRaw)
@@ -61,42 +70,32 @@ const contentEndpoint = {
   }
 }
 
-const rawResources = fs.readdirSync(fshResourcesDirectory).map(file => {
+const resources = fs.readdirSync(fshResourcesDirectory).map(file => {
   try {
     const data = fs.readFileSync(`${fshResourcesDirectory}/${file}`, 'utf-8')
-    return data
+    return JSON.parse(data)
   } catch (e) {
     console.log(`Problem reading file ${file}: ${e}`)
   }
 }).filter(r => r != null)
 
-
-// Test/Parameters => Body
-
-// Test/ExpectedOutput => script.exec
-
 const items = postmanData?.item?.map(item => {
-  const requestBodyRaw = rawResources.find(resource => (item.name + 'Parameters').endsWith(JSON.parse(resource).id) || (item.name + 'Parameters').endsWith(JSON.parse(resource).name))
-  const expectedOutput = rawResources.find(resource => (item.name + 'Expected').endsWith(JSON.parse(resource).id) || (item.name + 'Expected').endsWith(JSON.parse(resource).name))
-  const {event, body, name} = item
+  const {event, request, name} = item
+  const requestBodyRaw = resources.find(resource => name === resource.id)
+  const expectedOutput = resources.find(resource => name.replace('Parameters', 'Expected') === resource.id)
   if (requestBodyRaw != null && expectedOutput != null) {
-    requestBodyRaw.parameters?.push(terminologyEndpoint)
-    requestBodyRaw.parameters?.push(contentEndpoint)
-    const {script} = event[0]
-    const testIndex = script.exec.findIndex(line => line.includes('pm.test'))
-    const testScriptRaw = script.exec.slice(testIndex)
+    requestBodyRaw.parameter?.push(terminologyEndpoint)
+    requestBodyRaw.parameter?.push(contentEndpoint)
+    const testIndex = event[0].script?.exec?.findIndex(line => line.includes('pm.test'))
+    const testScriptRaw = event[0].script?.exec?.slice(testIndex)
     if (testScriptRaw != null) {
-      const script = `const expected = ${(expectedOutput)}\n` + testScriptRaw.join('\n')
-      const newItem = new Item({
+      const script = ((`const expected = ${(JSON.stringify(expectedOutput, null, 2))}\n`).split('\n').concat(testScriptRaw))
+      const newItem = {
         ...item,
-        event: [{...event, script: {...script, exec: script}}],
-        body: {...body, raw: requestBodyRaw}
-      })
-      if (Item.isItem(newItem)) {
-        return newItem
-      } else {
-        console.log(`Unable to update postman item ${name}: problem formatting new item`)
+        event: [{...event[0], script: {...event[0].script, exec: script}}],
+        request: {...request, body: {...request.body, raw: JSON.stringify(requestBodyRaw, null, 2)}}
       }
+      return newItem
     } else {
       console.log(`Unable to update postman item ${name}: problem formatting test script`)
     }
