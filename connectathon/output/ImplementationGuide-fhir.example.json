@@ -5,7 +5,7 @@
   "version" : "0.2.0",
   "name" : "CpgFixtures",
   "status" : "draft",
-  "date" : "2025-01-22T13:50:39-05:00",
+  "date" : "2025-07-11T13:47:00-04:00",
   "publisher" : "Example Publisher",
   "packageId" : "fhir.example",
   "license" : "CC0-1.0",
@@ -18,7 +18,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.1.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -28,7 +28,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.2.0"
   },
   {
     "id" : "hl7_fhir_uv_cpg",
@@ -40,7 +40,7 @@
     "id" : "hl7_fhir_uv_sdc",
     "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
     "packageId" : "hl7.fhir.uv.sdc",
-    "version" : "current"
+    "version" : "dev"
   }],
   "definition" : {
     "extension" : [{
@@ -678,6 +678,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DateOfDiagnosisFeature"
+      },
+      "name" : "Active RA Diagnosis Feature",
+      "description" : "Case feature definition: patient has active RA Diagnosis",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -685,6 +697,28 @@
       },
       "name" : "Case Feature Codes",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/ActiveRATreatment1Parameters"
+      },
+      "name" : "ActiveRATreatment1Parameters",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/ActiveRATreatmentExpected"
+      },
+      "name" : "ActiveRATreatmentExpected",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -954,6 +988,17 @@
         "reference" : "Medication/CurrentMedication"
       },
       "name" : "CurrentMedication",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Library"
+      }],
+      "reference" : {
+        "reference" : "Library/DateOfDiagnosisFeatureLogic"
+      },
+      "name" : "DateOfDiagnosisFeatureLogic",
       "exampleBoolean" : true
     },
     {
@@ -1747,6 +1792,40 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/RAFollowUpRecommendationExpected"
+      },
+      "name" : "RAFollowUpRecommendationExpected",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/RAFollowUpRecommendationParameters"
+      },
+      "name" : "RAFollowUpRecommendationParameters",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RaFollowUpRecommendation"
+      },
+      "name" : "RA Monitoring Recommendation",
+      "description" : "Follow up for antirheumatic drug therapy for Ra.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
@@ -1803,28 +1882,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/RaMonitoringRecommendation3Expected"
-      },
-      "name" : "RaMonitoringRecommendation3Expected",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Parameters"
-      }],
-      "reference" : {
-        "reference" : "Parameters/RaMonitoringRecommendation3Parameters"
-      },
-      "name" : "RaMonitoringRecommendation3Parameters",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Library"
       }],
       "reference" : {
@@ -1870,45 +1927,12 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/RaQuestionnaire2"
-      },
-      "name" : "RaQuestionnaire2",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/RaQuestionnaire3"
-      },
-      "name" : "RaQuestionnaire3",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
         "reference" : "QuestionnaireResponse/RaQuestionnaireResponse2"
       },
       "name" : "RaQuestionnaireResponse2",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/RaQuestionnaireResponse3"
-      },
-      "name" : "RaQuestionnaireResponse3",
       "exampleBoolean" : true
     },
     {
@@ -2158,6 +2182,17 @@
       },
       "name" : "ReportWeightHeightPlan",
       "description" : "Plan to report weight and height of patient upon admission",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/RheumatoidArthritisCondition"
+      },
+      "name" : "RheumatoidArthritisCondition",
       "exampleBoolean" : true
     },
     {

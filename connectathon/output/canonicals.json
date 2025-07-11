@@ -161,6 +161,13 @@
     "name" : "AnemiaScreeningLibrary"
   },
   {
+    "id" : "DateOfDiagnosisFeatureLogic",
+    "type" : "Library",
+    "url" : "http://example.org/Library/DateOfDiagnosisFeatureLogic",
+    "version" : "0.2.0",
+    "name" : "DateOfDiagnosisFeatureLogic"
+  },
+  {
     "id" : "DispenseMedicationLibrary",
     "type" : "Library",
     "url" : "http://example.org/Library/DispenseMedicationLibrary",
@@ -322,6 +329,13 @@
     "name" : "OrderServicePlan"
   },
   {
+    "id" : "RaFollowUpRecommendation",
+    "type" : "PlanDefinition",
+    "url" : "http://example.org/PlanDefinition/RaFollowUpRecommendation",
+    "version" : "0.2.0",
+    "name" : "RaFollowUpRecommendation"
+  },
+  {
     "id" : "RaMonitoringRecommendation",
     "type" : "PlanDefinition",
     "url" : "http://example.org/PlanDefinition/RaMonitoringRecommendation",
@@ -371,15 +385,22 @@
     "name" : "ActiveRaTreatmentFeature"
   },
   {
-    "id" : "RaQuestionnaire2",
+    "id" : "DateOfDiagnosisFeature",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/DateOfDiagnosisFeature",
+    "version" : "0.2.0",
+    "name" : "DateOfDiagnosisFeature"
+  },
+  {
+    "id" : "ActiveRATreatmentExpected",
     "type" : "Questionnaire",
-    "url" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",
+    "url" : "http://questionnaire-processor/Questionnaire/ActiveRATreatmentExpected",
     "version" : "0.2.0"
   },
   {
-    "id" : "RaQuestionnaire3",
+    "id" : "RAFollowUpRecommendationExpected",
     "type" : "Questionnaire",
-    "url" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",
+    "url" : "http://questionnaire-processor/Questionnaire/RAFollowUpRecommendationExpected",
     "version" : "0.2.0"
   }
 ]

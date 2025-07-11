@@ -49,7 +49,7 @@
         "code" : [{
           "coding" : [{
             "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
-            "code" : "diagnostic-testing"
+            "code" : "guideline-based-care"
           }]
         }],
         "condition" : [{
@@ -134,7 +134,7 @@
           "effectiveDateTime" : "2024-01-01",
           "valueBoolean" : true,
           "derivedFrom" : [{
-            "reference" : "QuestionnaireResponse/RaQuestionnaireResponse3"
+            "reference" : "QuestionnaireResponse/RaQuestionnaireResponse4"
           }]
         }
       }]
@@ -145,7 +145,7 @@
     "resource" : {
       "resourceType" : "QuestionnaireResponse",
       "id" : "RaQuestionnaireResponse2",
-      "questionnaire" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",
+      "questionnaire" : "http://questionnaire-processor/Questionnaire/ActiveRATreatmentExpected",
       "status" : "completed",
       "subject" : {
         "reference" : "Patient/Patient2"
@@ -157,7 +157,7 @@
       "item" : [{
         "linkId" : "ActiveRaTreatmentFeature#Observation",
         "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation",
-        "text" : "Measurements and simple assertions",
+        "text" : "Active RA Treatment Feature",
         "item" : [{
           "linkId" : "ActiveRaTreatmentFeature#Observation.code",
           "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation.code",

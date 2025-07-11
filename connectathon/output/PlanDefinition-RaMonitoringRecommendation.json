@@ -16,7 +16,7 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-22T13:50:39-05:00",
+  "date" : "2025-07-11T13:47:00-04:00",
   "publisher" : "Example Publisher",
   "description" : "Monitoring tests for antirheumatic drug therapy for Ra.",
   "library" : ["http://example.org/Library/RaMonitoringRecommendationLibrary|0.2.0"],
@@ -26,7 +26,7 @@
     "code" : [{
       "coding" : [{
         "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
-        "code" : "diagnostic-testing"
+        "code" : "guideline-based-care"
       }]
     }],
     "condition" : [{

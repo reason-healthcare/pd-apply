@@ -49,7 +49,7 @@
         "code" : [{
           "coding" : [{
             "system" : "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
-            "code" : "diagnostic-testing"
+            "code" : "guideline-based-care"
           }]
         }],
         "condition" : [{
@@ -134,7 +134,7 @@
           "effectiveDateTime" : "2024-01-01",
           "valueBoolean" : true,
           "derivedFrom" : [{
-            "reference" : "QuestionnaireResponse/RaQuestionnaireResponse3"
+            "reference" : "QuestionnaireResponse/RaQuestionnaireResponse4"
           }]
         }
       }]

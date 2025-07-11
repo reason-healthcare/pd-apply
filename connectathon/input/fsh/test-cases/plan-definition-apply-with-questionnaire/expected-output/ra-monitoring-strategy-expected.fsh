@@ -5,7 +5,7 @@ Usage: #example
 * insert BundleEntry(RaMonitoringStrategyRequestGroup4, RequestGroup)
 * insert BundleEntry(RaMonitoringRecommendationRequestGroup4, RequestGroup)
 * insert BundleEntry(RaQuestionnaireResponse4, QuestionnaireResponse)
-* insert BundleEntry(RaQuestionnaire4, Questionnaire)
+* insert BundleEntry(ActiveRATreatmentExpected, Questionnaire)
 * insert BundleEntry(OrderTestingRequest4, ServiceRequest)
 
 Instance: RaMonitoringStrategyRequestGroup4
@@ -26,7 +26,7 @@ Usage: #inline
 * action
   * title = "Order monitoring tests for antirheumatic drug therapy."
   * description = "Order monitoring tests for antirheumatic drug therapy."
-  * code = $cpg-common-process#diagnostic-testing
+  * code = $cpg-common-process#guideline-based-care
   * type = $action-type#create
   * condition
     * kind = #applicability
@@ -38,54 +38,17 @@ Usage: #inline
 Instance: RaQuestionnaireResponse4
 InstanceOf: QuestionnaireResponse
 Usage: #inline
-* insert QuestionnaireResponseMetaData(RaQuestionnaire4)
+* insert QuestionnaireResponseMetaData(ActiveRATreatmentExpected)
 * subject = Reference(Patient/Patient2)
 * authored  = "2025-01-01T11:45:33+11:00"
 * author = Reference(Practitioner/Practitioner2)
 * item[+]
   * insert QuestionnaireItem(ActiveRaTreatmentFeature, Observation)
-  * text = "Measurements and simple assertions"
+  * text = "Active RA Treatment Feature"
   * item[+]
     * insert QuestionnaireItem(ActiveRaTreatmentFeature, Observation.code)
     * text = "Type of observation (code / type)"
     * answer[+].valueCoding = CaseFeatureCodes#on-ra-treatment
-
-Instance: RaQuestionnaire4
-InstanceOf: Questionnaire
-Usage: #inline
-* insert QuestionnaireMetaData(RaQuestionnaire1)
-* extension[LaunchContextExtension]
-  * extension[name].valueCoding = $launch-context-codes#patient
-  * extension[type].valueCode = #Patient
-* item[+]
-  * insert QuestionnaireItem(ActiveRaTreatmentFeature, Observation)
-  * text = "Measurements and simple assertions"
-  * type = #group
-  * extension[sdc-questionnaire-definitionExtract].extension[definition].valueCanonical = Canonical(ActiveRaTreatmentFeature)
-  * extension[sdc-questionnaire-definitionExtractValue]
-    * extension[definition].valueUri = "http://fhir.org/test/StructureDefinition/ActiveRaTreatmentFeature#Observation.subject"
-    * extension[expression].valueExpression
-      * language = #text/fhirpath
-      * expression = "%resource.subject"
-  * extension[sdc-questionnaire-definitionExtractValue]
-    * extension[definition].valueUri = "http://fhir.org/test/StructureDefinition/ActiveRaTreatmentFeature#Observation.effective[x]"
-    * extension[expression].valueExpression
-      * language = #text/fhirpath
-      * expression = "%resource.authored"
-  * extension[ItemPopulationContextExtension].valueExpression
-    * language = #text/cql-identifier
-    * expression = "On RA Treatment"
-    * reference = Canonical(ActiveRaTreatmentFeatureLogic)
-    * name = "ActiveRaTreatmentFeature"
-  * item[+]
-    * insert QuestionnaireItem(ActiveRaTreatmentFeature, Observation.valueBoolean)
-    * text = "Actual result"
-    * type = #boolean
-    * extension[InitialExpressionExtension]
-      * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression"
-      * valueExpression
-        * language = #text/cql-expression
-        * expression = "%ActiveRaTreatmentFeature.value[x]"
 
 Instance: OrderTestingRequest4
 InstanceOf: $cpg-servicerequest

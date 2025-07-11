@@ -13,7 +13,7 @@ RuleSet: KnowledgeArtifactDefinitionMetadata(id, type)
 * url = "http://example.org/{type}/{id}"
 * name = "{id}"
 * title = "{type} {id}"
-* status = #draft
+* status = #active
 * experimental = true
 * publisher = "Example"
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
@@ -39,13 +39,13 @@ RuleSet: QuestionnaireResponseMetaData(questionnaireId)
 
 RuleSet: CaseFeatureExpressions(reference, baseExpression)
 * ^extension[CPGInferenceExpression].valueExpression.language = #text/cql-identifier
-* ^extension[CPGInferenceExpression].valueExpression.reference = "http://example.org/Library/{reference}"
+* ^extension[CPGInferenceExpression].valueExpression.reference = "http://example.org/Library/{reference}|0.2.0"
 * ^extension[CPGInferenceExpression].valueExpression.expression = "{baseExpression} Inference"
 * ^extension[CPGAssertionExpression].valueExpression.language = #text/cql-identifier
-* ^extension[CPGAssertionExpression].valueExpression.reference = "http://example.org/Library/{reference}"
+* ^extension[CPGAssertionExpression].valueExpression.reference = "http://example.org/Library/{reference}|0.2.0"
 * ^extension[CPGAssertionExpression].valueExpression.expression = "{baseExpression} Assertion"
 * ^extension[CPGFeatureExpression].valueExpression.language = #text/cql-identifier
-* ^extension[CPGFeatureExpression].valueExpression.reference = "http://example.org/Library/{reference}"
+* ^extension[CPGFeatureExpression].valueExpression.reference = "http://example.org/Library/{reference}|0.2.0"
 * ^extension[CPGFeatureExpression].valueExpression.expression = "{baseExpression}"
 
 RuleSet: BundleEntry(id, type)

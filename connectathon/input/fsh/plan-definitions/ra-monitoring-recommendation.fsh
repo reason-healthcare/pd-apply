@@ -16,5 +16,5 @@ Title: "RA Monitoring Recommendation"
   * input[+]
     * type = #Observation
     * profile = Canonical(ActiveRaTreatmentFeature)
-  * code = $cpg-common-process#diagnostic-testing
+  * code = $cpg-common-process#guideline-based-care
   * definitionCanonical = Canonical(OrderServiceActivity|0.2.0)

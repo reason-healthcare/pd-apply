@@ -21,12 +21,30 @@ Usage: #example
 Instance: ActiveRaTreatmentFeature1
 InstanceOf: ActiveRaTreatmentFeature
 Usage: #inline
-* derivedFrom = Reference(QuestionnaireResponse/RaQuestionnaireResponse3)
+* derivedFrom = Reference(QuestionnaireResponse/RaQuestionnaireResponse4)
 * status = #final
 * code = CaseFeatureCodes#on-ra-treatment
 * subject = Reference(Patient/Patient2)
 * valueBoolean = true
 * effectiveDateTime = "2024-01-01"
+
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $sct = http://snomed.info/sct
+
+Instance: RheumatoidArthritisCondition
+InstanceOf: Condition
+Usage: #example
+* clinicalStatus = $condition-clinical#active
+* verificationStatus = $condition-ver-status#confirmed
+* category
+  * coding[0] = $condition-category#encounter-diagnosis "Encounter Diagnosis"
+  * coding[+] = $sct#439401001 "Diagnosis"
+* severity = $sct#24484000 "Severe"
+* code = $sct#69896004 "Rheumatoid arthritis (disorder)"
+* subject = Reference(Patient/Patient2)
+* onsetDateTime = "2025-07-10"
 
 Instance: PatientTestBundle2
 InstanceOf: Bundle

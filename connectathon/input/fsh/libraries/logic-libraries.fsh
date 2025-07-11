@@ -81,3 +81,9 @@ InstanceOf: Library
 * insert KnowledgeArtifactDefinitionMetadata(ActiveRaTreatmentFeatureLogic, Library)
 * type = http://terminology.hl7.org/CodeSystem/library-type#logic-library
 * content.id = "ig-loader-ActiveRaTreatmentFeatureLogic.cql"
+
+Instance: DateOfDiagnosisFeatureLogic
+InstanceOf: Library
+* insert KnowledgeArtifactDefinitionMetadata(DateOfDiagnosisFeatureLogic, Library)
+* type = http://terminology.hl7.org/CodeSystem/library-type#logic-library
+* content.id = "ig-loader-DateOfDiagnosisFeatureLogic.cql"

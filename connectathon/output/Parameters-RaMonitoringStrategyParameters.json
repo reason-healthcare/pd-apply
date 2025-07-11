@@ -122,7 +122,7 @@
           "effectiveDateTime" : "2024-01-01",
           "valueBoolean" : true,
           "derivedFrom" : [{
-            "reference" : "QuestionnaireResponse/RaQuestionnaireResponse3"
+            "reference" : "QuestionnaireResponse/RaQuestionnaireResponse4"
           }]
         }
       }]

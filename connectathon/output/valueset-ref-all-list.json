@@ -12,7 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -26,7 +27,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -40,7 +42,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -54,7 +57,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -68,7 +72,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -84,7 +89,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -98,7 +104,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -112,7 +119,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -129,7 +137,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -145,7 +154,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature"
+      "StructureDefinition-ActiveRaTreatmentFeature.html" : "Active RA Treatment Feature",
+      "StructureDefinition-DateOfDiagnosisFeature.html" : "Active RA Diagnosis Feature"
     }
   ]
 }

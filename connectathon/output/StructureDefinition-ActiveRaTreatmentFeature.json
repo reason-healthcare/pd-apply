@@ -6,7 +6,7 @@
     "valueExpression" : {
       "language" : "text/cql-identifier",
       "expression" : "On RA Treatment Inference",
-      "reference" : "http://example.org/Library/ActiveRaTreatmentLogic"
+      "reference" : "http://example.org/Library/ActiveRaTreatmentFeatureLogic|0.2.0"
     }
   },
   {
@@ -14,7 +14,7 @@
     "valueExpression" : {
       "language" : "text/cql-identifier",
       "expression" : "On RA Treatment Assertion",
-      "reference" : "http://example.org/Library/ActiveRaTreatmentLogic"
+      "reference" : "http://example.org/Library/ActiveRaTreatmentFeatureLogic|0.2.0"
     }
   },
   {
@@ -22,7 +22,7 @@
     "valueExpression" : {
       "language" : "text/cql-identifier",
       "expression" : "On RA Treatment",
-      "reference" : "http://example.org/Library/ActiveRaTreatmentLogic"
+      "reference" : "http://example.org/Library/ActiveRaTreatmentFeatureLogic|0.2.0"
     }
   }],
   "url" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature",
@@ -30,7 +30,7 @@
   "name" : "ActiveRaTreatmentFeature",
   "title" : "Active RA Treatment Feature",
   "status" : "active",
-  "date" : "2025-01-23T11:26:38-05:00",
+  "date" : "2025-07-11T13:47:00-04:00",
   "publisher" : "Example Publisher",
   "description" : "Case feature definition: patient has active RA treatment",
   "fhirVersion" : "4.0.1",

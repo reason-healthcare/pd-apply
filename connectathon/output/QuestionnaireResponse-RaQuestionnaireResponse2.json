@@ -1,7 +1,7 @@
 {
   "resourceType" : "QuestionnaireResponse",
   "id" : "RaQuestionnaireResponse2",
-  "questionnaire" : "http://questionnaire-processor/Questionnaire/RaQuestionnaire2",
+  "questionnaire" : "http://questionnaire-processor/Questionnaire/ActiveRATreatmentExpected",
   "status" : "completed",
   "subject" : {
     "reference" : "Patient/Patient2"
@@ -13,7 +13,7 @@
   "item" : [{
     "linkId" : "ActiveRaTreatmentFeature#Observation",
     "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation",
-    "text" : "Measurements and simple assertions",
+    "text" : "Active RA Treatment Feature",
     "item" : [{
       "linkId" : "ActiveRaTreatmentFeature#Observation.code",
       "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation.code",
