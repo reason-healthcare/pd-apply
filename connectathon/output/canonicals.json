@@ -398,6 +398,12 @@
     "version" : "0.2.0"
   },
   {
+    "id" : "DateOfDiagnosisFeatureExpected",
+    "type" : "Questionnaire",
+    "url" : "http://questionnaire-processor/Questionnaire/DateOfDiagnosisFeatureExpected",
+    "version" : "0.2.0"
+  },
+  {
     "id" : "RAFollowUpRecommendationExpected",
     "type" : "Questionnaire",
     "url" : "http://questionnaire-processor/Questionnaire/RAFollowUpRecommendationExpected",

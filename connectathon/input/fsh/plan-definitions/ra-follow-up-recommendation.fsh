@@ -12,7 +12,7 @@ Title: "RA Monitoring Recommendation"
     * kind = #applicability
     * expression
       * language = #text/cql-identifier
-      * expression = "Send message to remind patient of follow up for RA Diagnosis within one month of dagnosis"
+      * expression = "Send message to remind patient of follow up for RA Diagnosis within one month of diagnosis"
   * input[+]
     * type = #Observation
     * profile = Canonical(DateOfDiagnosisFeature)

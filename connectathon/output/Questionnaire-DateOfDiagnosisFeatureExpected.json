@@ -1,6 +1,6 @@
 {
   "resourceType" : "Questionnaire",
-  "id" : "RAFollowUpRecommendationExpected",
+  "id" : "DateOfDiagnosisFeatureExpected",
   "extension" : [{
     "extension" : [{
       "url" : "name",
@@ -16,7 +16,7 @@
     }],
     "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
   }],
-  "url" : "http://questionnaire-processor/Questionnaire/RAFollowUpRecommendationExpected",
+  "url" : "http://questionnaire-processor/Questionnaire/DateOfDiagnosisFeatureExpected",
   "version" : "0.2.0",
   "status" : "draft",
   "date" : "2025-07-14T10:27:22-04:00",
@@ -84,73 +84,6 @@
       "definition" : "http://example.org/StructureDefinition/DateOfDiagnosisFeature#Observation.value[x]",
       "text" : "Actual result",
       "type" : "group",
-      "required" : false,
-      "repeats" : false
-    }]
-  },
-  {
-    "extension" : [{
-      "extension" : [{
-        "url" : "definition",
-        "valueCanonical" : "http://example.org/StructureDefinition/DateOfDiagnosisFeature"
-      }],
-      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract"
-    },
-    {
-      "extension" : [{
-        "url" : "definition",
-        "valueUri" : "http://fhir.org/test/StructureDefinition/ActiveRaTreatmentFeature#Observation.subject"
-      },
-      {
-        "url" : "expression",
-        "valueExpression" : {
-          "language" : "text/fhirpath",
-          "expression" : "%resource.subject"
-        }
-      }],
-      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue"
-    },
-    {
-      "extension" : [{
-        "url" : "definition",
-        "valueUri" : "http://fhir.org/test/StructureDefinition/ActiveRaTreatmentFeature#Observation.effective[x]"
-      },
-      {
-        "url" : "expression",
-        "valueExpression" : {
-          "language" : "text/fhirpath",
-          "expression" : "%resource.authored"
-        }
-      }],
-      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue"
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext",
-      "valueExpression" : {
-        "name" : "ActiveRaTreatmentFeature",
-        "language" : "text/cql-identifier",
-        "expression" : "On RA Treatment",
-        "reference" : "http://example.org/Library/ActiveRaTreatmentFeatureLogic|0.2.0"
-      }
-    }],
-    "linkId" : "ActiveRaTreatmentFeature#Observation",
-    "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation",
-    "text" : "Active RA Treatment Feature",
-    "type" : "group",
-    "required" : false,
-    "repeats" : true,
-    "item" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-        "valueExpression" : {
-          "language" : "text/cql-expression",
-          "expression" : "%ActiveRaTreatmentFeature.value"
-        }
-      }],
-      "linkId" : "ActiveRaTreatmentFeature#Observation.value[x]",
-      "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation.value[x]",
-      "text" : "Actual result",
-      "type" : "boolean",
       "required" : false,
       "repeats" : false
     }]

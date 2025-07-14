@@ -7,7 +7,7 @@ Usage: #example
   * extension[type].valueCode = #Patient
 * item[+]
   * insert QuestionnaireItem(DateOfDiagnosisFeature, Observation)
-  * text = "Active RA Treatment Feature"
+  * text = "Date of Diagnosis Feature"
   * type = #group
   * required = false
   * repeats = true
@@ -24,13 +24,13 @@ Usage: #example
       * expression = "%resource.authored"
   * extension[ItemPopulationContextExtension].valueExpression
     * language = #text/cql-identifier
-    * expression = "On RA Treatment"
+    * expression = "Active RA Diagnosis"
     * reference = Canonical(DateOfDiagnosisFeatureLogic|0.2.0)
     * name = "DateOfDiagnosisFeature"
   * item[+]
     * insert QuestionnaireItem(DateOfDiagnosisFeature, Observation.value[x])
     * text = "Actual result"
-    * type = #group
+    * type = #dateTime
     * required = false
     * repeats = false
     * extension[InitialExpressionExtension]
@@ -44,7 +44,7 @@ Usage: #example
   * type = #group
   * required = false
   * repeats = true
-  * extension[sdc-questionnaire-definitionExtract].extension[definition].valueCanonical = Canonical(DateOfDiagnosisFeature)
+  * extension[sdc-questionnaire-definitionExtract].extension[definition].valueCanonical = Canonical(ActiveRaTreatmentFeature)
   * extension[sdc-questionnaire-definitionExtractValue][+]
     * extension[definition].valueUri = "http://fhir.org/test/StructureDefinition/ActiveRaTreatmentFeature#Observation.subject"
     * extension[expression].valueExpression

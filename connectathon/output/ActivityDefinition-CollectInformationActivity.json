@@ -14,7 +14,7 @@
   "title" : "ActivityDefinition CollectInformationActivity",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-07-11T13:47:00-04:00",
+  "date" : "2025-07-14T10:27:22-04:00",
   "publisher" : "Example Publisher",
   "description" : "Example Activity Definition for a recommendation to collect information",
   "kind" : "Task",

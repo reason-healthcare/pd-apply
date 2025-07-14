@@ -16,7 +16,7 @@
   },
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-07-11T13:47:00-04:00",
+  "date" : "2025-07-14T10:27:22-04:00",
   "publisher" : "Example Publisher",
   "description" : "Follow up for antirheumatic drug therapy for Ra.",
   "library" : ["http://example.org/Library/RaMonitoringRecommendationLibrary|0.2.0"],
@@ -33,7 +33,7 @@
       "kind" : "applicability",
       "expression" : {
         "language" : "text/cql-identifier",
-        "expression" : "Send message to remind patient of follow up for RA Diagnosis within one month of dagnosis"
+        "expression" : "Send message to remind patient of follow up for RA Diagnosis within one month of diagnosis"
       }
     }],
     "input" : [{

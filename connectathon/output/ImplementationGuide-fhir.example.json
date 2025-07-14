@@ -5,7 +5,7 @@
   "version" : "0.2.0",
   "name" : "CpgFixtures",
   "status" : "draft",
-  "date" : "2025-07-11T13:47:00-04:00",
+  "date" : "2025-07-14T10:27:22-04:00",
   "publisher" : "Example Publisher",
   "packageId" : "fhir.example",
   "license" : "CC0-1.0",
@@ -683,7 +683,7 @@
       "reference" : {
         "reference" : "StructureDefinition/DateOfDiagnosisFeature"
       },
-      "name" : "Active RA Diagnosis Feature",
+      "name" : "Date of Diagnosis Feature",
       "description" : "Case feature definition: patient has active RA Diagnosis",
       "exampleBoolean" : false
     },
@@ -993,12 +993,34 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/DateOfDiagnosisFeatureExpected"
+      },
+      "name" : "DateOfDiagnosisFeatureExpected",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Library"
       }],
       "reference" : {
         "reference" : "Library/DateOfDiagnosisFeatureLogic"
       },
       "name" : "DateOfDiagnosisFeatureLogic",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/DateOfDiagnosisParameters"
+      },
+      "name" : "DateOfDiagnosisParameters",
       "exampleBoolean" : true
     },
     {

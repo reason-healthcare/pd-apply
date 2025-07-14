@@ -1,4 +1,4 @@
-library ActiveRaTreatmentFeatureLogic version '0.2.0'
+library DateOfDiagnosisFeatureLogic version '0.2.0'
 
 using FHIR version '4.0.1'
 
@@ -9,7 +9,7 @@ code "Date of Diagnosis Feature": 'date-of-diagnosis' from "CaseFeatureCodes"
 
 codesystem "sct": 'http://snomed.info/sct'
 code "RA Condition":
-  '69896004' from "sct" display "Rheumatoid arthritis (disorder)"
+  '69896004' from "sct" display 'Rheumatoid arthritis (disorder)'
 
 context Patient
 
@@ -73,7 +73,7 @@ define "RA Diagnosis Asserted":
  * @description
  * Feature is asserted followed by inferred
  */
-define "On RA Treatment":
+define "Active RA Diagnosis":
   Coalesce(
     "RA Diagnosis Asserted",
     "RA Diagnosis Inferred"

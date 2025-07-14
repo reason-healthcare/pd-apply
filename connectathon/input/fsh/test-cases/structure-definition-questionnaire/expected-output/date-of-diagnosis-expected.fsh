@@ -1,13 +1,13 @@
-Instance: ActiveRATreatmentExpected
+Instance: DateOfDiagnosisFeatureExpected
 InstanceOf: Questionnaire
 Usage: #example
-* insert QuestionnaireMetaData(ActiveRATreatmentExpected)
+* insert QuestionnaireMetaData(DateOfDiagnosisFeatureExpected)
 * extension[LaunchContextExtension]
   * extension[name].valueCoding = $launch-context-codes#patient "Patient"
   * extension[type].valueCode = #Patient
 * item[+]
   * insert QuestionnaireItem(DateOfDiagnosisFeature, Observation)
-  * text = "Active RA Treatment Feature"
+  * text = "Date of Diagnosis Feature"
   * type = #group
   * required = false
   * repeats = true
@@ -24,7 +24,7 @@ Usage: #example
       * expression = "%resource.authored"
   * extension[ItemPopulationContextExtension].valueExpression
     * language = #text/cql-identifier
-    * expression = "On RA Treatment"
+    * expression = "Active RA Diagnosis"
     * reference = Canonical(DateOfDiagnosisFeatureLogic|0.2.0)
     * name = "DateOfDiagnosisFeature"
   * item[+]

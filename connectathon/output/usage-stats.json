@@ -11,7 +11,7 @@
       },
       {
         "url": "http://example.org/StructureDefinition/DateOfDiagnosisFeature",
-        "title": "Active RA Diagnosis Feature"
+        "title": "Date of Diagnosis Feature"
       }
     ]
   },

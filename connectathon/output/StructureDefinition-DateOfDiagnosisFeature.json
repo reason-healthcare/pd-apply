@@ -5,7 +5,7 @@
     "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-inferenceExpression",
     "valueExpression" : {
       "language" : "text/cql-identifier",
-      "expression" : "On RA Diagnosis Inference",
+      "expression" : "Active RA Diagnosis Inference",
       "reference" : "http://example.org/Library/DateOfDiagnosisFeatureLogic|0.2.0"
     }
   },
@@ -13,7 +13,7 @@
     "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assertionExpression",
     "valueExpression" : {
       "language" : "text/cql-identifier",
-      "expression" : "On RA Diagnosis Assertion",
+      "expression" : "Active RA Diagnosis Assertion",
       "reference" : "http://example.org/Library/DateOfDiagnosisFeatureLogic|0.2.0"
     }
   },
@@ -21,16 +21,16 @@
     "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-featureExpression",
     "valueExpression" : {
       "language" : "text/cql-identifier",
-      "expression" : "On RA Diagnosis",
+      "expression" : "Active RA Diagnosis",
       "reference" : "http://example.org/Library/DateOfDiagnosisFeatureLogic|0.2.0"
     }
   }],
   "url" : "http://example.org/StructureDefinition/DateOfDiagnosisFeature",
   "version" : "0.2.0",
   "name" : "DateOfDiagnosisFeature",
-  "title" : "Active RA Diagnosis Feature",
+  "title" : "Date of Diagnosis Feature",
   "status" : "active",
-  "date" : "2025-07-11T13:47:00-04:00",
+  "date" : "2025-07-14T10:27:22-04:00",
   "publisher" : "Example Publisher",
   "description" : "Case feature definition: patient has active RA Diagnosis",
   "fhirVersion" : "4.0.1",

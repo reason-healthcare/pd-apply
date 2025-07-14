@@ -1,8 +1,8 @@
 Profile: DateOfDiagnosisFeature
 Parent: Observation
 Description: "Case feature definition: patient has active RA Diagnosis"
-Title: "Active RA Diagnosis Feature"
-* insert CaseFeatureExpressions(DateOfDiagnosisFeatureLogic, On RA Diagnosis)
+Title: "Date of Diagnosis Feature"
+* insert CaseFeatureExpressions(DateOfDiagnosisFeatureLogic, Active RA Diagnosis)
 * status = #final
 * code = CaseFeatureCodes#date-of-diagnosis
 * value[x] only dateTime
