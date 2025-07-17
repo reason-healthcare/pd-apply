@@ -1,0 +1,29 @@
+{
+  "resourceType" : "QuestionnaireResponse",
+  "id" : "RaQuestionnaireResponse2",
+  "questionnaire" : "http://questionnaire-processor/Questionnaire/ActiveRATreatmentExpected",
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/Patient2"
+  },
+  "authored" : "2025-01-01T11:45:33+11:00",
+  "author" : {
+    "reference" : "Practitioner/Practitioner2"
+  },
+  "item" : [{
+    "linkId" : "ActiveRaTreatmentFeature#Observation",
+    "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation",
+    "text" : "Active RA Treatment Feature",
+    "item" : [{
+      "linkId" : "ActiveRaTreatmentFeature#Observation.code",
+      "definition" : "http://example.org/StructureDefinition/ActiveRaTreatmentFeature#Observation.code",
+      "text" : "Type of observation (code / type)",
+      "answer" : [{
+        "valueCoding" : {
+          "system" : "http://example.org/CodeSystem/CaseFeatureCodes",
+          "code" : "on-ra-treatment"
+        }
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,64 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "27aaff70-40c4-4fbb-9bc2-fd93df327818",
+  "meta" : {
+    "lastUpdated" : "2025-07-17T13:42:22.526-04:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.org/ValueSet/DiagnosisStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.80</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA6577-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6577-6/\">LA6577-6</a></td><td>http://loinc.org</td><td>Negative</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA6576-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6576-8/\">LA6576-8</a></td><td>http://loinc.org</td><td>Positive</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/DiagnosisStatusVS",
+      "version" : "0.2.0",
+      "name" : "DiagnosisStatusVS",
+      "title" : "Diagnosis Status ValueSet",
+      "status" : "active",
+      "date" : "2025-07-17T13:42:22-04:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:950d27fb-1c2e-440e-814f-85cf4dadc615",
+        "timestamp" : "2025-07-17T13:43:22-04:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.80"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.80"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA6577-6",
+          "display" : "Negative"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA6576-8",
+          "display" : "Positive"
+        }]
+      }
+    }
+  }]
+}

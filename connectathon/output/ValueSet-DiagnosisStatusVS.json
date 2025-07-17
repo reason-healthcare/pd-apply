@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DiagnosisStatusVS",
+  "url" : "http://example.org/ValueSet/DiagnosisStatusVS",
+  "version" : "0.2.0",
+  "name" : "DiagnosisStatusVS",
+  "title" : "Diagnosis Status ValueSet",
+  "status" : "active",
+  "date" : "2025-07-17T13:42:22-04:00",
+  "publisher" : "Example Publisher",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6577-6",
+        "display" : "Negative"
+      },
+      {
+        "code" : "LA6576-8",
+        "display" : "Positive"
+      }]
+    }]
+  }
+}

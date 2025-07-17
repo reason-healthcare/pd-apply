@@ -1,0 +1,431 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorOptions" : "EnableAnnotations,EnableLocators",
+         "signatureLevel" : "None",
+         "type" : "CqlToElmInfo"
+      }, {
+         "type" : "Annotation",
+         "s" : {
+            "r" : "26",
+            "s" : [ {
+               "value" : [ "","library RaMonitoringRecommendationLibrary version '0.2.0'" ]
+            } ]
+         }
+      } ],
+      "identifier" : {
+         "id" : "RaMonitoringRecommendationLibrary",
+         "system" : "http://example.org",
+         "version" : "0.2.0"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1"
+         }, {
+            "localId" : "1",
+            "locator" : "3:1-3:26",
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "1",
+                  "s" : [ {
+                     "value" : [ "","using " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIR" ]
+                     } ]
+                  }, {
+                     "value" : [ " version '4.0.1'" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localId" : "2",
+            "locator" : "5:1-5:35",
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "http://example.org/FHIRHelpers",
+            "version" : "0.2.0",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "2",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "FHIRHelpers" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'0.2.0'" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "3",
+            "locator" : "6:1-6:85",
+            "localIdentifier" : "ActiveRaTreatmentFeature",
+            "path" : "http://example.org/ActiveRaTreatmentFeatureLogic",
+            "version" : "0.2.0",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "3",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "ActiveRaTreatmentFeatureLogic" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'0.2.0'"," called ","ActiveRaTreatmentFeature" ]
+                  } ]
+               }
+            } ]
+         }, {
+            "localId" : "4",
+            "locator" : "7:1-7:81",
+            "localIdentifier" : "DateOfDiagnosisFeature",
+            "path" : "http://example.org/DateOfDiagnosisFeatureLogic",
+            "version" : "0.2.0",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "4",
+                  "s" : [ {
+                     "value" : [ "","include " ]
+                  }, {
+                     "s" : [ {
+                        "value" : [ "DateOfDiagnosisFeatureLogic" ]
+                     } ]
+                  }, {
+                     "value" : [ " version ","'0.2.0'"," called ","DateOfDiagnosisFeature" ]
+                  } ]
+               }
+            } ]
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "locator" : "9:1-9:15",
+            "name" : "Patient"
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "locator" : "9:1-9:15",
+            "name" : "Patient",
+            "context" : "Patient",
+            "expression" : {
+               "type" : "SingletonFrom",
+               "operand" : {
+                  "locator" : "9:1-9:15",
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                  "type" : "Retrieve"
+               }
+            }
+         }, {
+            "localId" : "15",
+            "locator" : "11:1-15:9",
+            "name" : "Order monitoring tests if on RA treatment",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "15",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Order monitoring tests if on RA treatment\"",":\n  " ]
+                  }, {
+                     "r" : "14",
+                     "s" : [ {
+                        "value" : [ "if " ]
+                     }, {
+                        "r" : "7",
+                        "s" : [ {
+                           "value" : [ "(" ]
+                        }, {
+                           "r" : "7",
+                           "s" : [ {
+                              "r" : "6",
+                              "s" : [ {
+                                 "r" : "5",
+                                 "s" : [ {
+                                    "value" : [ "ActiveRaTreatmentFeature" ]
+                                 } ]
+                              }, {
+                                 "value" : [ "." ]
+                              }, {
+                                 "r" : "6",
+                                 "s" : [ {
+                                    "value" : [ "\"On RA Treatment\"" ]
+                                 } ]
+                              } ]
+                           }, {
+                              "value" : [ " is not null" ]
+                           } ]
+                        }, {
+                           "value" : [ ")" ]
+                        } ]
+                     }, {
+                        "value" : [ " then\n    " ]
+                     }, {
+                        "r" : "12",
+                        "s" : [ {
+                           "r" : "10",
+                           "s" : [ {
+                              "r" : "9",
+                              "s" : [ {
+                                 "r" : "8",
+                                 "s" : [ {
+                                    "value" : [ "ActiveRaTreatmentFeature" ]
+                                 } ]
+                              }, {
+                                 "value" : [ "." ]
+                              }, {
+                                 "r" : "9",
+                                 "s" : [ {
+                                    "value" : [ "\"On RA Treatment\"" ]
+                                 } ]
+                              } ]
+                           }, {
+                              "value" : [ "." ]
+                           }, {
+                              "r" : "10",
+                              "s" : [ {
+                                 "value" : [ "value" ]
+                              } ]
+                           } ]
+                        }, {
+                           "value" : [ " as " ]
+                        }, {
+                           "r" : "11",
+                           "s" : [ {
+                              "value" : [ "boolean" ]
+                           } ]
+                        } ]
+                     }, {
+                        "r" : "13",
+                        "value" : [ "\n  else\n    ","false" ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "14",
+               "locator" : "12:3-15:9",
+               "type" : "If",
+               "condition" : {
+                  "localId" : "7",
+                  "locator" : "12:6-12:61",
+                  "type" : "Not",
+                  "operand" : {
+                     "locator" : "12:7-12:60",
+                     "type" : "IsNull",
+                     "operand" : {
+                        "localId" : "6",
+                        "locator" : "12:7-12:48",
+                        "name" : "On RA Treatment",
+                        "libraryName" : "ActiveRaTreatmentFeature",
+                        "type" : "ExpressionRef"
+                     }
+                  }
+               },
+               "then" : {
+                  "name" : "ToBoolean",
+                  "libraryName" : "FHIRHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "localId" : "12",
+                     "locator" : "13:5-13:63",
+                     "strict" : false,
+                     "type" : "As",
+                     "operand" : {
+                        "localId" : "10",
+                        "locator" : "13:5-13:52",
+                        "path" : "value",
+                        "type" : "Property",
+                        "source" : {
+                           "localId" : "9",
+                           "locator" : "13:5-13:46",
+                           "name" : "On RA Treatment",
+                           "libraryName" : "ActiveRaTreatmentFeature",
+                           "type" : "ExpressionRef"
+                        }
+                     },
+                     "asTypeSpecifier" : {
+                        "localId" : "11",
+                        "locator" : "13:57-13:63",
+                        "name" : "{http://hl7.org/fhir}boolean",
+                        "type" : "NamedTypeSpecifier"
+                     }
+                  } ]
+               },
+               "else" : {
+                  "localId" : "13",
+                  "locator" : "15:5-15:9",
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "false",
+                  "type" : "Literal"
+               }
+            }
+         }, {
+            "localId" : "26",
+            "locator" : "17:1-21:9",
+            "name" : "Send message to remind patient of follow up for RA Diagnosis within one month of diagnosis",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ {
+               "type" : "Annotation",
+               "s" : {
+                  "r" : "26",
+                  "s" : [ {
+                     "value" : [ "","define ","\"Send message to remind patient of follow up for RA Diagnosis within one month of diagnosis\"",":\n  " ]
+                  }, {
+                     "r" : "25",
+                     "s" : [ {
+                        "value" : [ "if " ]
+                     }, {
+                        "r" : "18",
+                        "s" : [ {
+                           "value" : [ "(" ]
+                        }, {
+                           "r" : "18",
+                           "s" : [ {
+                              "r" : "17",
+                              "s" : [ {
+                                 "r" : "16",
+                                 "s" : [ {
+                                    "value" : [ "DateOfDiagnosisFeature" ]
+                                 } ]
+                              }, {
+                                 "value" : [ "." ]
+                              }, {
+                                 "r" : "17",
+                                 "s" : [ {
+                                    "value" : [ "\"Active RA Diagnosis\"" ]
+                                 } ]
+                              } ]
+                           }, {
+                              "value" : [ " is not null" ]
+                           } ]
+                        }, {
+                           "value" : [ ")" ]
+                        } ]
+                     }, {
+                        "value" : [ " then\n    " ]
+                     }, {
+                        "r" : "23",
+                        "s" : [ {
+                           "r" : "21",
+                           "s" : [ {
+                              "r" : "20",
+                              "s" : [ {
+                                 "r" : "19",
+                                 "s" : [ {
+                                    "value" : [ "DateOfDiagnosisFeature" ]
+                                 } ]
+                              }, {
+                                 "value" : [ "." ]
+                              }, {
+                                 "r" : "20",
+                                 "s" : [ {
+                                    "value" : [ "\"Active RA Diagnosis\"" ]
+                                 } ]
+                              } ]
+                           }, {
+                              "value" : [ "." ]
+                           }, {
+                              "r" : "21",
+                              "s" : [ {
+                                 "value" : [ "value" ]
+                              } ]
+                           } ]
+                        }, {
+                           "value" : [ " as " ]
+                        }, {
+                           "r" : "22",
+                           "s" : [ {
+                              "value" : [ "boolean" ]
+                           } ]
+                        } ]
+                     }, {
+                        "r" : "24",
+                        "value" : [ "\n  else\n    ","false" ]
+                     } ]
+                  } ]
+               }
+            } ],
+            "expression" : {
+               "localId" : "25",
+               "locator" : "18:3-21:9",
+               "type" : "If",
+               "condition" : {
+                  "localId" : "18",
+                  "locator" : "18:6-18:63",
+                  "type" : "Not",
+                  "operand" : {
+                     "locator" : "18:7-18:62",
+                     "type" : "IsNull",
+                     "operand" : {
+                        "localId" : "17",
+                        "locator" : "18:7-18:50",
+                        "name" : "Active RA Diagnosis",
+                        "libraryName" : "DateOfDiagnosisFeature",
+                        "type" : "ExpressionRef"
+                     }
+                  }
+               },
+               "then" : {
+                  "name" : "ToBoolean",
+                  "libraryName" : "FHIRHelpers",
+                  "type" : "FunctionRef",
+                  "operand" : [ {
+                     "localId" : "23",
+                     "locator" : "19:5-19:65",
+                     "strict" : false,
+                     "type" : "As",
+                     "operand" : {
+                        "localId" : "21",
+                        "locator" : "19:5-19:54",
+                        "path" : "value",
+                        "type" : "Property",
+                        "source" : {
+                           "localId" : "20",
+                           "locator" : "19:5-19:48",
+                           "name" : "Active RA Diagnosis",
+                           "libraryName" : "DateOfDiagnosisFeature",
+                           "type" : "ExpressionRef"
+                        }
+                     },
+                     "asTypeSpecifier" : {
+                        "localId" : "22",
+                        "locator" : "19:59-19:65",
+                        "name" : "{http://hl7.org/fhir}boolean",
+                        "type" : "NamedTypeSpecifier"
+                     }
+                  } ]
+               },
+               "else" : {
+                  "localId" : "24",
+                  "locator" : "21:5-21:9",
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "false",
+                  "type" : "Literal"
+               }
+            }
+         } ]
+      }
+   }
+}

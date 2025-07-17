@@ -5,7 +5,7 @@ Title: "Date of Diagnosis Feature"
 * insert CaseFeatureExpressions(RAStatusFeatureLogic, RA Status)
 * status = #final
 * code = CaseFeatureCodes#ra-status
-* value[x] only CodeableConcept
+* valueCodeableConcept only CodeableConcept
 * valueCodeableConcept from DiagnosisStatusVS (required)
 * subject 1..1 MS
   * ^extension[sdc-questionnaire-definitionExtractValue].extension[definition].valueUri = "http://fhir.org/test/StructureDefinition/RAStatusFeature#Observation.subject"

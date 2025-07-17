@@ -1,0 +1,13 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/DiagnosisStatusVS",
+      "version" : "0.2.0",
+      "status" : "active",
+      "name" : "DiagnosisStatusVS",
+      "title" : "Diagnosis Status ValueSet",
+      "description" : null,
+      "systems" : ["http://loinc.org"]
+    }
+  ]
+}

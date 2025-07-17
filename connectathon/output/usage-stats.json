@@ -1,0 +1,124 @@
+{
+  "package": "fhir.example",
+  "version": "0.2.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://example.org/StructureDefinition/ActiveRaTreatmentFeature",
+        "title": "Active RA Treatment Feature"
+      },
+      {
+        "url": "http://example.org/StructureDefinition/DateOfDiagnosisFeature",
+        "title": "Date of Diagnosis Feature"
+      },
+      {
+        "url": "http://example.org/StructureDefinition/RAStatusFeature",
+        "title": "Date of Diagnosis Feature"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "Parameters.parameter.resource.snapshot.element.constraint",
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "Parameters.parameter.resource.snapshot.element.constraint",
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "Parameters.parameter.resource.snapshot.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "Parameters.parameter.resource.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "Parameters.parameter.resource.snapshot.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-doNotPerform": [
+      "Task"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal": [
+      "Bundle.entry.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "Parameters.parameter.resource.snapshot.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "Parameters.parameter.resource.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "Parameters.parameter.resource.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assertionExpression": [
+      "Parameters.parameter.resource",
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith": [
+      "ActivityDefinition",
+      "Parameters.parameter.resource"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn": [
+      "ActivityDefinition",
+      "Parameters.parameter.resource"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-featureExpression": [
+      "Parameters.parameter.resource",
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-inferenceExpression": [
+      "Parameters.parameter.resource",
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith": [
+      "ActivityDefinition",
+      "Parameters.parameter.resource"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtract": [
+      "Bundle.entry.resource.item",
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue": [
+      "Bundle.entry.resource.item",
+      "Parameters.parameter.resource.differential.element",
+      "Parameters.parameter.resource.snapshot.element",
+      "Questionnaire.item",
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression": [
+      "Bundle.entry.resource.item.item",
+      "Questionnaire.item.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext": [
+      "Bundle.entry.resource.item",
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext": [
+      "Bundle.entry.resource",
+      "Questionnaire"
+    ]
+  }
+}

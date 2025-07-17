@@ -1,0 +1,19 @@
+{
+  "url" : "http://example.org/ImplementationGuide/fhir.example",
+  "name" : "CpgFixtures",
+  "title" : null,
+  "description" : null,
+  "status" : "draft",
+  "package-id" : "fhir.example",
+  "ig-ver" : "0.2.0",
+  "date" : "Thu, 17 Jul, 2025 13:42:22 -0400",
+  "dateISO8601" : "2025-07-17T13:42:22-04:00",
+  "errs" : 28,
+  "warnings" : 659,
+  "hints" : 61,
+  "suppressed-hints" : 5,
+  "suppressed-warnings" : 2,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2541882568
+}
